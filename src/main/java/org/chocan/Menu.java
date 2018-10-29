@@ -19,7 +19,6 @@ public class Menu {
 
     public void MainMenu(){
         System.out.println();
-        System.out.println();
         System.out.println("***************************************************");
         System.out.println("  ___  ___  ___  ___  ___.---------------.");
         System.out.println(".'\\__\\'\\__\\'\\__\\'\\__\\'\\__,`   .  ____ ___ \\ ");
@@ -61,36 +60,7 @@ public class Menu {
         }
     }
     public void LoginMenu(){
-        System.out.println();
-        System.out.println();
-        System.out.println("***************************************************");
-        System.out.println("               `-+shdmNMMMMNmdhs+-`               ");
-        System.out.println("           `:smMmyo/:.``  ``.:/oymMms:`           ");
-        System.out.println("         :yNms:`                  `:smNy:         ");
-        System.out.println("       /mNy-                          -yNm/       ");
-        System.out.println("     :mNo`          .+syhhys+.          `oNm:     ");
-        System.out.println("   `yMh.         `omMMMMMMMMMMmo`         .hMs`   ");
-        System.out.println("  `dM+          :NMMMMMMMMMMMMMMN:          +Md`  ");
-        System.out.println(" `dM/          :MMMMMMMMMMMMMMMMMM:          /Md` ");
-        System.out.println(" yMo           dMMMMMMMMMMMMMMMMMMd           oMy ");
-        System.out.println(":Mm            NMMMMMMMMMMMMMMMMMMN            mM:");
-        System.out.println("yM+            sMMMMMMMMMMMMMMMMMMs            +My");
-        System.out.println("NM.            `dMMMMMMMMMMMMMMMMd`            .MN");
-        System.out.println("MM`              oNMMMMMMMMMMMMMs`             `MM");
-        System.out.println("NM.               `+hMMMMMMMMh+`               .MN");
-        System.out.println("yM+             `/ymMMMMMMMMMMms/`             +My");
-        System.out.println(":Mm           -hMMMMMMMMMMMMMMMMMNy.           mM:");
-        System.out.println(" yMo        .hMMMMMMMMMMMMMMMMMMMMMMy`        oMy ");
-        System.out.println(" `dM+      :NMMMMMMMMMMMMMMMMMMMMMMMMN-      +Md` ");
-        System.out.println("  `dMo    .NMMMMMMMMMMMMMMMMMMMMMMMMMMN.    oMd`  ");
-        System.out.println("    sMd.  hMMMMMMMMMMMMMMMMMMMMMMMMMMMMh  .dMs    ");
-        System.out.println("     :mMy.MMMMMMMMMMMMMMMMMMMMMMMMMMMMMM.yMm:     ");
-        System.out.println("       /mMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMm/       ");
-        System.out.println("         :yNMMMMMMMMMMMMMMMMMMMMMMMMMMNy:         ");
-        System.out.println("            :smMMMMMMMMMMMMMMMMMMMMms:            ");
-        System.out.println("               `-+shdmNMMMMNmdhs+-`               ");
-        System.out.println();
-        System.out.println("********************Login Menu*********************");
+        System.out.println("----------------------Login Menu----------------------");
         System.out.println("Please choose an option: ");
         System.out.println("\t-1: Quit app");
         System.out.println("\t 0: Clear Screen");
@@ -129,38 +99,6 @@ public class Menu {
 
     }
     public void PrintReportMenu(){
-        System.out.println();
-        System.out.println();
-        System.out.println("***************************************************");
-        System.out.println("-syooooooooooooooooooooooooooooooooooooosy+");
-        System.out.println("+y/  ```  ``  ``` ```  ``` ```  ``  ``` `sy");
-        System.out.println("+y:``:///////////////////////////////:```sy");
-        System.out.println("+y: `:////++//++///++//++///++//++///:`  sy");
-        System.out.println("+y:  .....--...-...-.  ``............`   sy");
-        System.out.println("+y:``oooooooooooooooo`` /sssssssssssso```sy");
-        System.out.println("+y:  ````````````````  `````..``..`````  sy");
-        System.out.println("+y:``   ````.:--.``  ``  ``   ``  ``   ``sy");
-        System.out.println("+y:  ``.-:::.+++++:.`  ``   ``  ``   ``  sy");
-        System.out.println("+y:```-/////`+++++++-``  :////////////-``sy");
-        System.out.println("+y:  ://////.:++++++/` ``//+++//++//++-  sy");
-        System.out.println("+y:``///////--:----::`` `-::::::::::::.``sy");
-        System.out.println("+y: `////////://////:   `+++o++++o++++:  sy");
-        System.out.println("+y:  -//////////////.      ```  ``  ``   sy");
-        System.out.println("+y:`` .://////////:. ``   `   ``  ``   ``sy");
-        System.out.println("+y:  ```.-:::::--````  ``   ``  ``:://-  sy");
-        System.out.println("+y:``   ``  ``   ``  ``  `````.. .++++/``sy");
-        System.out.println("+y:  ``   ``  ``   ``  ``  .++++--++++/  sy");
-        System.out.println("+y:``:////////////-  .::::.-++++:.++++/``sy");
-        System.out.println("+y: `/++/+++//+++/-``:++++:-++++:-++++/  sy");
-        System.out.println("+y:``:::::::::::::.  :++++:-++++:.++++/``sy");
-        System.out.println("+y: `+o+++oo++oo++:``:++++:-++++:.++++/  sy");
-        System.out.println("+y:  .............`  :++++:-++++:.++++/  sy");
-        System.out.println("+y:``sssssssssssss/  -++++-.++++-.++++:``sy");
-        System.out.println("+y:  ````````````` ``  ```  ``` `` ````  sy");
-        System.out.println(":ys/////////////////////////////////////+ys");
-        System.out.println(" -///+++//++//+++/+++//+++/+++//++//+++//:.");
-        System.out.println();
-        System.out.println();
-        System.out.println("********************Report Menu*********************");
+        System.out.println("\n----------------------Report Menu----------------------");
     }
 }
