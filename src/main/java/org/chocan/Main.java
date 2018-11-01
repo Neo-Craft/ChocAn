@@ -1,6 +1,14 @@
 package org.chocan;
 
 public class Main {
+    /*
+            menuIndx:
+                0: Main Menu
+                1: Login Screen
+                2: Manager Menu
+                3: Operator Menu
+                4: Service Provider Menu
+         */
 
     public static void main(String[] args) {
         Menu mMenu = new Menu();
@@ -18,12 +26,18 @@ public class Main {
                 case 1:
                     mMenu.LoginMenu();
                     break;
-
+                case 2:
+                    mMenu.ManagerAccountMenu();
+                    break;
+                case 3:
+                    mMenu.OperatorAccountMenu();
+                    break;
+                case 4:
+                    mMenu.ProviderAccountMenu();
+                    break;
             }
         }
         System.out.println("Thank you for using our app!");
         System.out.println("Quiting...");
-
     }
-
 }

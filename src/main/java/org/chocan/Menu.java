@@ -7,7 +7,9 @@ public class Menu {
         menuIndx:
             0: Main Menu
             1: Login Screen
-
+            2: Manager Menu
+            3: Operator Menu
+            4: Service Provider Menu
      */
     public int menuIndx = 0;
     private Scanner sc = new Scanner(System.in);
@@ -120,47 +122,80 @@ public class Menu {
                 return;
             case 2:
                 //TODO: Handle login here
-                //If login succesfully then go to account option, if not, let the user input again or quit
+                //If login succesfully then go to right account menu, if not, let the user input again or quit
                 break;
         }
     }
 
-    public void AccountMenu(){
+    public void ManagerAccountMenu(){
+        System.out.println();
+        System.out.println();
+        System.out.println("********************Manager Menu*********************");
+        System.out.println("Please choose an option: ");
+        System.out.println("\t-1: Quit app");
+        System.out.println("\t 0: Clear Screen");
+        System.out.println("\t 1: Log Out");
+        System.out.println("\t 2: Run Weekly Reports");
 
+        System.out.print("Your choice: ");
+        int option = sc.nextInt();
+
+        //Bad input ----- Make sure to check to upper bound
+        while (option < -1 || option > 2){
+            System.out.print("Can't choose that...");
+            System.out.print("Your choice: ");
+            option = sc.nextInt();
+        }
     }
-    public void PrintReportMenu(){
+
+    public void OperatorAccountMenu(){
         System.out.println();
         System.out.println();
-        System.out.println("***************************************************");
-        System.out.println("-syooooooooooooooooooooooooooooooooooooosy+");
-        System.out.println("+y/  ```  ``  ``` ```  ``` ```  ``  ``` `sy");
-        System.out.println("+y:``:///////////////////////////////:```sy");
-        System.out.println("+y: `:////++//++///++//++///++//++///:`  sy");
-        System.out.println("+y:  .....--...-...-.  ``............`   sy");
-        System.out.println("+y:``oooooooooooooooo`` /sssssssssssso```sy");
-        System.out.println("+y:  ````````````````  `````..``..`````  sy");
-        System.out.println("+y:``   ````.:--.``  ``  ``   ``  ``   ``sy");
-        System.out.println("+y:  ``.-:::.+++++:.`  ``   ``  ``   ``  sy");
-        System.out.println("+y:```-/////`+++++++-``  :////////////-``sy");
-        System.out.println("+y:  ://////.:++++++/` ``//+++//++//++-  sy");
-        System.out.println("+y:``///////--:----::`` `-::::::::::::.``sy");
-        System.out.println("+y: `////////://////:   `+++o++++o++++:  sy");
-        System.out.println("+y:  -//////////////.      ```  ``  ``   sy");
-        System.out.println("+y:`` .://////////:. ``   `   ``  ``   ``sy");
-        System.out.println("+y:  ```.-:::::--````  ``   ``  ``:://-  sy");
-        System.out.println("+y:``   ``  ``   ``  ``  `````.. .++++/``sy");
-        System.out.println("+y:  ``   ``  ``   ``  ``  .++++--++++/  sy");
-        System.out.println("+y:``:////////////-  .::::.-++++:.++++/``sy");
-        System.out.println("+y: `/++/+++//+++/-``:++++:-++++:-++++/  sy");
-        System.out.println("+y:``:::::::::::::.  :++++:-++++:.++++/``sy");
-        System.out.println("+y: `+o+++oo++oo++:``:++++:-++++:.++++/  sy");
-        System.out.println("+y:  .............`  :++++:-++++:.++++/  sy");
-        System.out.println("+y:``sssssssssssss/  -++++-.++++-.++++:``sy");
-        System.out.println("+y:  ````````````` ``  ```  ``` `` ````  sy");
-        System.out.println(":ys/////////////////////////////////////+ys");
-        System.out.println(" -///+++//++//+++/+++//+++/+++//++//+++//:.");
+        System.out.println("********************Operator Menu*********************");
+        System.out.println("Please choose an option: ");
+        System.out.println("\t-1: Quit app");
+        System.out.println("\t 0: Clear Screen");
+        System.out.println("\t 1: Log Out");
+        System.out.println("\t 2: Add member");
+        System.out.println("\t 3: Update member");
+        System.out.println("\t 4: Remove member");
+        System.out.println("\t 5: Add provider");
+        System.out.println("\t 6: Update provider");
+        System.out.println("\t 7: Remove provider");
+
+        System.out.print("Your choice: ");
+        int option = sc.nextInt();
+
+        //Bad input ----- Make sure to check to upper bound
+        while (option < -1 || option > 7){
+            System.out.print("Can't choose that...");
+            System.out.print("Your choice: ");
+            option = sc.nextInt();
+        }
+    }
+
+    public void ProviderAccountMenu(){
         System.out.println();
         System.out.println();
         System.out.println("********************Report Menu*********************");
+
+        System.out.println("Please choose an option: ");
+        System.out.println("\t-1: Quit app");
+        System.out.println("\t 0: Clear Screen");
+        System.out.println("\t 1: Log Out");
+        System.out.println("\t 2: Enter Service Provided into System");
+        System.out.println("\t 3: View Provider Directory");
+        System.out.println("\t 4: View and Send Billing Info");
+        System.out.println("\t 5: View Subscription");
+
+        System.out.print("Your choice: ");
+        int option = sc.nextInt();
+
+        //Bad input ----- Make sure to check to upper bound
+        while (option < -1 || option > 5){
+            System.out.print("Can't choose that...");
+            System.out.print("Your choice: ");
+            option = sc.nextInt();
+        }
     }
 }
