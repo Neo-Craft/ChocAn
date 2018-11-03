@@ -1,7 +1,8 @@
 # ChocAn
 
 ## Java Requirements :
-JDK 8
+JDK 8<br />
+JRE 8
 
 ## To Compile (Shell)
 mvn package

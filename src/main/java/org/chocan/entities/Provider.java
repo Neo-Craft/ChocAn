@@ -1,16 +1,20 @@
 package org.chocan.entities;
 
+import java.util.ArrayList;
+
 public class Provider {
 
     private String name;
     private long GID; //Alias 9-digit number
     private Coordinate cordinate; //The provider address etc...
-    //TODO Either Map<Member, Service> or ArrayList<Service>
+    private ArrayList<Service> services;
+    //TODO is Map<Member, Service> better ?
 
     public Provider(String name, long gid, Coordinate cordinate) {
         this.name = name;
         GID = gid;
         this.cordinate = cordinate;
+        this.services = new ArrayList<>();
     }
 
     public String getName() {
@@ -37,7 +41,7 @@ public class Provider {
         this.cordinate = cordinate;
     }
 
-
-
-
+    public ArrayList<Service> getServices() {
+        return services;
+    }
 }
