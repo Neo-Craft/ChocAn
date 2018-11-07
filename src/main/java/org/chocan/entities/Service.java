@@ -6,17 +6,17 @@ public class Service {
 
     private Date serviceDate;   // Date of service (MM-DD-YYYY).
     private Date receiveDate;   // Date and time data were received by the computer (MM-DD-YYYY HH:MM:SS)
-    private String provider;    // TODO Bind to a Provider object
+    private int providerId;
     private int serviceCode;    // 6digits
-    private short paidFee;      // Fee to be paid (up to $999.99)
+    private float paidFee;      // Fee to be paid (up to $999.99)
     private String serviceName;
 
 
 
-    public Service(Date serviceDate, Date receiveDate, String provider, int serviceCode, short paidFee, String serviceName){
+    public Service(Date serviceDate, Date receiveDate, int provider, int serviceCode, float paidFee, String serviceName){
         this.serviceDate = serviceDate;
         this.receiveDate = receiveDate;
-        this.provider = provider;
+        this.providerId = provider;
         this.serviceCode = serviceCode;
         this.paidFee = paidFee;
         this.serviceName = serviceName;
@@ -39,12 +39,12 @@ public class Service {
         this.receiveDate = receiveDate;
     }
 
-    public String getProvider() {
-        return provider;
+    public int getProviderId() {
+        return providerId;
     }
 
-    public void setProvider(String provider) {
-        this.provider = provider;
+    public void setProviderId(int provider) {
+        this.providerId = provider;
     }
 
     public int getServiceCode() {
@@ -55,11 +55,11 @@ public class Service {
         this.serviceCode = serviceCode;
     }
 
-    public short getPaidFee() {
+    public float getPaidFee() {
         return paidFee;
     }
 
-    public void setPaidFee(short paidFee) {
+    public void setPaidFee(float paidFee) {
         this.paidFee = paidFee;
     }
 

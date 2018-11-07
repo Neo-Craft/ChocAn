@@ -2,45 +2,26 @@ package org.chocan.entities;
 
 import java.util.ArrayList;
 
-public class Member {
+public class Member extends ClientInfo {
 
-    private String name;
-    private long number; //9 digits
-    private Coordinate coordinate;
-    private ArrayList<Service> services = new ArrayList<>();
+    private ArrayList<Service> services;
+    private boolean suspended;
 
-    public Member(String name, long number, Coordinate coordinate){
-        this.name = name;
-        this.number = number;
-        this.coordinate = coordinate;
+    public Member(String name, int number, Coordinate coordinate, boolean suspended){
+        super(name, number, coordinate);
+        this.suspended = suspended;
+        this.services = new ArrayList<>();
     }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public long getNumber() {
-        return number;
-    }
-
-    public void setNumber(long number) {
-        this.number = number;
-    }
-
 
     public ArrayList<Service> getServices() {
         return services;
     }
 
-    public Coordinate getCoordinate() {
-        return coordinate;
+    public boolean isSuspended() {
+        return suspended;
     }
 
-    public void setCoordinate(Coordinate coordinate) {
-        this.coordinate = coordinate;
+    public void setSuspended(boolean suspended) {
+        this.suspended = suspended;
     }
 }

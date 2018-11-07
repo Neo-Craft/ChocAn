@@ -6,7 +6,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
-public class ProviderDao implements Dao<Provider, Long> {
+public class ProviderDao implements Dao<Provider, Integer> {
 
     private ArrayList<Provider> cache;
 
@@ -21,9 +21,9 @@ public class ProviderDao implements Dao<Provider, Long> {
     }
 
     @Override
-    public Optional<Provider> get(Long id) {
+    public Optional<Provider> get(Integer id) {
         return cache.stream()
-                .filter(provider -> provider.getGID() == id)
+                .filter(provider -> provider.getNumber() == id)
                 .findAny();
     }
 

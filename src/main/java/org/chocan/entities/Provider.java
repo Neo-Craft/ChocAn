@@ -1,47 +1,30 @@
 package org.chocan.entities;
 
 import java.util.ArrayList;
+import java.util.Map;
+import java.util.concurrent.ConcurrentHashMap;
 
-public class Provider {
+public class Provider extends ClientInfo {
 
-    private String name;
-    private long GID; //Alias 9-digit number
-    private Coordinate cordinate; //The provider address etc...
-    private ArrayList<Service> services;
-    //TODO is Map<Member, Service> better ?
+    private float weeklyFees;
+    private short weeklyConsultations;
+    private Map<Member, ArrayList<Service>> services;
 
-    public Provider(String name, long gid, Coordinate cordinate) {
-        this.name = name;
-        GID = gid;
-        this.cordinate = cordinate;
-        this.services = new ArrayList<>();
+    public Provider(String name, int gid, Coordinate coordinate) {
+        super(name, gid, coordinate);
+        this.services = new ConcurrentHashMap<Member, ArrayList<Service>>();
     }
 
-    public String getName() {
-        return name;
+    public ArrayList<Service> getService(Member member) {
+        return services.get(member);
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public float totalWeeklyFees(){
+        return 0; //TODO
     }
 
-    public long getGID() {
-        return GID;
+    public short totalWeeklyConsultations(){
+        return 0; //TODO
     }
 
-    public void setGID(long GID) {
-        this.GID = GID;
-    }
-
-    public Coordinate getCordinate() {
-        return cordinate;
-    }
-
-    public void setCordinate(Coordinate cordinate) {
-        this.cordinate = cordinate;
-    }
-
-    public ArrayList<Service> getServices() {
-        return services;
-    }
 }

@@ -24,8 +24,8 @@ public class DaoTest {
         );
 
         providers.add(sampleProvider);
-        assertTrue(providers.get(sampleProvider.getGID()).isPresent());
-        assertFalse(providers.get(fakeProvider.getGID()).isPresent());
+        assertTrue(providers.get(sampleProvider.getNumber()).isPresent());
+        assertFalse(providers.get(fakeProvider.getNumber()).isPresent());
 
 
     }
