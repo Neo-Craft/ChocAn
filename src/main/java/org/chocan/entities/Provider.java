@@ -20,11 +20,11 @@ public class Provider extends ClientInfo {
     }
 
     public float totalWeeklyFees(){
-        return 0; //TODO
+        return weeklyFees;
     }
 
     public short totalWeeklyConsultations(){
-        return 0; //TODO
+        return weeklyConsultations;
     }
 
 }

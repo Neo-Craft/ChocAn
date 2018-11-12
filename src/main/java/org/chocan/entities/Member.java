@@ -1,19 +1,20 @@
 package org.chocan.entities;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class Member extends ClientInfo {
 
-    private ArrayList<Service> services;
+    private List<Service> services;
     private boolean suspended;
 
     public Member(String name, int number, Coordinate coordinate, boolean suspended){
         super(name, number, coordinate);
         this.suspended = suspended;
-        this.services = new ArrayList<>();
+        this.setServices(new ArrayList<>());
     }
 
-    public ArrayList<Service> getServices() {
+    public List<Service> getServices() {
         return services;
     }
 
@@ -23,5 +24,9 @@ public class Member extends ClientInfo {
 
     public void setSuspended(boolean suspended) {
         this.suspended = suspended;
+    }
+
+    public void setServices(List<Service> services) {
+        this.services = services;
     }
 }

@@ -8,7 +8,7 @@ JRE 8
 mvn package
 
 ## To Run
-java -cp target/ChocAn-jar-with-dependencies.jar org.chocan.Main
+java -jar target/ChocAn-jar-with-dependencies.jar
 
 ## To Execute Tests
 mvn clean test

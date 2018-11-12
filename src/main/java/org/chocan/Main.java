@@ -1,5 +1,7 @@
 package org.chocan;
 
+import javax.xml.crypto.Data;
+
 public class Main {
     /*
             menuIndx:
@@ -16,7 +18,8 @@ public class Main {
         System.out.println("Welcome to our ChocAn App!");
         System.out.println("Connecting to database...");
         Database.load();
-        //if(true)return;
+        Runtime.getRuntime().addShutdownHook(new StopHook());
+        if(true)return;
         System.out.println("Connection established :D");
 
         while (mMenu.menuIndx != -1){
@@ -41,5 +44,13 @@ public class Main {
         }
         System.out.println("Thank you for using our app!");
         System.out.println("Quiting...");
+    }
+
+    private static class StopHook extends Thread {
+        @Override
+        public void run(){
+            Database.save();
+            System.out.println("ChocAn app is about to shutdown");
+        }
     }
 }
