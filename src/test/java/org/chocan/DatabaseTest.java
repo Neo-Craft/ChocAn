@@ -17,7 +17,7 @@ public class DatabaseTest {
 
     private int maxMembers = 10;        //Set number of Members to fill Database
     private int maxProviders = 10;      //Set number of Providers to fill Database
-    //private int maxServices = 10;       //Set number of Services to fill Database
+    private int maxServices = 10;       //Set number of Services to fill Database
 
     private int getRandNum(int min, int max){
         return ((int) (Math.random()*(max - min))) + min;
@@ -124,7 +124,7 @@ public class DatabaseTest {
         }
 
         //Create and put Service objects into Database
-        /*for(int i = 0; i< maxServices; i++) {
+        for(int i = 0; i< maxServices; i++) {
             Date date = new Date(getRandNum(2010,2018), getRandNum(0, 11), getRandNum(1,31));
             Date dateRec =  new Date(date.getYear(), date.getMonth(), date.getDay(), getRandNum(0,23), getRandNum(0,59), getRandNum(0,59));
             int serviceProvider = getRandNum(0, maxProviders);
@@ -136,7 +136,7 @@ public class DatabaseTest {
             Member member = Database.MEMBERS.get(getRandNum(0, maxMembers)).orElse(null);
             provider.addService(member, service);
             Database.PROVIDERS.update(provider);
-        }*/
+        }
         //Save the new Database
         Database.save();
 

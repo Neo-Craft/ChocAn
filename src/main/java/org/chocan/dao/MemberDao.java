@@ -18,19 +18,20 @@ public class MemberDao implements Dao<Member, Integer> {
 
     public MemberDao(){
         this.cache = new ConcurrentHashMap<>(20);
-        Gson gson = new GsonBuilder().create();
+        Gson gson = new GsonBuilder().enableComplexMapKeySerialization().create();
         BufferedReader reader = null;
         try {
             reader = new BufferedReader(new FileReader("member_database.json"));
             Member[] people = gson.fromJson(reader, Member[].class);
-            for (Member person : people) {
-                person.setServices(person.getServices().stream().map(entry -> Database.SERVICES.get(entry.getServiceCode()))    // we set the services in json to points here
-                        .filter(entry -> entry.isPresent())
-                        .map(entry -> entry.get())
-                        .collect(Collectors.toList()));
-                this.cache.put(person.getNumber(), person);
-            }
-            System.out.println(people.length + " members loaded");
+            if(people != null)
+                for (Member person : people) {
+                    person.setServices(person.getServices().stream().map(entry -> Database.SERVICES.get(entry.getServiceCode()))    // we set the services in json to points here
+                            .filter(entry -> entry.isPresent())
+                            .map(entry -> entry.get())
+                            .collect(Collectors.toList()));
+                    this.cache.put(person.getNumber(), person);
+                }
+            System.out.println(cache.size() + " members loaded");
 
         } catch (FileNotFoundException ex) {
             System.out.println("The file member_database.json is not present at the working directory");
@@ -38,7 +39,7 @@ public class MemberDao implements Dao<Member, Integer> {
             System.out.println("0 member loaded");
         }
 
-        System.out.println(gson.toJson(cache.values()));
+        //System.out.println(gson.toJson(cache.values()));
     }
 
     @Override
@@ -71,7 +72,7 @@ public class MemberDao implements Dao<Member, Integer> {
     @Override
     public void save() {
         try (Writer writer = new FileWriter("member_database.json")) {
-            Gson gson = new GsonBuilder().create();
+            Gson gson = new GsonBuilder().enableComplexMapKeySerialization().create();
             gson.toJson(cache.values(), writer);
         } catch (IOException e) {
             e.printStackTrace();
