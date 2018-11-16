@@ -2,6 +2,7 @@ package org.chocan.dao;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
+import com.google.gson.JsonSyntaxException;
 import org.chocan.entities.Coordinate;
 import org.chocan.entities.Member;
 import org.chocan.entities.Provider;
@@ -29,7 +30,11 @@ public class ProviderDao implements Dao<Provider, Integer> {
                 System.out.println(providers.length + " providers loaded");
             }
 
-        } catch (FileNotFoundException ex) {
+        }
+        catch(JsonSyntaxException ex){
+            System.out.println(reader);
+        }
+        catch (FileNotFoundException ex) {
             System.out.println("The file provider_database.json is not present at the working directory");
             ex.printStackTrace();
             System.out.println("0 provider loaded");
