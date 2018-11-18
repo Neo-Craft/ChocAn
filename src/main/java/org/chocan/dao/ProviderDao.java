@@ -2,6 +2,8 @@ package org.chocan.dao;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
+import com.google.gson.JsonSyntaxException;
+import com.google.gson.reflect.TypeToken;
 import org.chocan.entities.Coordinate;
 import org.chocan.entities.Member;
 import org.chocan.entities.Provider;
@@ -19,23 +21,26 @@ public class ProviderDao implements Dao<Provider, Integer> {
     public ProviderDao(){
         this.cache = new ArrayList<>();
 
-        Gson gson = new GsonBuilder().create();
+        Gson gson = new GsonBuilder()
+                .enableComplexMapKeySerialization()
+                .create();
         BufferedReader reader = null;
         try {
             reader = new BufferedReader(new FileReader("provider_database.json"));
-            Provider[] providers = gson.fromJson(reader, Provider[].class);
-            if(providers != null) {
-                cache.addAll(Arrays.asList(providers));
-                System.out.println(providers.length + " providers loaded");
-            }
+            cache = gson.fromJson(reader, new TypeToken<ArrayList<Provider>>() {}.getType());
 
-        } catch (FileNotFoundException ex) {
+        }
+        catch (FileNotFoundException ex) {
             System.out.println("The file provider_database.json is not present at the working directory");
             ex.printStackTrace();
-            System.out.println("0 provider loaded");
+        }catch (Exception e){
+            e.printStackTrace();
         }
+        if(cache == null)
+            cache = new ArrayList<>();
+        System.out.println(cache.size() + " providers loaded");
 
-        System.out.println(gson.toJson(cache));
+        //System.out.println(gson.toJson(cache));
     }
 
     @Override
@@ -70,7 +75,9 @@ public class ProviderDao implements Dao<Provider, Integer> {
     @Override
     public void save() {
         try (Writer writer = new FileWriter("provider_database.json")) {
-            Gson gson = new GsonBuilder().create();
+            Gson gson = new GsonBuilder()
+                    .enableComplexMapKeySerialization()
+                    .create();
             gson.toJson(cache, writer);
         } catch (IOException e) {
             e.printStackTrace();

@@ -18,7 +18,7 @@ public class ServiceDao implements Dao<Service, Integer> {
 
     public ServiceDao(){
         this.cache = new ConcurrentHashMap<>(20);
-        Gson gson = new GsonBuilder().create();
+        Gson gson = new GsonBuilder().enableComplexMapKeySerialization().create();
         BufferedReader reader = null;
         try {
             reader = new BufferedReader(new FileReader("service_database.json"));
@@ -38,7 +38,7 @@ public class ServiceDao implements Dao<Service, Integer> {
             System.out.println("0 service loaded");
         }
 
-        System.out.println(gson.toJson(cache.values()));
+       // System.out.println(gson.toJson(cache.values()));
     }
 
     @Override
@@ -48,7 +48,7 @@ public class ServiceDao implements Dao<Service, Integer> {
 
     @Override
     public Optional<Service> get(Integer id) {
-        return Optional.of(cache.get(id));
+        return Optional.ofNullable(cache.get(id));
     }
 
     @Override
@@ -71,7 +71,7 @@ public class ServiceDao implements Dao<Service, Integer> {
     @Override
     public void save() {
         try (Writer writer = new FileWriter("service_database.json")) {
-            Gson gson = new GsonBuilder().create();
+            Gson gson = new GsonBuilder().enableComplexMapKeySerialization().create();
             gson.toJson(cache.values(), writer);
         } catch (IOException e) {
             e.printStackTrace();

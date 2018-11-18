@@ -8,11 +8,16 @@ public class Provider extends ClientInfo {
 
     private float weeklyFees;
     private short weeklyConsultations;
-    private Map<Member, ArrayList<Service>> services;
+    private ConcurrentHashMap<Member, ArrayList<Service>> services;
 
-    public Provider(String name, int gid, Coordinate coordinate) {
+    public Provider(String name, int gid, Coordinate coordinate ) {
         super(name, gid, coordinate);
         this.services = new ConcurrentHashMap<Member, ArrayList<Service>>();
+    }
+
+    public Provider(String name, int gid, Coordinate coordinate, ConcurrentHashMap services ) {
+        super(name, gid, coordinate);
+        this.services = services;
     }
 
     public ArrayList<Service> getService(Member member) {
@@ -21,6 +26,12 @@ public class Provider extends ClientInfo {
 
     public float totalWeeklyFees(){
         return weeklyFees;
+    }
+
+    public void addService(Member member, Service service){
+        if(services.get(member) == null)
+            services.put(member, new ArrayList<>());
+        services.get(member).add(service);
     }
 
     public short totalWeeklyConsultations(){
