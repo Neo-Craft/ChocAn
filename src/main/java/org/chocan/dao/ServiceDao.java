@@ -48,7 +48,7 @@ public class ServiceDao implements Dao<Service, Integer> {
 
     @Override
     public Optional<Service> get(Integer id) {
-        return Optional.of(cache.get(id));
+        return Optional.ofNullable(cache.get(id));
     }
 
     @Override

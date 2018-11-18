@@ -49,7 +49,7 @@ public class MemberDao implements Dao<Member, Integer> {
 
     @Override
     public Optional<Member> get(Integer id) {
-        return Optional.of(cache.get(id));
+        return Optional.ofNullable(cache.get(id));
     }
 
     @Override

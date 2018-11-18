@@ -1,9 +1,14 @@
 package org.chocan;
 
+import org.chocan.dao.MemberDao;
 import org.chocan.dao.ProviderDao;
 import org.chocan.entities.Coordinate;
+import org.chocan.entities.Member;
 import org.chocan.entities.Provider;
 import org.junit.Test;
+
+
+import java.util.Optional;
 
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertThat;
@@ -28,6 +33,13 @@ public class DaoTest {
         assertFalse(providers.get(fakeProvider.getNumber()).isPresent());
 
 
+    }
+
+    @Test
+    public void testLoadUndefinedMember(){
+        MemberDao members = new MemberDao();
+        Optional<Member> nullableMember = members.get(Integer.MAX_VALUE);
+        assertFalse(nullableMember.isPresent());
     }
 
 }
