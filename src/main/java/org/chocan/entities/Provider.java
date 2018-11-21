@@ -1,6 +1,7 @@
 package org.chocan.entities;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 
@@ -22,6 +23,10 @@ public class Provider extends ClientInfo {
 
     public ArrayList<Service> getService(Member member) {
         return services.get(member);
+    }
+
+    public ConcurrentHashMap<Member, ArrayList<Service>> getServices() {
+        return services;
     }
 
     public float totalWeeklyFees(){

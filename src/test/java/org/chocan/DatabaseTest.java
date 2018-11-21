@@ -11,7 +11,10 @@ import org.junit.Test;
 import org.omg.CORBA.DATA_CONVERSION;
 
 import javax.xml.crypto.Data;
+import java.util.ArrayList;
 import java.util.Date;
+import java.util.concurrent.ConcurrentHashMap;
+import java.util.Iterator;
 
 public class DatabaseTest {
 
@@ -20,9 +23,12 @@ public class DatabaseTest {
     private int maxServices = 10;       //Set number of Services to fill Database
 
     private int getRandNum(int min, int max){
-        return ((int) (Math.random()*(max - min))) + min;
+        return ((int) Math.floor((Math.random()*(max - min))) + min);
     }
-    private float getRanFloat(float min, float max) { return ((float) (Math.random()*(max - min))) + min; }
+
+    private float getRanFloat(float min, float max) {
+        return ((float) (Math.random()*(max - min))) + min;
+    }
 
     private void printMemberInfo(Member member) {
         if (member == null)
@@ -33,8 +39,8 @@ public class DatabaseTest {
                     + member.getCoordinate().getStreetAddress() + ", "
                     + member.getCoordinate().getCity() + ", "
                     + member.getCoordinate().getState() + ", "
-                    + member.getCoordinate().getZipCode() + "."
-                    + "\n\n");
+                    + member.getCoordinate().getZipCode() + ".\n");
+            System.out.print("Status: " + member.isSuspended() + "\n\n");
         }
     }
 
@@ -49,20 +55,37 @@ public class DatabaseTest {
                     + provider.getCoordinate().getState() + ", "
                     + provider.getCoordinate().getZipCode() + "."
                     + "\n\n");
+
+            //Print services provided
+
         }
     }
 
-    /*private void printServiceInfo(Service service) {
+    private void printServiceInfo(Service service) {
         if(service == null)
             System.out.print("Null Service\n\n");
         else {
             System.out.print("Service #" + service.getServiceCode() + ": " + service.getServiceName() + "\n");
-            System.out.print("Service Provider: #" + service.getProviderId() + "\n");
+            System.out.print("Service Provider #" + service.getProviderId() + ": " + Database.PROVIDERS.get(service.getProviderId()).orElse(null).getName() + "\n");
             System.out.print("Date of service: " + service.getServiceDate() + "\n");
             System.out.print("Date of service recieved: " + service.getReceiveDate() + "\n");
-            System.out.print("Service cost: " + service.getPaidFee() + "\n");
+            System.out.print("Service cost: $" + service.getPaidFee() + "\n");
+            System.out.print("\n");
         }
-    }*/
+    }
+
+    private void printProviderServices(Provider provider) {
+        printProviderInfo(provider);
+        System.out.print(("Provided services to Member(s):\n"));
+            ConcurrentHashMap<Member, ArrayList<Service>> services = provider.getServices();
+            Iterator<Member> it = services.keySet().iterator();
+            while(it.hasNext()){
+                Member member = it.next();
+                System.out.print("\t*Member #" + member.getNumber() + ": "
+                            + member.getName() + "\n");
+        }
+                System.out.print("\n");
+    }
 
     @Test
     public void testDatabase() {
@@ -111,7 +134,7 @@ public class DatabaseTest {
         for(int i = 0; i < maxMembers; i++) {
             String Addr = getRandNum(100,9999) + " " + adresses[getRandNum(0,adresses.length)];
             Coordinate cord = new Coordinate(Addr, cities[getRandNum(0, cities.length)], states[getRandNum(0, states.length)], getRandNum(10000,99999));
-            Member member = new Member(names[getRandNum(0, names.length-1)], i, cord, false);
+            Member member = new Member(names[getRandNum(0, names.length-1)], i, cord, (1==getRandNum(0,3)));
             Database.MEMBERS.add(member);
         }
 
@@ -125,10 +148,11 @@ public class DatabaseTest {
 
         //Create and put Service objects into Database
         for(int i = 0; i< maxServices; i++) {
-            Date date = new Date(getRandNum(2010,2018), getRandNum(0, 11), getRandNum(1,31));
-            Date dateRec =  new Date(date.getYear(), date.getMonth(), date.getDay(), getRandNum(0,23), getRandNum(0,59), getRandNum(0,59));
+            Date date = new Date(getRandNum(110,118), getRandNum(0, 11), getRandNum(1,31));
+            Date dateRec =  new Date(date.getYear(), date.getMonth(), date.getDate(), getRandNum(0,23), getRandNum(0,59), getRandNum(0,59));
+
             int serviceProvider = getRandNum(0, maxProviders);
-            Service service = new Service(date, dateRec, serviceProvider, getRandNum(0, 999999), getRanFloat(0f, 999.99f), services[getRandNum(0 , services.length)]);
+            Service service = new Service(date, dateRec, serviceProvider, i, getRanFloat(0f, 999.99f), services[getRandNum(0 , services.length)]);
             Database.SERVICES.add(service);
 
             //Add service to provider
@@ -155,11 +179,18 @@ public class DatabaseTest {
         }
 
         //Print Service object information stored in Database
-        /*System.out.print("*** SERVICES ***\n\n");
+        System.out.print("*** SERVICES ***\n\n");
         for(int i = 0; i < maxServices; i++) {
             Service service = Database.SERVICES.get(i).orElse(null);
             printServiceInfo(service);
-        }*/
+        }
+
+        //Print services provided by a Provider object.
+        System.out.print("***SERVICES PROVIDED BY A PROVIDER***\n\n");
+        for(int i = 0; i < maxProviders; i++) {
+            Provider provider = Database.PROVIDERS.get(i).orElse(null);
+            printProviderServices(provider);
+        }
     }
 }
 
