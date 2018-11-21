@@ -24,7 +24,7 @@ public class ProviderDao implements Dao<Provider, Integer> {
         Gson gson = new GsonBuilder()
                 .enableComplexMapKeySerialization()
                 .create();
-        BufferedReader reader = null;
+        final BufferedReader reader;
         try {
             reader = new BufferedReader(new FileReader("provider_database.json"));
             cache = gson.fromJson(reader, new TypeToken<ArrayList<Provider>>() {}.getType());
@@ -57,7 +57,9 @@ public class ProviderDao implements Dao<Provider, Integer> {
 
     @Override
     public void update(Provider transientObject) {
-        //TODO
+        this.cache.removeIf(entry -> entry.getNumber() == transientObject.getNumber());
+        this.cache.add(transientObject);
+        this.save();
     }
 
     @Override
