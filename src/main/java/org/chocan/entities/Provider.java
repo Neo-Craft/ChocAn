@@ -24,6 +24,8 @@ public class Provider extends ClientInfo {
         return services.get(member);
     }
 
+    public ConcurrentHashMap<Member, ArrayList<Service>> getServices() { return services; }
+
     public float totalWeeklyFees(){
         return weeklyFees;
     }
