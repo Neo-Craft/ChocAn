@@ -1,5 +1,6 @@
 package org.chocan;
 
+import org.chocan.common.AccountHelper;
 import org.chocan.dao.MemberDao;
 import org.chocan.dao.ProviderDao;
 import org.chocan.entities.Coordinate;
@@ -21,12 +22,12 @@ public class DaoTest {
         ProviderDao providers = new ProviderDao();
         Provider sampleProvider = new Provider("Kaiser Chocolate",
                 101,
-                new Coordinate("Bruce Lane", "Tigard", "OR", 97008)
-        );
+                new Coordinate("Bruce Lane", "Tigard", "OR", 97008),
+                AccountHelper.generateHash( AccountHelper.KEY + "test"));
         Provider fakeProvider = new Provider("I Don't Exist",
                 666,
-                new Coordinate("No where", "Saint Thomas", "Virgin Islands", 801)
-        );
+                new Coordinate("No where", "Saint Thomas", "Virgin Islands", 801),
+                AccountHelper.generateHash( AccountHelper.KEY + "test"));
 
         providers.add(sampleProvider);
         assertTrue(providers.get(sampleProvider.getNumber()).isPresent());
