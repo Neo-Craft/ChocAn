@@ -19,7 +19,7 @@ public class Main {
         System.out.println("Connecting to database...");
         Database.load();
         Runtime.getRuntime().addShutdownHook(new StopHook());
-        if(true)return;
+
         System.out.println("Connection established :D");
 
         while (mMenu.menuIndx != -1){

@@ -1,14 +1,11 @@
 package org.chocan;
 
-import com.sun.prism.shader.DrawSemiRoundRect_RadialGradient_REPEAT_AlphaTest_Loader;
-import org.chocan.Database;
-import org.chocan.dao.MemberDao;
+import org.chocan.common.AccountHelper;
 import org.chocan.entities.Coordinate;
 import org.chocan.entities.Member;
 import org.chocan.entities.Provider;
 import org.chocan.entities.Service;
 import org.junit.Test;
-import org.omg.CORBA.DATA_CONVERSION;
 
 import javax.xml.crypto.Data;
 import java.util.ArrayList;
@@ -142,7 +139,7 @@ public class DatabaseTest {
         for(int i = 0; i < maxProviders; i++) {
             String Addr = getRandNum(100,9999) + " " + adresses[getRandNum(0,adresses.length)];
             Coordinate cord = new Coordinate(Addr, cities[getRandNum(0, cities.length)], states[getRandNum(0, states.length)], getRandNum(10000,99999));
-            Provider provider = new Provider(providers[getRandNum(0, providers.length)], i, cord);
+            Provider provider = new Provider(providers[getRandNum(0, providers.length)], i, cord, AccountHelper.generateHash( AccountHelper.KEY + "test"));
             Database.PROVIDERS.add(provider);
         }
 
@@ -193,4 +190,3 @@ public class DatabaseTest {
         }
     }
 }
-
