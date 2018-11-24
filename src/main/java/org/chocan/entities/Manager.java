@@ -1,5 +1,7 @@
 package org.chocan.entities;
 
+import org.chocan.common.AccountHelper;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -37,6 +39,10 @@ public class Manager {
 
     public void setProviders(List<Provider> list){
         this.providers = list;
+    }
+
+    public boolean isValidPass(String Pass) {
+        return password.equals(AccountHelper.generateHash( AccountHelper.KEY + Pass));
     }
 
 }
