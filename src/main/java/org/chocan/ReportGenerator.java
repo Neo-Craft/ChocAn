@@ -100,8 +100,7 @@ public class ReportGenerator {
         String todayString = fileDateFormat.format(today);
         FileWriter write = new FileWriter(path + "/EFT/EFT_Summary" + todayString + ".txt", appendToFile);
         PrintWriter printReport = new PrintWriter(write);
-        ProviderDao providerDao = new ProviderDao();
-        List<Provider> providers = providerDao.getAll();
+        List<Provider> providers = Database.PROVIDERS.getAll();
         double totalFees = 0.0;
         int totalConsultations = 0;
 
