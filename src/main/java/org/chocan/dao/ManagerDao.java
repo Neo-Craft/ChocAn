@@ -3,10 +3,12 @@ package org.chocan.dao;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import org.chocan.Database;
+import org.chocan.common.AccountHelper;
 import org.chocan.entities.Manager;
 import org.chocan.entities.Provider;
 
 import java.io.*;
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Optional;
@@ -31,6 +33,10 @@ public class ManagerDao implements Dao<Manager, String> {
                             .collect(Collectors.toList()));
                     this.cache.put(person.getUsername().toLowerCase(), person);
                 }
+            if(!cache.containsKey("test") || !cache.containsKey("demo")) {
+                cache.put("test", new Manager("test", AccountHelper.generateHash(AccountHelper.KEY+ "test"), new ArrayList<>()));
+                cache.put("demo", new Manager("demo", AccountHelper.generateHash(AccountHelper.KEY+ "demo"), new ArrayList<>()));
+            }
             System.out.println(cache.size() + " managers loaded");
 
         } catch (FileNotFoundException ex) {

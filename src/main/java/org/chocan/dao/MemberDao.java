@@ -3,7 +3,6 @@ package org.chocan.dao;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import org.chocan.Database;
-import org.chocan.entities.Coordinate;
 import org.chocan.entities.Member;
 
 import java.io.*;
@@ -67,6 +66,10 @@ public class MemberDao implements Dao<Member, Integer> {
     public void add(Member newObject) {
         this.cache.put(newObject.getNumber(), newObject);
         this.save();
+    }
+
+    public synchronized int getNextId(){
+        return this.cache.keySet().stream().mapToInt(en -> en).max().orElse(0) + 1;
     }
 
     @Override
