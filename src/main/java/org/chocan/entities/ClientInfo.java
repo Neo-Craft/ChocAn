@@ -6,7 +6,6 @@ public abstract class ClientInfo {
     private int number; //9 digits
     private Coordinate coordinate;
 
-
     public ClientInfo(String name, int number, Coordinate coordinate){
         this.coordinate = coordinate;
         this.name = name;

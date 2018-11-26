@@ -1,1 +1,379 @@
-[{"weeklyFees":0.0,"weeklyConsultations":0,"services":[[{"services":[],"suspended":false,"name":"Jimbo","number":1,"coordinate":{"streetAddress":"6649 NE Babo Street","city":"Lalapope","state":"Washington","zipCode":97941}},[{"serviceDate":"Jun 11, 3915 12:00:00 AM","receiveDate":"Jun 5, 3915 4:02:01 PM","providerId":0,"serviceCode":833134,"paidFee":661.7003,"serviceName":"Sober house"}]]],"name":"Providence","number":0,"coordinate":{"streetAddress":"7683 West Chicken Street","city":"Tengi","state":"New Mexico","zipCode":32760}},{"weeklyFees":0.0,"weeklyConsultations":0,"services":{},"name":"Heartfelt Hospital","number":1,"coordinate":{"streetAddress":"1499 NW Sparrow Road","city":"Vitsburgh","state":"Iowa","zipCode":38357}},{"weeklyFees":0.0,"weeklyConsultations":0,"services":[[{"services":[],"suspended":false,"name":"Terry","number":6,"coordinate":{"streetAddress":"782 Barlow Road","city":"Barnen","state":"Alaska","zipCode":10310}},[{"serviceDate":"Aug 27, 3916 12:00:00 AM","receiveDate":"Jul 31, 3916 6:19:45 PM","providerId":2,"serviceCode":237838,"paidFee":915.02924,"serviceName":"Family therapy"}]],[{"services":[],"suspended":false,"name":"Jacob","number":7,"coordinate":{"streetAddress":"3459 West Hood Street","city":"Salem","state":"California","zipCode":77714}},[{"serviceDate":"Oct 15, 3917 12:00:00 AM","receiveDate":"Oct 1, 3917 5:15:39 AM","providerId":2,"serviceCode":289214,"paidFee":293.58182,"serviceName":"Recovery group meeting"}]]],"name":"St. Jude Hospital","number":2,"coordinate":{"streetAddress":"9720 Kosh Street","city":"Vitsburgh","state":"Vermont","zipCode":16104}},{"weeklyFees":0.0,"weeklyConsultations":0,"services":[[{"services":[],"suspended":false,"name":"Andrew","number":5,"coordinate":{"streetAddress":"2228 SW Jangle Road","city":"Gundam","state":"Alaska","zipCode":27940}},[{"serviceDate":"Jun 30, 3913 12:00:00 AM","receiveDate":"Jun 1, 3913 12:37:32 PM","providerId":3,"serviceCode":918827,"paidFee":292.51028,"serviceName":"Inpatient rehabilitation"}]],[{"services":[],"suspended":false,"name":"Terry","number":4,"coordinate":{"streetAddress":"7463 North Barrel Avenue","city":"Vitsburgh","state":"Oregon","zipCode":29126}},[{"serviceDate":"Mar 4, 3915 12:00:00 AM","receiveDate":"Mar 4, 3915 5:11:30 AM","providerId":3,"serviceCode":286426,"paidFee":218.7359,"serviceName":"Family therapy"}]]],"name":"St. Jude Hospital","number":3,"coordinate":{"streetAddress":"3490 East Jurk Road","city":"Insata","state":"Texas","zipCode":40824}},{"weeklyFees":0.0,"weeklyConsultations":0,"services":{},"name":"Health of America","number":4,"coordinate":{"streetAddress":"6057 Kent Avenue","city":"Kelpfield","state":"Vermont","zipCode":87370}},{"weeklyFees":0.0,"weeklyConsultations":0,"services":[[{"services":[],"suspended":false,"name":"Jacob","number":7,"coordinate":{"streetAddress":"3459 West Hood Street","city":"Salem","state":"California","zipCode":77714}},[{"serviceDate":"Nov 21, 3915 12:00:00 AM","receiveDate":"Oct 31, 3915 3:53:43 AM","providerId":5,"serviceCode":27717,"paidFee":139.24939,"serviceName":"Detox"}]]],"name":"Western Hospital","number":5,"coordinate":{"streetAddress":"3520 SW Beat Street","city":"Lalapope","state":"Texas","zipCode":98027}},{"weeklyFees":0.0,"weeklyConsultations":0,"services":[[{"services":[],"suspended":false,"name":"Terry","number":6,"coordinate":{"streetAddress":"782 Barlow Road","city":"Barnen","state":"Alaska","zipCode":10310}},[{"serviceDate":"Jan 20, 3915 12:00:00 AM","receiveDate":"Jan 3, 3915 7:35:30 PM","providerId":6,"serviceCode":714335,"paidFee":441.73053,"serviceName":"Sober house"}]]],"name":"Universal Health Clinic","number":6,"coordinate":{"streetAddress":"9779 NE Deak Steet","city":"Salmon","state":"North Dakota","zipCode":69234}},{"weeklyFees":0.0,"weeklyConsultations":0,"services":{},"name":"St. Jude Hospital","number":7,"coordinate":{"streetAddress":"9531 NW Sparrow Road","city":"Tengi","state":"Iowa","zipCode":99628}},{"weeklyFees":0.0,"weeklyConsultations":0,"services":[[{"services":[],"suspended":false,"name":"Andrew","number":5,"coordinate":{"streetAddress":"2228 SW Jangle Road","city":"Gundam","state":"Alaska","zipCode":27940}},[{"serviceDate":"Jun 6, 3914 12:00:00 AM","receiveDate":"Jun 6, 3914 2:19:12 AM","providerId":8,"serviceCode":686021,"paidFee":695.4851,"serviceName":"Physcology"}]],[{"services":[],"suspended":false,"name":"Lilly","number":9,"coordinate":{"streetAddress":"7607 SW Beat Street","city":"Cuda","state":"Arizona","zipCode":98535}},[{"serviceDate":"Feb 8, 3914 12:00:00 AM","receiveDate":"Jan 31, 3914 9:11:22 AM","providerId":8,"serviceCode":649347,"paidFee":679.9147,"serviceName":"Inpatient rehabilitation"}]]],"name":"St. Jude Hospital","number":8,"coordinate":{"streetAddress":"4764 SE John Street","city":"Mallard","state":"Iowa","zipCode":72253}},{"weeklyFees":0.0,"weeklyConsultations":0,"services":[[{"services":[],"suspended":false,"name":"Elizabeth","number":8,"coordinate":{"streetAddress":"654 NW Sparrow Road","city":"Tengi","state":"Iowa","zipCode":97424}},[{"serviceDate":"Jan 4, 3915 12:00:00 AM","receiveDate":"Jan 1, 3915 10:18:34 AM","providerId":9,"serviceCode":254628,"paidFee":130.69641,"serviceName":"Family therapy"}]]],"name":"Universal Health Clinic","number":9,"coordinate":{"streetAddress":"8007 NE Babo Street","city":"Tengi","state":"Florida","zipCode":30217}}]
+[
+  {
+    "weeklyFees": 0.0,
+    "weeklyConsultations": 0,
+    "services": [
+      [
+        {
+          "services": [],
+          "suspended": false,
+          "name": "Jimbo",
+          "number": 1,
+          "coordinate": {
+            "streetAddress": "6649 NE Babo Street",
+            "city": "Lalapope",
+            "state": "Washington",
+            "zipCode": 97941
+          }
+        },
+        [
+          {
+            "serviceDate": "Jun 11, 3915 12:00:00 AM",
+            "receiveDate": "Jun 5, 3915 4:02:01 PM",
+            "providerId": 0,
+            "serviceCode": 833134,
+            "paidFee": 661.7003,
+            "serviceName": "Sober house"
+          }
+        ]
+      ]
+    ],
+    "name": "Providence",
+    "number": 0,
+    "coordinate": {
+      "streetAddress": "7683 West Chicken Street",
+      "city": "Tengi",
+      "state": "New Mexico",
+      "zipCode": 32760
+    }
+  },
+  {
+    "weeklyFees": 0.0,
+    "weeklyConsultations": 0,
+    "services": {},
+    "name": "Heartfelt Hospital",
+    "number": 1,
+    "coordinate": {
+      "streetAddress": "1499 NW Sparrow Road",
+      "city": "Vitsburgh",
+      "state": "Iowa",
+      "zipCode": 38357
+    }
+  },
+  {
+    "weeklyFees": 0.0,
+    "weeklyConsultations": 0,
+    "services": [
+      [
+        {
+          "services": [],
+          "suspended": false,
+          "name": "Terry",
+          "number": 6,
+          "coordinate": {
+            "streetAddress": "782 Barlow Road",
+            "city": "Barnen",
+            "state": "Alaska",
+            "zipCode": 10310
+          }
+        },
+        [
+          {
+            "serviceDate": "Aug 27, 3916 12:00:00 AM",
+            "receiveDate": "Jul 31, 3916 6:19:45 PM",
+            "providerId": 2,
+            "serviceCode": 237838,
+            "paidFee": 915.02924,
+            "serviceName": "Family therapy"
+          }
+        ]
+      ],
+      [
+        {
+          "services": [],
+          "suspended": false,
+          "name": "Jacob",
+          "number": 7,
+          "coordinate": {
+            "streetAddress": "3459 West Hood Street",
+            "city": "Salem",
+            "state": "California",
+            "zipCode": 77714
+          }
+        },
+        [
+          {
+            "serviceDate": "Oct 15, 3917 12:00:00 AM",
+            "receiveDate": "Oct 1, 3917 5:15:39 AM",
+            "providerId": 2,
+            "serviceCode": 289214,
+            "paidFee": 293.58182,
+            "serviceName": "Recovery group meeting"
+          }
+        ]
+      ]
+    ],
+    "name": "St. Jude Hospital",
+    "number": 2,
+    "coordinate": {
+      "streetAddress": "9720 Kosh Street",
+      "city": "Vitsburgh",
+      "state": "Vermont",
+      "zipCode": 16104
+    }
+  },
+  {
+    "weeklyFees": 0.0,
+    "weeklyConsultations": 0,
+    "services": [
+      [
+        {
+          "services": [],
+          "suspended": false,
+          "name": "Andrew",
+          "number": 5,
+          "coordinate": {
+            "streetAddress": "2228 SW Jangle Road",
+            "city": "Gundam",
+            "state": "Alaska",
+            "zipCode": 27940
+          }
+        },
+        [
+          {
+            "serviceDate": "Jun 30, 3913 12:00:00 AM",
+            "receiveDate": "Jun 1, 3913 12:37:32 PM",
+            "providerId": 3,
+            "serviceCode": 918827,
+            "paidFee": 292.51028,
+            "serviceName": "Inpatient rehabilitation"
+          }
+        ]
+      ],
+      [
+        {
+          "services": [],
+          "suspended": false,
+          "name": "Terry",
+          "number": 4,
+          "coordinate": {
+            "streetAddress": "7463 North Barrel Avenue",
+            "city": "Vitsburgh",
+            "state": "Oregon",
+            "zipCode": 29126
+          }
+        },
+        [
+          {
+            "serviceDate": "Mar 4, 3915 12:00:00 AM",
+            "receiveDate": "Mar 4, 3915 5:11:30 AM",
+            "providerId": 3,
+            "serviceCode": 286426,
+            "paidFee": 218.7359,
+            "serviceName": "Family therapy"
+          }
+        ]
+      ]
+    ],
+    "name": "St. Jude Hospital",
+    "number": 3,
+    "coordinate": {
+      "streetAddress": "3490 East Jurk Road",
+      "city": "Insata",
+      "state": "Texas",
+      "zipCode": 40824
+    }
+  },
+  {
+    "weeklyFees": 0.0,
+    "weeklyConsultations": 0,
+    "services": {},
+    "name": "Health of America",
+    "number": 4,
+    "coordinate": {
+      "streetAddress": "6057 Kent Avenue",
+      "city": "Kelpfield",
+      "state": "Vermont",
+      "zipCode": 87370
+    }
+  },
+  {
+    "weeklyFees": 0.0,
+    "weeklyConsultations": 0,
+    "services": [
+      [
+        {
+          "services": [],
+          "suspended": false,
+          "name": "Jacob",
+          "number": 7,
+          "coordinate": {
+            "streetAddress": "3459 West Hood Street",
+            "city": "Salem",
+            "state": "California",
+            "zipCode": 77714
+          }
+        },
+        [
+          {
+            "serviceDate": "Nov 21, 3915 12:00:00 AM",
+            "receiveDate": "Oct 31, 3915 3:53:43 AM",
+            "providerId": 5,
+            "serviceCode": 27717,
+            "paidFee": 139.24939,
+            "serviceName": "Detox"
+          }
+        ]
+      ]
+    ],
+    "name": "Western Hospital",
+    "number": 5,
+    "coordinate": {
+      "streetAddress": "3520 SW Beat Street",
+      "city": "Lalapope",
+      "state": "Texas",
+      "zipCode": 98027
+    }
+  },
+  {
+    "weeklyFees": 0.0,
+    "weeklyConsultations": 0,
+    "services": [
+      [
+        {
+          "services": [],
+          "suspended": false,
+          "name": "Terry",
+          "number": 6,
+          "coordinate": {
+            "streetAddress": "782 Barlow Road",
+            "city": "Barnen",
+            "state": "Alaska",
+            "zipCode": 10310
+          }
+        },
+        [
+          {
+            "serviceDate": "Jan 20, 3915 12:00:00 AM",
+            "receiveDate": "Jan 3, 3915 7:35:30 PM",
+            "providerId": 6,
+            "serviceCode": 714335,
+            "paidFee": 441.73053,
+            "serviceName": "Sober house"
+          }
+        ]
+      ]
+    ],
+    "name": "Universal Health Clinic",
+    "number": 6,
+    "coordinate": {
+      "streetAddress": "9779 NE Deak Steet",
+      "city": "Salmon",
+      "state": "North Dakota",
+      "zipCode": 69234
+    }
+  },
+  {
+    "weeklyFees": 0.0,
+    "weeklyConsultations": 0,
+    "services": {},
+    "name": "St. Jude Hospital",
+    "number": 7,
+    "coordinate": {
+      "streetAddress": "9531 NW Sparrow Road",
+      "city": "Tengi",
+      "state": "Iowa",
+      "zipCode": 99628
+    }
+  },
+  {
+    "weeklyFees": 0.0,
+    "weeklyConsultations": 0,
+    "services": [
+      [
+        {
+          "services": [],
+          "suspended": false,
+          "name": "Andrew",
+          "number": 5,
+          "coordinate": {
+            "streetAddress": "2228 SW Jangle Road",
+            "city": "Gundam",
+            "state": "Alaska",
+            "zipCode": 27940
+          }
+        },
+        [
+          {
+            "serviceDate": "Jun 6, 3914 12:00:00 AM",
+            "receiveDate": "Jun 6, 3914 2:19:12 AM",
+            "providerId": 8,
+            "serviceCode": 686021,
+            "paidFee": 695.4851,
+            "serviceName": "Physcology"
+          }
+        ]
+      ],
+      [
+        {
+          "services": [],
+          "suspended": false,
+          "name": "Lilly",
+          "number": 9,
+          "coordinate": {
+            "streetAddress": "7607 SW Beat Street",
+            "city": "Cuda",
+            "state": "Arizona",
+            "zipCode": 98535
+          }
+        },
+        [
+          {
+            "serviceDate": "Feb 8, 3914 12:00:00 AM",
+            "receiveDate": "Jan 31, 3914 9:11:22 AM",
+            "providerId": 8,
+            "serviceCode": 649347,
+            "paidFee": 679.9147,
+            "serviceName": "Inpatient rehabilitation"
+          }
+        ]
+      ]
+    ],
+    "name": "St. Jude Hospital",
+    "number": 8,
+    "coordinate": {
+      "streetAddress": "4764 SE John Street",
+      "city": "Mallard",
+      "state": "Iowa",
+      "zipCode": 72253
+    }
+  },
+  {
+    "weeklyFees": 0.0,
+    "weeklyConsultations": 0,
+    "services": [
+      [
+        {
+          "services": [],
+          "suspended": false,
+          "name": "Elizabeth",
+          "number": 8,
+          "coordinate": {
+            "streetAddress": "654 NW Sparrow Road",
+            "city": "Tengi",
+            "state": "Iowa",
+            "zipCode": 97424
+          }
+        },
+        [
+          {
+            "serviceDate": "Jan 4, 3915 12:00:00 AM",
+            "receiveDate": "Jan 1, 3915 10:18:34 AM",
+            "providerId": 9,
+            "serviceCode": 254628,
+            "paidFee": 130.69641,
+            "serviceName": "Family therapy"
+          }
+        ]
+      ]
+    ],
+    "name": "Universal Health Clinic",
+    "number": 9,
+    "coordinate": {
+      "streetAddress": "8007 NE Babo Street",
+      "city": "Tengi",
+      "state": "Florida",
+      "zipCode": 30217
+    }
+  }
+]

@@ -17,7 +17,6 @@ public class Provider extends ClientInfo {
         this.password = password;
         this.services = new ConcurrentHashMap<Member, ArrayList<Service>>();
     }
-
     public Provider(String name, int gid, Coordinate coordinate, ConcurrentHashMap services, String password) {
         super(name, gid, coordinate);
         this.services = services;
@@ -27,21 +26,17 @@ public class Provider extends ClientInfo {
     public ArrayList<Service> getService(Member member) {
         return services.get(member);
     }
-
     public ConcurrentHashMap<Member, ArrayList<Service>> getServices() {
         return services;
     }
-
     public float totalWeeklyFees(){
         return weeklyFees;
     }
-
     public void addService(Member member, Service service){
         if(services.get(member) == null)
             services.put(member, new ArrayList<>());
         services.get(member).add(service);
     }
-
     public short totalWeeklyConsultations(){
         return weeklyConsultations;
     }
@@ -53,8 +48,13 @@ public class Provider extends ClientInfo {
     public String getPassword(){
         return password;
     }
-
     public void setPassword(String pass){
         this.password = pass;
+    }
+    public void setWeeklyFees(float fees){
+        this.weeklyFees = fees;
+    }
+    public void setWeeklyConsultations(short weeklyConsultations) {
+        this.weeklyConsultations = weeklyConsultations;
     }
 }
