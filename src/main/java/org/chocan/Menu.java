@@ -4,10 +4,7 @@ import org.chocan.entities.*;
 
 import javax.xml.crypto.Data;
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Optional;
-import java.util.Scanner;
+import java.util.*;
 
 public class Menu {
     /*
@@ -135,12 +132,12 @@ public class Menu {
                     String userName, password;
                     System.out.println("Manager Login Menu");
                     System.out.print("Username: ");
-                    userName = sc.nextLine();
+                    userName = sc.next();
 
                     Optional<Manager> provider = Database.MANAGERS.get(userName);
                     if (provider.isPresent() == true) {
                         System.out.print("Password: ");
-                        password = sc.nextLine();
+                        password = sc.next();
                         if (provider.get().isValidPass(password) == true){
                             mManager = provider.get();
                             menuIndx = 3;
@@ -477,13 +474,15 @@ public class Menu {
                     System.out.print("Choose a member's index to generate report (-1 to return): ");
                     choice = GetInputIndx(-1, members.size() - 1);
                     if (choice != -1){
-                        System.out.println("Here is the report: ");
-                        mRG.generateMemberReport(members.get(choice));
+                        final String returnedPath  = mRG.generateMemberReport(members.get(choice));
+                        System.out.println("The report has been saved in "+ returnedPath);
                         System.out.println();
                     }
                     break;
                 case 4:
-                    mRG.generateEFTReport();
+                    final String reportPath =  mRG.generateEFTReport();
+                    System.out.println("The EFT report has been generated in "+ reportPath);
+                    System.out.println();
                     break;
                 case 5:
                     System.out.println("Here is the list of all providers' names");
@@ -493,8 +492,8 @@ public class Menu {
                     System.out.print("Choose a provider's index to generate report (-1 to return): ");
                     choice = GetInputIndx(-1, providers.size() - 1);
                     if (choice != -1){
-                        System.out.println("Here is the report: ");
-                        mRG.generateProviderReport(providers.get(choice));
+                        final String savePath = mRG.generateProviderReport(providers.get(choice));
+                        System.out.println("The report has been saved in " +savePath);
                         System.out.println();
                     }
                     break;
@@ -567,12 +566,19 @@ public class Menu {
         mManager = null;
     }
     protected int GetInputIndx(int min, int max){
-        int returnVal = sc.nextInt();
+        int returnVal = -3;
+        try {
+             returnVal = sc.nextInt();
+        }catch (InputMismatchException ex){
+        }
         //Bad input ----- Make sure to check to upper bound
         while (returnVal < min || returnVal > max){
             System.out.print("Can't choose that... ");
             System.out.print("Your choice: ");
-            returnVal = sc.nextInt();
+            try {
+                returnVal = sc.nextInt();
+            }catch (InputMismatchException ex){
+            }
         }
 
         return returnVal;

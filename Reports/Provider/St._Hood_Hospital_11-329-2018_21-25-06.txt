@@ -1,0 +1,74 @@
+Weekly Report for St. Hood Hospital
+ID No.: 8
+2637 Earth Worm Avenue
+Vernen
+Oregon
+33272
+
+==================================================
+Date of Service: 05-131-3912
+Date Received:   05-126-3912-05-01-25 PM
+Member Name:     Natalie
+Member ID No.:   4
+Service Code:    307471
+Fee to be paid:  $128,56
+
+==================================================
+Date of Service: 05-140-3911
+Date Received:   05-126-3911-09-31-26 PM
+Member Name:     Marlo
+Member ID No.:   3
+Service Code:    94783
+Fee to be paid:  $48,30
+
+==================================================
+Date of Service: 01-22-3913
+Date Received:   01-03-3913-07-12-16 AM
+Member Name:     Nathan
+Member ID No.:   3
+Service Code:    612070
+Fee to be paid:  $130,95
+
+==================================================
+Date of Service: 05-148-3916
+Date Received:   05-127-3916-07-09-38 PM
+Member Name:     Veronica
+Member ID No.:   2
+Service Code:    896888
+Fee to be paid:  $265,91
+
+==================================================
+Date of Service: 09-256-3913
+Date Received:   09-249-3913-04-15-01 AM
+Member Name:     Sarah
+Member ID No.:   6
+Service Code:    927028
+Fee to be paid:  $176,12
+
+==================================================
+Date of Service: 08-215-3917
+Date Received:   08-217-3917-09-16-30 PM
+Member Name:     Sarah
+Member ID No.:   6
+Service Code:    744237
+Fee to be paid:  $216,73
+
+==================================================
+Date of Service: 09-271-3910
+Date Received:   09-246-3910-04-46-06 AM
+Member Name:     Chris
+Member ID No.:   5
+Service Code:    814312
+Fee to be paid:  $328,28
+
+==================================================
+Date of Service: 09-272-3917
+Date Received:   09-249-3917-01-55-09 AM
+Member Name:     Brian
+Member ID No.:   9
+Service Code:    9097
+Fee to be paid:  $562,42
+
+==================================================
+Total Weekly Consultations: 67
+Total Fees to be Paid:      $0,00

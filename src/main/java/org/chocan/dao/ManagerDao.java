@@ -80,7 +80,7 @@ public class ManagerDao implements Dao<Manager, String> {
             Gson gson = new GsonBuilder()
                     .enableComplexMapKeySerialization()
                     .create();
-            gson.toJson(cache, writer);
+            gson.toJson(cache.values(), writer);
         } catch (IOException e) {
             e.printStackTrace();
         }
