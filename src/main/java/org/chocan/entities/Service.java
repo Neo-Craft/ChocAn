@@ -7,7 +7,7 @@ public class Service {
     private Date serviceDate;   // Date of service (MM-DD-YYYY).
     private Date receiveDate;   // Date and time data were received by the computer (MM-DD-YYYY HH:MM:SS)
     private int providerId;
-    private int serviceCode;    // 6digits
+    private int serviceCode;    // 9 digits
     private float paidFee;      // Fee to be paid (up to $999.99)
     private String serviceName;
 
