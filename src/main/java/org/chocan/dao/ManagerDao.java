@@ -37,6 +37,10 @@ public class ManagerDao implements Dao<Manager, String> {
                 cache.put("test", new Manager("test", AccountHelper.generateHash(AccountHelper.KEY+ "test"), new ArrayList<>()));
                 cache.put("demo", new Manager("demo", AccountHelper.generateHash(AccountHelper.KEY+ "demo"), new ArrayList<>()));
             }
+            if(cache.get("test").getProviders().isEmpty() && Database.PROVIDERS.getAll().size() > 1){
+                cache.get("test").getProviders().add(Database.PROVIDERS.getAll().get(0));
+                cache.get("test").getProviders().add(Database.PROVIDERS.getAll().get(1));
+            }
             System.out.println(cache.size() + " managers loaded");
 
         } catch (FileNotFoundException ex) {

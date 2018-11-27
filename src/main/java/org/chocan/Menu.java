@@ -313,7 +313,7 @@ public class Menu {
         }
     }
 
-    public void ManagerDatabaseInteraction()s{
+    public void ManagerDatabaseInteraction(){
         System.out.println();
         System.out.println();
         System.out.println("********************Manager Database Interaction Menu*********************");
@@ -330,7 +330,7 @@ public class Menu {
         while (onMenu == true){
             DisplayMenu(5);
             System.out.print("Your Menu choice: ");
-            int option = GetNumberInputWithBoundCheck(-1, 6);
+            int option = GetNumberInputWithBoundCheck(-1, 14);
             int indxToInteract;
 
             switch (option){
