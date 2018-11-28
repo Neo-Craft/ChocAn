@@ -1,18 +1,10 @@
 package org.chocan;
 
 import javax.xml.crypto.Data;
+import java.io.IOException;
 
 public class Main {
-    /*
-            menuIndx:
-                0: Main Menu
-                1: Login Screen
-                2: Manager Menu
-                3: Operator Menu
-                4: Service Provider Menu
-         */
-
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
         Menu mMenu = new Menu();
 
         System.out.println("Welcome to our ChocAn App!");
@@ -30,16 +22,22 @@ public class Main {
                     mMenu.MainMenu();
                     break;
                 case 1:
-                    mMenu.LoginMenu();
+                    mMenu.ManagerLoginMenu();
                     break;
                 case 2:
-                    mMenu.ManagerAccountMenu();
+                    mMenu.ProviderLoginMenu();
                     break;
                 case 3:
-                    mMenu.OperatorAccountMenu();
+                    mMenu.ManagerAccountMenu();
                     break;
                 case 4:
                     mMenu.ProviderAccountMenu();
+                    break;
+                case 5:
+                    mMenu.ManagerDatabaseInteraction();
+                    break;
+                case 6:
+                    mMenu.ReportGeneratorMenu();
                     break;
             }
         }

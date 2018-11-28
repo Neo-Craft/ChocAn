@@ -89,4 +89,10 @@ public class ProviderDao implements Dao<Provider, Integer> {
             e.printStackTrace();
         }
     }
+
+    public Optional<Provider> getByName(String name) {
+        return cache.stream()
+                .filter(provider -> provider.getName().equalsIgnoreCase(name))
+                .findAny();
+    }
 }
