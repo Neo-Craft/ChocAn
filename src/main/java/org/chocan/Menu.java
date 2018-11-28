@@ -843,7 +843,7 @@ public class Menu {
             int providerID = sc.nextInt();
             Provider curProvider;
             while((curProvider = Database.PROVIDERS.get(providerID).orElseGet(null)) == null){
-                System.out.println("Provider with ID: " + providerID + " doesn't exit!");
+                System.out.println("Provider with ID: " + providerID + " doesn't exist!");
                 System.out.print("Please enter a new ID or -1 to quit: ");
                 providerID = sc.nextInt();
 
@@ -853,7 +853,7 @@ public class Menu {
                 }
             }
 
-            System.out.print("Please enter a 9 digits service code: ");
+            System.out.print("Please enter a 9 digit service code: ");
             int serviceCode = GetNumberInputWithBoundCheck(100000000, 999999999);
             System.out.print("Please enter the fee to be paid (Up to $999.99): ");
             float paidFee = GetNumberInputWithBoundCheck(0.0f, 999.99f);
@@ -972,7 +972,7 @@ public class Menu {
         while (onMenu == true){
             DisplaySubMenu(0);
             System.out.print("Your Menu choice: ");
-            int choice = GetNumberInputWithBoundCheck(-1, 10);
+            int choice = GetNumberInputWithBoundCheck(-1, 8);
 
             switch(choice){
                 case -1:
@@ -1048,30 +1048,6 @@ public class Menu {
                     }
                     break;
                 case 8:
-                    System.out.print("Please enter a new provider's weekly fee: ");
-                    float weeklyFee = sc.nextFloat();
-                    System.out.println("Weekly fee: " + provider.totalWeeklyFees() + "\n  will be changed to " + weeklyFee);
-                    System.out.print("Are you sure (0/1): ");
-                    if (GetNumberInputWithBoundCheck(0, 1) == 1){
-                        provider.setWeeklyFees(weeklyFee);
-                        System.out.println("Weekly fee changed!");
-                    } else {
-                        System.out.println("New weekly fee discard!");
-                    }
-                    break;
-                case 9:
-                    System.out.print("Please enter a new provider's weekly consultations: ");
-                    short weeklyConsultations = sc.nextShort();
-                    System.out.println("Zip Code: " + provider.totalWeeklyConsultations() + "\n  will be changed to " + weeklyConsultations);
-                    System.out.print("Are you sure (0/1): ");
-                    if (GetNumberInputWithBoundCheck(0, 1) == 1){
-                        provider.setWeeklyConsultations(weeklyConsultations);
-                        System.out.println("Weekly consultations changed!");
-                    } else {
-                        System.out.println("New weekly consultations discard!");
-                    }
-                    break;
-                case 10:
                     System.out.print("Please enter service code: ");
                     int serviceCode = sc.nextInt();
                     Service curService;

@@ -3,12 +3,11 @@ package org.chocan.entities;
 import org.chocan.common.AccountHelper;
 
 import java.util.ArrayList;
+import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 
 public class Provider extends ClientInfo {
 
-    private float weeklyFees;
-    private short weeklyConsultations;
     private ConcurrentHashMap<Member, ArrayList<Service>> services;
     private String password;
 
@@ -30,6 +29,12 @@ public class Provider extends ClientInfo {
         return services;
     }
     public float totalWeeklyFees(){
+        float weeklyFees = 0.0f;
+        for(Map.Entry<Member, ArrayList<Service>> entry: services.entrySet()) {
+            for(Service service : entry.getValue()) {
+                weeklyFees += service.getPaidFee();
+            }
+        }
         return weeklyFees;
     }
     public void addService(Member member, Service service){
@@ -37,7 +42,12 @@ public class Provider extends ClientInfo {
             services.put(member, new ArrayList<>());
         services.get(member).add(service);
     }
+
     public short totalWeeklyConsultations(){
+        short weeklyConsultations = 0;
+        for(Map.Entry<Member, ArrayList<Service>> entry: services.entrySet()){
+            weeklyConsultations++;
+        }
         return weeklyConsultations;
     }
 
@@ -50,13 +60,5 @@ public class Provider extends ClientInfo {
     }
     public void setPassword(String pass){
         this.password = pass;
-    }
-  
-    public void setWeeklyFees(float fees){
-        this.weeklyFees = fees;
-    }
-  
-    public void setWeeklyConsultations(short weeklyConsultations) {
-        this.weeklyConsultations = weeklyConsultations;
     }
 }
