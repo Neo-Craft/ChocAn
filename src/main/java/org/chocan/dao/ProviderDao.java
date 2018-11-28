@@ -74,6 +74,10 @@ public class ProviderDao implements Dao<Provider, Integer> {
         this.save();
     }
 
+    public synchronized int getNextId(){
+        return this.cache.stream().mapToInt(en -> en.getNumber()).max().orElse(0) +1;
+    }
+
     @Override
     public void save() {
         try (Writer writer = new FileWriter("provider_database.json")) {

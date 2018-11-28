@@ -28,7 +28,9 @@ public class Provider extends ClientInfo {
         return services.get(member);
     }
 
-    public ConcurrentHashMap<Member, ArrayList<Service>> getServices() { return services; }
+    public ConcurrentHashMap<Member, ArrayList<Service>> getServices() {
+        return services;
+    }
 
     public float totalWeeklyFees(){
         return weeklyFees;
@@ -54,5 +56,13 @@ public class Provider extends ClientInfo {
 
     public void setPassword(String pass){
         this.password = pass;
+    }
+
+    public void setWeeklyFees(float fees){
+        this.weeklyFees = fees;
+    }
+
+    public void setWeeklyConsultations(short weeklyConsultations) {
+        this.weeklyConsultations = weeklyConsultations;
     }
 }

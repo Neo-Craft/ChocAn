@@ -10,10 +10,7 @@ import java.io.FileWriter;
 import java.io.PrintWriter;
 import java.io.IOException;
 import java.text.SimpleDateFormat;
-import java.util.ArrayList;
-import java.util.Date;
-import java.util.Map;
-import java.util.Optional;
+import java.util.*;
 
 public class ReportGenerator {
 
@@ -103,8 +100,7 @@ public class ReportGenerator {
         String todayString = fileDateFormat.format(today);
         FileWriter write = new FileWriter(path + "/EFT/EFT_Summary" + todayString + ".txt", appendToFile);
         PrintWriter printReport = new PrintWriter(write);
-        ProviderDao providerDao = new ProviderDao();
-        ArrayList<Provider> providers = providerDao.getAll();
+        List<Provider> providers = Database.PROVIDERS.getAll();
         double totalFees = 0.0;
         int totalConsultations = 0;
 
