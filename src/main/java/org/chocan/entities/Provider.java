@@ -51,9 +51,11 @@ public class Provider extends ClientInfo {
     public void setPassword(String pass){
         this.password = pass;
     }
+  
     public void setWeeklyFees(float fees){
         this.weeklyFees = fees;
     }
+  
     public void setWeeklyConsultations(short weeklyConsultations) {
         this.weeklyConsultations = weeklyConsultations;
     }

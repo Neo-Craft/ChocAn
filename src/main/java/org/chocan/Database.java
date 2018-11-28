@@ -12,6 +12,7 @@ public class Database {
     public static ServiceDao SERVICES;
     public static ManagerDao MANAGERS;
 
+
     public static void load(){
         PROVIDERS = new ProviderDao();
         SERVICES = new ServiceDao();

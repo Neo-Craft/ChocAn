@@ -11,6 +11,7 @@ public class Main {
         System.out.println("Connecting to database...");
         Database.load();
         Runtime.getRuntime().addShutdownHook(new StopHook());
+        ReportGenerator reportEngine = new ReportGenerator();
 
         System.out.println("Connection established :D");
 
