@@ -277,7 +277,7 @@ public class Menu {
             }
         }
     }
-    public void ProviderAccountMenu(){
+    public void ProviderAccountMenu() throws IOException {
         System.out.println();
         System.out.println();
         System.out.println("********************Provider Menu*********************");
@@ -286,7 +286,7 @@ public class Menu {
         while (onMenu == true) {
             DisplayMenu(4);
             System.out.print("Your Menu choice: ");
-            int option = GetNumberInputWithBoundCheck(-1, 5);
+            int option = GetNumberInputWithBoundCheck(-1, 3);
 
             switch (option) {
                 case 0:
@@ -298,12 +298,15 @@ public class Menu {
                     onMenu = false;
                     break;
                 case 2:
-                    //Request and view reports
+                    //Request Service Directory
+                    DirectoryGenerator sDG = new DirectoryGenerator();
+                    final String directoryPath =  sDG.generateProviderDirectory();
+                    System.out.println("The directory has been generated in "+ directoryPath);
+                    System.out.println();
                     break;
                 case 3:
-                    //Report Menu
-                    menuIndx = 6;
-                    onMenu = false;
+                    //Add service to bill
+                    AddNewService(mProvider);
                     break;
                 default:
                     menuIndx = -1;
@@ -595,7 +598,6 @@ public class Menu {
                     onMenu = false;
                     break;
                 case 3:
-                    //TODO: NEED TO RESTRICT THIS TO PROVIDER'S ACCESSIBILITY
                     System.out.println("Here is the list of all members' names");
                     for(int indx = 0; indx < members.size(); indx++){
                         System.out.println(indx + ": " + members.get(indx).getName());
@@ -660,7 +662,7 @@ public class Menu {
                 System.out.println("\t" + indx++ + ": Quit app");
                 System.out.println("\t " + indx++ + ": Clear Screen");
                 System.out.println("\t " + indx++ + ": Log Out");
-                System.out.println("\t " + indx++ + ": Request and send reports");
+                System.out.println("\t " + indx++ + ": Request Service Directory");
                 System.out.println("\t " + indx++ + ": Bill services provided");
                 break;
             case 5: //Manager Database Interaction Menu: -1 -> 14
@@ -753,11 +755,8 @@ public class Menu {
         System.out.println("Adding new provider...");
         System.out.print("Please enter a new name: ");
         String name = sc.nextLine();
-        System.out.print("Please enter a new weekly consultations: ");
-        short weeklyConsultations = sc.nextShort();
-        System.out.print("Please enter a new weekly fees: ");
-        float weeklyFees = sc.nextFloat();
-        int serviceCode = Database.PROVIDERS.getNextId();
+        System.out.print("Please enter an ID: ");
+        int providerID = Database.PROVIDERS.getNextId();
         System.out.print("Please enter a new password: ");
         String password = sc.nextLine();
         System.out.print("Please enter provider' street address: ");
@@ -771,9 +770,7 @@ public class Menu {
 
         System.out.println("\nAre you sure you want to create a new provider with: ");
         System.out.println("\tName: " + name);
-        System.out.println("\tWeekly Consultations: " + weeklyConsultations);
-        System.out.println("\tWeekly Weekly Fees: " + weeklyFees);
-        System.out.println("\tService Code: " + serviceCode);
+        System.out.println("\tID: " + providerID);
         System.out.println("\tPassword: " + password);
         System.out.println("\tStreet Address: " + street);
         System.out.println("\tCity: " + city);
@@ -782,7 +779,7 @@ public class Menu {
 
         System.out.print("Your choice (0/1): ");
         if (GetNumberInputWithBoundCheck(0, 1) == 1){
-            Provider newProvider = new Provider(name, serviceCode,
+            Provider newProvider = new Provider(name, providerID,
                     new Coordinate(street, city, state, zipCode), password);
             Database.PROVIDERS.add(newProvider);
             System.out.println("New provider created!");
@@ -832,12 +829,23 @@ public class Menu {
     private Service AddNewService(){
         try {
             System.out.println("Adding new service...");
-            System.out.print("Please enter service name: ");
-            String serviceName = sc.nextLine();
+            boolean validCode = false;
+            int serviceCode = 0;
+            while (!validCode) {
+                System.out.print("Please enter a 6 digit service code: ");
+                serviceCode = GetNumberInputWithBoundCheck(100000, 999999);
+                if (Service.serviceDirectory.containsKey(serviceCode)) {
+                    System.out.println("Service entered is " + Service.serviceDirectory.get(serviceCode));
+                    System.out.println("Is this correct? (0/1): ");
+                    if (GetNumberInputWithBoundCheck(0, 1) == 1) {
+                        validCode = true;
+                    }
+                }
+            }
+            String serviceName = Service.serviceDirectory.get(serviceCode);
             System.out.print("Please enter date of service (MM-DD-YYYY): ");
             Date serviceDate  = new SimpleDateFormat("MM-DD-yyyy")
                     .parse(sc.nextLine());
-            Date receiveDate  = new Date(); //Current time
 
             System.out.print("Please enter an associated provider ID: ");
             int providerID = sc.nextInt();
@@ -853,8 +861,6 @@ public class Menu {
                 }
             }
 
-            System.out.print("Please enter a 9 digit service code: ");
-            int serviceCode = GetNumberInputWithBoundCheck(100000000, 999999999);
             System.out.print("Please enter the fee to be paid (Up to $999.99): ");
             float paidFee = GetNumberInputWithBoundCheck(0.0f, 999.99f);
 
@@ -882,7 +888,7 @@ public class Menu {
 
             System.out.print("Your choice (0/1): ");
             if (GetNumberInputWithBoundCheck(0, 1) == 1){
-                Service newService = new Service(serviceDate, receiveDate, providerID,
+                Service newService = new Service(serviceDate, providerID,
                         serviceCode, paidFee, serviceName);
 
                 //Also add the service to the provider list
@@ -904,17 +910,26 @@ public class Menu {
     private Service AddNewService(Provider provider){
         try {
             System.out.println("Adding new service...");
-            System.out.print("Please enter service name: ");
-            String serviceName = sc.nextLine();
+            boolean validCode = false;
+            int serviceCode = 0;
+            while (!validCode) {
+                System.out.print("Please enter a 6 digit service code: ");
+                serviceCode = GetNumberInputWithBoundCheck(100000, 999999);
+                if (Service.serviceDirectory.containsKey(serviceCode)) {
+                    System.out.println("Service entered is " + Service.serviceDirectory.get(serviceCode));
+                    System.out.println("Is this correct? (0/1): ");
+                    if (GetNumberInputWithBoundCheck(0, 1) == 1) {
+                        validCode = true;
+                    }
+                }
+            }
+            String serviceName = Service.serviceDirectory.get(serviceCode);
             System.out.print("Please enter date of service (MM-DD-YYYY): ");
             Date serviceDate  = new SimpleDateFormat("MM-DD-yyyy")
                     .parse(sc.nextLine());
-            Date receiveDate  = new Date(); //Current time
 
             int providerID = provider.getNumber();
 
-            System.out.print("Please enter a 9 digits service code: ");
-            int serviceCode = GetNumberInputWithBoundCheck(100000000, 999999999);
             System.out.print("Please enter the fee to be paid (Up to $999.99): ");
             float paidFee = GetNumberInputWithBoundCheck(0.0f, 999.99f);
 
@@ -942,7 +957,7 @@ public class Menu {
 
             System.out.print("Your choice (0/1): ");
             if (GetNumberInputWithBoundCheck(0, 1) == 1){
-                Service newService = new Service(serviceDate, receiveDate, providerID,
+                Service newService = new Service(serviceDate, providerID,
                         serviceCode, paidFee, serviceName);
 
                 //Also add the service to the provider list
@@ -1196,9 +1211,9 @@ public class Menu {
                     System.out.print("Are you sure (0/1): ");
                     if (GetNumberInputWithBoundCheck(0, 1) == 1) {
                         member.setSuspended(isSuspended == 1);
-                        System.out.println("Weekly fee changed!");
+                        System.out.println("Suspension status changed!");
                     } else {
-                        System.out.println("New weekly fee discard!");
+                        System.out.println("Suspension status unchanged!");
                     }
                     break;
                 case 9:
@@ -1297,15 +1312,21 @@ public class Menu {
                     }
                     break;
                 case 4:
-                    System.out.print("Please enter a new service's ID: ");
-                    int newID = sc.nextInt();
-                    System.out.println("ID: " + service.getServiceCode() + "\n  will be changed to " + newID);
-                    System.out.print("Are you sure (0/1): ");
-                    if (GetNumberInputWithBoundCheck(0, 1) == 1) {
-                        service.setServiceCode(newID);
-                        System.out.println("ID changed!");
+                    System.out.print("Please enter the new service code: ");
+                    int newCode = sc.nextInt();
+                    if (Service.serviceDirectory.containsKey(newCode)) {
+                        System.out.println(service.getServiceName() + "`\nwill be changed to "
+                                + Service.serviceDirectory.get(newCode));
+                        System.out.print("Is this correct? (0/1): ");
+                        if (GetNumberInputWithBoundCheck(0, 1) == 1) {
+                            service.setServiceCode(newCode);
+                            service.setServiceName(Service.serviceDirectory.get(newCode));
+                            System.out.println("Service changed!");
+                        } else {
+                            System.out.println("Change discarded!");
+                        }
                     } else {
-                        System.out.println("New ID discard!");
+                        System.out.println("Service not found.");
                     }
                     break;
                 case 5:
@@ -1368,8 +1389,6 @@ public class Menu {
                 System.out.println("\t " + indx++ + ": Change provider's city");
                 System.out.println("\t " + indx++ + ": Change provider's state");
                 System.out.println("\t " + indx++ + ": Change provider's zip code");
-                System.out.println("\t " + indx++ + ": Change provider's weekly fee");
-                System.out.println("\t " + indx++ + ": Change provider's weekly consultation");
                 System.out.println("\t " + indx++ + ": Change provider's service");
                 break;
             case 1: //Update Member sub-menu: -1 -> 9

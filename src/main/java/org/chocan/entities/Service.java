@@ -1,21 +1,22 @@
 package org.chocan.entities;
 
-import java.util.Date;
+import java.util.*;
 
 public class Service {
 
+    public static HashMap<Integer, String> serviceDirectory = new HashMap<>();
     private Date serviceDate;   // Date of service (MM-DD-YYYY).
     private Date receiveDate;   // Date and time data were received by the computer (MM-DD-YYYY HH:MM:SS)
     private int providerId;
-    private int serviceCode;    // 9 digits
+    private int serviceCode;    // 6 digits
     private float paidFee;      // Fee to be paid (up to $999.99)
     private String serviceName;
 
 
 
-    public Service(Date serviceDate, Date receiveDate, int provider, int serviceCode, float paidFee, String serviceName){
+    public Service(Date serviceDate, int provider, int serviceCode, float paidFee, String serviceName){
         this.serviceDate = serviceDate;
-        this.receiveDate = receiveDate;
+        this.receiveDate = new Date(); //Current time;
         this.providerId = provider;
         this.serviceCode = serviceCode;
         this.paidFee = paidFee;

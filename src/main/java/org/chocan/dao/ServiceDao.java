@@ -17,6 +17,7 @@ public class ServiceDao implements Dao<Service, Integer> {
     private ConcurrentHashMap<Integer, Service> cache;
 
     public ServiceDao(){
+        initServiceDirectory();
         this.cache = new ConcurrentHashMap<>(20);
         Gson gson = new GsonBuilder().enableComplexMapKeySerialization().create();
         BufferedReader reader = null;
@@ -39,6 +40,20 @@ public class ServiceDao implements Dao<Service, Integer> {
         }
 
        // System.out.println(gson.toJson(cache.values()));
+    }
+
+    private void initServiceDirectory() {
+        Service.serviceDirectory.putIfAbsent(883948, "Aerobics exercise session");
+        Service.serviceDirectory.putIfAbsent(598470, "Dietitian session");
+        Service.serviceDirectory.putIfAbsent(739452, "Appetite management therapy");
+        Service.serviceDirectory.putIfAbsent(225824, "Triple bypass surgery");
+        Service.serviceDirectory.putIfAbsent(642196, "Kidney dialysis");
+        Service.serviceDirectory.putIfAbsent(337713, "Insulin pump install");
+        Service.serviceDirectory.putIfAbsent(110943, "Theobromine detoxification");
+        Service.serviceDirectory.putIfAbsent(529440, "Stomach pumping");
+        Service.serviceDirectory.putIfAbsent(755212, "Diabetes test");
+        Service.serviceDirectory.putIfAbsent(682220, "Inpatient withdrawal treatment");
+        Service.serviceDirectory.putIfAbsent(555555, "Other");
     }
 
     @Override
