@@ -1,0 +1,25 @@
+Weekly EFT Summary Report
+
+==================================================
+Provider Name:           Mercy Hospital
+Consultations This Week: 1
+
+==================================================
+Provider Name:           Fortmill Hospital
+Consultations This Week: 2
+
+==================================================
+Provider Name:           Mayo Clinic
+Consultations This Week: 3
+
+==================================================
+Provider Name:           Providence
+Consultations This Week: 2
+
+==================================================
+Provider Name:           Fortmill Hospital
+Consultations This Week: 2
+
+==================================================
+Total Weekly Consultations: 10
+Total Weekly Fees:          $3835,74
