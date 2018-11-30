@@ -15,10 +15,10 @@ import java.util.*;
 public class ReportGenerator {
 
     private static final long DAY_IN_MS = 1000 * 60 * 60 * 24;
-    private static final SimpleDateFormat dateFormat = new SimpleDateFormat("MM-DD-yyyy");
-    private static final SimpleDateFormat dateTimeFormat = new SimpleDateFormat("MM-DD-yyyy-hh-mm-ss a");
+    private static final SimpleDateFormat dateFormat = new SimpleDateFormat("MM-dd-yyyy");
+    private static final SimpleDateFormat dateTimeFormat = new SimpleDateFormat("MM-dd-yyyy-hh-mm-ss a");
     private static final SimpleDateFormat fileDateFormat = new SimpleDateFormat("_" +
-            "MM-DD-yyyy_HH-mm-ss");
+            "MM-dd-yyyy_HH-mm-ss");
     private String fileDirPath;
     private boolean appendToFile = false;
 

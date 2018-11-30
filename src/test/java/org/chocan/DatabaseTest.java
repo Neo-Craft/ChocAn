@@ -146,10 +146,9 @@ public class DatabaseTest {
         //Create and put Service objects into Database
         for(int i = 0; i< maxServices; i++) {
             Date date = new Date(getRandNum(110,118), getRandNum(0, 11), getRandNum(1,31));
-            Date dateRec =  new Date(date.getYear(), date.getMonth(), date.getDate(), getRandNum(0,23), getRandNum(0,59), getRandNum(0,59));
 
             int serviceProvider = getRandNum(0, maxProviders);
-            Service service = new Service(date, dateRec, serviceProvider, i, getRanFloat(0f, 999.99f), services[getRandNum(0 , services.length)]);
+            Service service = new Service(date, serviceProvider, i, getRanFloat(0f, 999.99f), services[getRandNum(0 , services.length)]);
             Database.SERVICES.add(service);
 
             //Add service to provider

@@ -49,7 +49,7 @@ public class Menu {
         while (onMenu == true) {
             DisplayMenu(0);
             System.out.print("Your Menu choice: ");
-            int option = GetNumberInputWithBoundCheck(-1, 2);
+            int option = GetNumberInputWithBoundCheck(-1, 3);
 
             switch (option) {
                 case -1:
@@ -61,7 +61,7 @@ public class Menu {
                     ClearScreen();
                     break;
                 case 1:
-                    DisplayMenu(0);       //Print the menu again
+                    //DisplayMenu(0);       //Print the menu again
                     break;
                 case 2:
                     //Log in as manager
@@ -122,11 +122,11 @@ public class Menu {
                 case 0:
                     //Clear screen and redisplay menu
                     ClearScreen();
-                    DisplayMenu(1);
+                    //DisplayMenu(1);
                     break;
                 case 1:
                     //Go back to main menu
-                    menuIndx = 1;
+                    menuIndx = 0;
                     onMenu = false;
                     Logout();
                     break;
@@ -202,11 +202,11 @@ public class Menu {
                 case 0:
                     //Clear and redisplay menu
                     ClearScreen();
-                    DisplayMenu(1);
+                    //DisplayMenu(1);
                     break;
                 case 1:
                     //Go back to main menu
-                    menuIndx = 1;
+                    menuIndx = 0;
                     onMenu = false;
                     Logout();
                     break;
@@ -251,7 +251,7 @@ public class Menu {
                 case 0:
                     //Clear and redisplay menu
                     ClearScreen();
-                    DisplayMenu(3);
+                    //DisplayMenu(3);
                     break;
                 case 1:
                     //Log out
@@ -291,7 +291,7 @@ public class Menu {
             switch (option) {
                 case 0:
                     ClearScreen();
-                    DisplayMenu(3);
+                    //DisplayMenu(3);
                     break;
                 case 1:
                     menuIndx = 1;
