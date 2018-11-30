@@ -690,7 +690,7 @@ public class Menu {
                 break;
             case 6: //Report generator menu: -1 -> 4 (or 5)
                 System.out.println("Please choose an option: ");
-                System.out.println("\t-1: Quit app");
+                System.out.println("\t" + indx++ + ": Quit app");
                 System.out.println("\t " + indx++ + ": Clear Screen");
                 System.out.println("\t " + indx++ + ": Log Out");
                 System.out.println("\t " + indx++ + ": Go back to previous menu");
