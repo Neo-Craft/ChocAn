@@ -1,1 +1,92 @@
-[{"serviceDate":"May 12, 2012 12:00:00 AM","receiveDate":"Nov 30, 2018 2:53:14 PM","providerId":6,"serviceId":0,"serviceCode":9,"paidFee":24.264385,"serviceName":"Detox"}]
+[
+  {
+    "serviceDate": "Jan 25, 2012 12:00:00 AM",
+    "receiveDate": "Nov 30, 2018 11:18:41 PM",
+    "providerId": 100000001,
+    "serviceId": 100000005,
+    "serviceCode": 804031,
+    "paidFee": 714.42303,
+    "serviceName": "Psychology"
+  },
+  {
+    "serviceDate": "Sep 18, 2012 12:00:00 AM",
+    "receiveDate": "Nov 30, 2018 11:18:41 PM",
+    "providerId": 100000008,
+    "serviceId": 100000004,
+    "serviceCode": 900422,
+    "paidFee": 410.88214,
+    "serviceName": "Family therapy"
+  },
+  {
+    "serviceDate": "Nov 11, 2014 12:00:00 AM",
+    "receiveDate": "Nov 30, 2018 11:18:41 PM",
+    "providerId": 100000009,
+    "serviceId": 100000007,
+    "serviceCode": 225824,
+    "paidFee": 659.6603,
+    "serviceName": "Sober house"
+  },
+  {
+    "serviceDate": "Sep 29, 2012 12:00:00 AM",
+    "receiveDate": "Nov 30, 2018 11:18:41 PM",
+    "providerId": 100000008,
+    "serviceId": 100000006,
+    "serviceCode": 739452,
+    "paidFee": 121.57588,
+    "serviceName": "Acupuncture"
+  },
+  {
+    "serviceDate": "Feb 28, 2016 12:00:00 AM",
+    "receiveDate": "Nov 30, 2018 11:18:41 PM",
+    "providerId": 100000003,
+    "serviceId": 100000001,
+    "serviceCode": 443290,
+    "paidFee": 254.87578,
+    "serviceName": "Therapy"
+  },
+  {
+    "serviceDate": "Apr 18, 2013 12:00:00 AM",
+    "receiveDate": "Nov 30, 2018 11:18:41 PM",
+    "providerId": 100000005,
+    "serviceId": 100000000,
+    "serviceCode": 755212,
+    "paidFee": 396.9646,
+    "serviceName": "Recovery group meeting"
+  },
+  {
+    "serviceDate": "Mar 10, 2016 12:00:00 AM",
+    "receiveDate": "Nov 30, 2018 11:18:41 PM",
+    "providerId": 100000002,
+    "serviceId": 100000003,
+    "serviceCode": 443290,
+    "paidFee": 771.5805,
+    "serviceName": "Therapy"
+  },
+  {
+    "serviceDate": "Oct 24, 2016 12:00:00 AM",
+    "receiveDate": "Nov 30, 2018 11:18:41 PM",
+    "providerId": 100000006,
+    "serviceId": 100000002,
+    "serviceCode": 739452,
+    "paidFee": 10.658592,
+    "serviceName": "Acupuncture"
+  },
+  {
+    "serviceDate": "Oct 24, 2014 12:00:00 AM",
+    "receiveDate": "Nov 30, 2018 11:18:41 PM",
+    "providerId": 100000005,
+    "serviceId": 100000009,
+    "serviceCode": 529440,
+    "paidFee": 917.4359,
+    "serviceName": "Relapse therapy"
+  },
+  {
+    "serviceDate": "Aug 14, 2017 12:00:00 AM",
+    "receiveDate": "Nov 30, 2018 11:18:41 PM",
+    "providerId": 100000003,
+    "serviceId": 100000008,
+    "serviceCode": 555555,
+    "paidFee": 306.62305,
+    "serviceName": "Other"
+  }
+]

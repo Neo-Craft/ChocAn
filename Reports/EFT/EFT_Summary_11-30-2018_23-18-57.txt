@@ -1,0 +1,45 @@
+Weekly EFT Summary Report
+
+==================================================
+Provider Name:           NorthWest Clinic
+Consultations This Week: 4
+
+==================================================
+Provider Name:           Heartfelt Hospital
+Consultations This Week: 1
+
+==================================================
+Provider Name:           Salt Lake Clinic
+Consultations This Week: 5
+
+==================================================
+Provider Name:           Fortmill Hospital
+Consultations This Week: 7
+
+==================================================
+Provider Name:           Western Hospital
+Consultations This Week: 7
+
+==================================================
+Provider Name:           Heartfelt Hospital
+Consultations This Week: 5
+
+==================================================
+Provider Name:           Mercy Hospital
+Consultations This Week: 8
+
+==================================================
+Provider Name:           NorthWest Clinic
+Consultations This Week: 6
+
+==================================================
+Provider Name:           St. Hood Hospital
+Consultations This Week: 3
+
+==================================================
+Provider Name:           Kaiser
+Consultations This Week: 4
+
+==================================================
+Total Weekly Consultations: 50
+Total Weekly Fees:          $26612,98

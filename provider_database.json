@@ -1,1 +1,2222 @@
-[{"services":{},"password":"6055e477b8138ffc75b55ab865a9cccc6d13ff6d17d4263309b94f1797b4c4cd0e5b74fae15016ea49f8c23fd3a6c8910ea8d095dcc65fc58a5b8e0483ec4258","name":"St. Hood Hospital","number":4,"coordinate":{"streetAddress":"2020 NE Deak Steet","city":"Yerner","state":"Texas","zipCode":91101}},{"services":{},"password":"6055e477b8138ffc75b55ab865a9cccc6d13ff6d17d4263309b94f1797b4c4cd0e5b74fae15016ea49f8c23fd3a6c8910ea8d095dcc65fc58a5b8e0483ec4258","name":"Jesus Hospital","number":8,"coordinate":{"streetAddress":"5400 NW Sparrow Road","city":"Barnen","state":"Vermont","zipCode":27895}},{"services":[[{"services":[],"suspended":false,"name":"Bree","number":9,"coordinate":{"streetAddress":"2851 South Kirtus Road","city":"Jesupe","state":"North Dakota","zipCode":52002}},[{"serviceDate":"Apr 21, 2013 12:00:00 AM","receiveDate":"Nov 30, 2018 2:51:35 PM","providerId":5,"serviceId":0,"serviceCode":1,"paidFee":342.75735,"serviceName":"Sober house"}]]],"password":"6055e477b8138ffc75b55ab865a9cccc6d13ff6d17d4263309b94f1797b4c4cd0e5b74fae15016ea49f8c23fd3a6c8910ea8d095dcc65fc58a5b8e0483ec4258","name":"Mercy Hospital","number":5,"coordinate":{"streetAddress":"5528 South Kirtus Road","city":"Tengi","state":"Iowa","zipCode":99405}},{"services":[[{"services":[],"suspended":true,"name":"Brittany","number":8,"coordinate":{"streetAddress":"5586 North Bull Terrace","city":"Barnen","state":"Alaska","zipCode":37861}},[{"serviceDate":"Jun 12, 2012 12:00:00 AM","receiveDate":"Nov 30, 2018 2:51:35 PM","providerId":3,"serviceId":0,"serviceCode":7,"paidFee":461.96143,"serviceName":"Acupuncture"}]],[{"services":[],"suspended":true,"name":"Timmothy","number":6,"coordinate":{"streetAddress":"7024 South Kirtus Road","city":"Salmon","state":"Oregon","zipCode":18147}},[{"serviceDate":"Mar 10, 2013 12:00:00 AM","receiveDate":"Nov 30, 2018 2:51:35 PM","providerId":3,"serviceId":0,"serviceCode":9,"paidFee":203.4456,"serviceName":"Inpatient rehabilitation"}]]],"password":"6055e477b8138ffc75b55ab865a9cccc6d13ff6d17d4263309b94f1797b4c4cd0e5b74fae15016ea49f8c23fd3a6c8910ea8d095dcc65fc58a5b8e0483ec4258","name":"Fortmill Hospital","number":3,"coordinate":{"streetAddress":"4411 North Barrel Avenue","city":"Salmon","state":"Texas","zipCode":48917}},{"services":{},"password":"6055e477b8138ffc75b55ab865a9cccc6d13ff6d17d4263309b94f1797b4c4cd0e5b74fae15016ea49f8c23fd3a6c8910ea8d095dcc65fc58a5b8e0483ec4258","name":"Kaiser Chocolate","number":101,"coordinate":{"streetAddress":"Bruce Lane","city":"Tigard","state":"OR","zipCode":97008}},{"services":{},"password":"6055e477b8138ffc75b55ab865a9cccc6d13ff6d17d4263309b94f1797b4c4cd0e5b74fae15016ea49f8c23fd3a6c8910ea8d095dcc65fc58a5b8e0483ec4258","name":"Health of America","number":3,"coordinate":{"streetAddress":"1798 West Hood Street","city":"Mallard","state":"Florida","zipCode":72021}},{"services":{},"password":"6055e477b8138ffc75b55ab865a9cccc6d13ff6d17d4263309b94f1797b4c4cd0e5b74fae15016ea49f8c23fd3a6c8910ea8d095dcc65fc58a5b8e0483ec4258","name":"Lakeview Hospital","number":4,"coordinate":{"streetAddress":"4880 Kent Avenue","city":"Kelpfield","state":"Kentucky","zipCode":39175}},{"services":{},"password":"6055e477b8138ffc75b55ab865a9cccc6d13ff6d17d4263309b94f1797b4c4cd0e5b74fae15016ea49f8c23fd3a6c8910ea8d095dcc65fc58a5b8e0483ec4258","name":"Salt Lake Clinic","number":5,"coordinate":{"streetAddress":"7047 West Hood Street","city":"Gundam","state":"Texas","zipCode":37367}},{"services":{},"password":"6055e477b8138ffc75b55ab865a9cccc6d13ff6d17d4263309b94f1797b4c4cd0e5b74fae15016ea49f8c23fd3a6c8910ea8d095dcc65fc58a5b8e0483ec4258","name":"Western Hospital","number":8,"coordinate":{"streetAddress":"6623 NW Sparrow Road","city":"Salem","state":"Iowa","zipCode":83594}},{"services":[[{"services":[],"suspended":false,"name":"Sandy","number":3,"coordinate":{"streetAddress":"2935 West Hood Street","city":"Barnen","state":"Oregon","zipCode":13230}},[{"serviceDate":"Mar 1, 2011 12:00:00 AM","receiveDate":"Nov 30, 2018 2:53:14 PM","providerId":1,"serviceId":0,"serviceCode":1,"paidFee":756.7596,"serviceName":"Therapy"}]]],"password":"6055e477b8138ffc75b55ab865a9cccc6d13ff6d17d4263309b94f1797b4c4cd0e5b74fae15016ea49f8c23fd3a6c8910ea8d095dcc65fc58a5b8e0483ec4258","name":"Mayo Clinic","number":1,"coordinate":{"streetAddress":"349 East Jurk Road","city":"Vitsburgh","state":"Alaska","zipCode":16422}},{"services":[[{"services":[],"suspended":false,"name":"Christopher","number":9,"coordinate":{"streetAddress":"2626 SW Beat Street","city":"Kerro","state":"California","zipCode":59115}},[{"serviceDate":"Mar 20, 2011 12:00:00 AM","receiveDate":"Nov 30, 2018 2:53:14 PM","providerId":0,"serviceId":0,"serviceCode":3,"paidFee":133.74402,"serviceName":"Inpatient rehabilitation"}]],[{"services":[],"suspended":true,"name":"Christopher","number":3,"coordinate":{"streetAddress":"6552 West Chicken Street","city":"Insata","state":"Florida","zipCode":56240}},[{"serviceDate":"Oct 21, 2015 12:00:00 AM","receiveDate":"Nov 30, 2018 2:51:35 PM","providerId":0,"serviceId":0,"serviceCode":0,"paidFee":681.2118,"serviceName":"Sober house"}]],[{"services":[],"suspended":true,"name":"Timmothy","number":6,"coordinate":{"streetAddress":"7024 South Kirtus Road","city":"Salmon","state":"Oregon","zipCode":18147}},[{"serviceDate":"Jul 24, 2014 12:00:00 AM","receiveDate":"Nov 30, 2018 2:51:35 PM","providerId":0,"serviceId":0,"serviceCode":5,"paidFee":72.332924,"serviceName":"Detox"}]]],"password":"6055e477b8138ffc75b55ab865a9cccc6d13ff6d17d4263309b94f1797b4c4cd0e5b74fae15016ea49f8c23fd3a6c8910ea8d095dcc65fc58a5b8e0483ec4258","name":"Fortmill Hospital","number":0,"coordinate":{"streetAddress":"1304 Saint Street","city":"Cuda","state":"Kentucky","zipCode":37170}},{"services":[[{"services":[],"suspended":true,"name":"Brian","number":8,"coordinate":{"streetAddress":"2080 Earth Worm Avenue","city":"Salmon","state":"Arizona","zipCode":41165}},[{"serviceDate":"Nov 22, 2017 12:00:00 AM","receiveDate":"Nov 30, 2018 2:53:14 PM","providerId":2,"serviceId":0,"serviceCode":6,"paidFee":100.29266,"serviceName":"Physcology"}]],[{"services":[],"suspended":true,"name":"Andrew","number":2,"coordinate":{"streetAddress":"8419 Oak Terrace","city":"Cuda","state":"Nevada","zipCode":80138}},[{"serviceDate":"Mar 1, 2011 12:00:00 AM","receiveDate":"Nov 30, 2018 2:53:14 PM","providerId":2,"serviceId":0,"serviceCode":5,"paidFee":45.13288,"serviceName":"Physcology"}]]],"password":"6055e477b8138ffc75b55ab865a9cccc6d13ff6d17d4263309b94f1797b4c4cd0e5b74fae15016ea49f8c23fd3a6c8910ea8d095dcc65fc58a5b8e0483ec4258","name":"Salt Lake Clinic","number":2,"coordinate":{"streetAddress":"4389 Earth Worm Avenue","city":"Tengi","state":"Nevada","zipCode":48846}},{"services":[[{"services":[],"suspended":true,"name":"Andrew","number":2,"coordinate":{"streetAddress":"8419 Oak Terrace","city":"Cuda","state":"Nevada","zipCode":80138}},[{"serviceDate":"Jun 8, 2017 12:00:00 AM","receiveDate":"Nov 30, 2018 2:53:14 PM","providerId":7,"serviceId":0,"serviceCode":7,"paidFee":812.03,"serviceName":"Therapy"}]],[{"services":[],"suspended":true,"name":"Brian","number":8,"coordinate":{"streetAddress":"2080 Earth Worm Avenue","city":"Salmon","state":"Arizona","zipCode":41165}},[{"serviceDate":"Mar 28, 2014 12:00:00 AM","receiveDate":"Nov 30, 2018 2:53:14 PM","providerId":7,"serviceId":0,"serviceCode":0,"paidFee":145.0059,"serviceName":"Acupuncture"}]],[{"services":[],"suspended":false,"name":"Timmothy","number":5,"coordinate":{"streetAddress":"7991 NE Deak Steet","city":"Kerro","state":"New Mexico","zipCode":79022}},[{"serviceDate":"Oct 10, 2012 12:00:00 AM","receiveDate":"Nov 30, 2018 2:51:35 PM","providerId":7,"serviceId":0,"serviceCode":2,"paidFee":16.338966,"serviceName":"Acupuncture"}]],[{"services":[],"suspended":true,"name":"Timmothy","number":6,"coordinate":{"streetAddress":"7024 South Kirtus Road","city":"Salmon","state":"Oregon","zipCode":18147}},[{"serviceDate":"Apr 9, 2014 12:00:00 AM","receiveDate":"Nov 30, 2018 2:51:35 PM","providerId":7,"serviceId":0,"serviceCode":6,"paidFee":721.93616,"serviceName":"Physcology"}]],[{"services":[],"suspended":true,"name":"Brittany","number":8,"coordinate":{"streetAddress":"5586 North Bull Terrace","city":"Barnen","state":"Alaska","zipCode":37861}},[{"serviceDate":"Sep 3, 2014 12:00:00 AM","receiveDate":"Nov 30, 2018 2:51:35 PM","providerId":7,"serviceId":0,"serviceCode":3,"paidFee":507.6817,"serviceName":"Therapy"}]],[{"services":[],"suspended":false,"name":"Christopher","number":5,"coordinate":{"streetAddress":"6009 North Barrel Avenue","city":"Insata","state":"Vermont","zipCode":74103}},[{"serviceDate":"Oct 21, 2012 12:00:00 AM","receiveDate":"Nov 30, 2018 2:53:14 PM","providerId":7,"serviceId":0,"serviceCode":4,"paidFee":251.00458,"serviceName":"Relaspe therapy"}]]],"password":"6055e477b8138ffc75b55ab865a9cccc6d13ff6d17d4263309b94f1797b4c4cd0e5b74fae15016ea49f8c23fd3a6c8910ea8d095dcc65fc58a5b8e0483ec4258","name":"Mayo Clinic","number":7,"coordinate":{"streetAddress":"5736 West Hood Street","city":"Kelpfield","state":"Oregon","zipCode":77178}},{"services":[[{"services":[],"suspended":true,"name":"Andrew","number":2,"coordinate":{"streetAddress":"8419 Oak Terrace","city":"Cuda","state":"Nevada","zipCode":80138}},[{"serviceDate":"Mar 1, 2012 12:00:00 AM","receiveDate":"Nov 30, 2018 2:53:14 PM","providerId":9,"serviceId":0,"serviceCode":8,"paidFee":608.84326,"serviceName":"Recovery group meeting"}]]],"password":"6055e477b8138ffc75b55ab865a9cccc6d13ff6d17d4263309b94f1797b4c4cd0e5b74fae15016ea49f8c23fd3a6c8910ea8d095dcc65fc58a5b8e0483ec4258","name":"Jesus Hospital","number":9,"coordinate":{"streetAddress":"4737 Barlow Road","city":"Vitsburgh","state":"Iowa","zipCode":36576}},{"services":[[{"services":[],"suspended":true,"name":"Brittany","number":8,"coordinate":{"streetAddress":"5586 North Bull Terrace","city":"Barnen","state":"Alaska","zipCode":37861}},[{"serviceDate":"Apr 6, 2013 12:00:00 AM","receiveDate":"Nov 30, 2018 2:51:35 PM","providerId":6,"serviceId":0,"serviceCode":4,"paidFee":70.351105,"serviceName":"Recovery group meeting"}]],[{"services":[],"suspended":true,"name":"Christopher","number":3,"coordinate":{"streetAddress":"6552 West Chicken Street","city":"Insata","state":"Florida","zipCode":56240}},[{"serviceDate":"Jun 12, 2012 12:00:00 AM","receiveDate":"Nov 30, 2018 2:51:35 PM","providerId":6,"serviceId":0,"serviceCode":8,"paidFee":757.7223,"serviceName":"Sober house"}]],[{"services":[],"suspended":true,"name":"Jimbo","number":4,"coordinate":{"streetAddress":"3691 East Jurk Road","city":"Jesupe","state":"Iowa","zipCode":85228}},[{"serviceDate":"Apr 24, 2010 12:00:00 AM","receiveDate":"Nov 30, 2018 2:53:14 PM","providerId":6,"serviceId":0,"serviceCode":2,"paidFee":47.786243,"serviceName":"Detox"}]],[{"services":[],"suspended":true,"name":"Andrew","number":2,"coordinate":{"streetAddress":"8419 Oak Terrace","city":"Cuda","state":"Nevada","zipCode":80138}},[{"serviceDate":"May 12, 2012 12:00:00 AM","receiveDate":"Nov 30, 2018 2:53:14 PM","providerId":6,"serviceId":0,"serviceCode":9,"paidFee":24.264385,"serviceName":"Detox"}]]],"password":"6055e477b8138ffc75b55ab865a9cccc6d13ff6d17d4263309b94f1797b4c4cd0e5b74fae15016ea49f8c23fd3a6c8910ea8d095dcc65fc58a5b8e0483ec4258","name":"Providence","number":6,"coordinate":{"streetAddress":"3574 Saint Street","city":"Kerro","state":"California","zipCode":17081}}]
+[
+  {
+    "services": [
+      [
+        {
+          "services": [
+            {
+              "serviceDate": "Jan 6, 2015 12:00:00 AM",
+              "receiveDate": "Nov 30, 2018 11:18:24 PM",
+              "providerId": 100000000,
+              "serviceId": 100000002,
+              "serviceCode": 755212,
+              "paidFee": 910.45856,
+              "serviceName": "Recovery group meeting"
+            }
+          ],
+          "suspended": true,
+          "name": "Winston",
+          "number": 100000001,
+          "coordinate": {
+            "streetAddress": "2011 Barlow Road",
+            "city": "Mallard",
+            "state": "Vermont",
+            "zipCode": 43411
+          }
+        },
+        [
+          {
+            "serviceDate": "Jan 6, 2015 12:00:00 AM",
+            "receiveDate": "Nov 30, 2018 11:18:24 PM",
+            "providerId": 100000000,
+            "serviceId": 100000002,
+            "serviceCode": 755212,
+            "paidFee": 910.45856,
+            "serviceName": "Recovery group meeting"
+          }
+        ]
+      ],
+      [
+        {
+          "services": [
+            {
+              "serviceDate": "Jan 3, 2015 12:00:00 AM",
+              "receiveDate": "Nov 30, 2018 11:18:21 PM",
+              "providerId": 100000000,
+              "serviceId": 100000000,
+              "serviceCode": 755212,
+              "paidFee": 698.41034,
+              "serviceName": "Recovery group meeting"
+            }
+          ],
+          "suspended": false,
+          "name": "Rachael",
+          "number": 100000001,
+          "coordinate": {
+            "streetAddress": "4321 Kosh Street",
+            "city": "Tengi",
+            "state": "Vermont",
+            "zipCode": 20124
+          }
+        },
+        [
+          {
+            "serviceDate": "Jan 3, 2015 12:00:00 AM",
+            "receiveDate": "Nov 30, 2018 11:18:21 PM",
+            "providerId": 100000000,
+            "serviceId": 100000000,
+            "serviceCode": 755212,
+            "paidFee": 698.41034,
+            "serviceName": "Recovery group meeting"
+          }
+        ]
+      ],
+      [
+        {
+          "services": [
+            {
+              "serviceDate": "Jan 2, 2010 12:00:00 AM",
+              "receiveDate": "Nov 30, 2018 11:18:32 PM",
+              "providerId": 100000000,
+              "serviceId": 100000004,
+              "serviceCode": 642196,
+              "paidFee": 450.8481,
+              "serviceName": "Outpatient rehabilitation"
+            }
+          ],
+          "suspended": false,
+          "name": "Andrew",
+          "number": 100000008,
+          "coordinate": {
+            "streetAddress": "6035 NW Sparrow Road",
+            "city": "Cuda",
+            "state": "Arizona",
+            "zipCode": 35753
+          }
+        },
+        [
+          {
+            "serviceDate": "Jan 2, 2010 12:00:00 AM",
+            "receiveDate": "Nov 30, 2018 11:18:32 PM",
+            "providerId": 100000000,
+            "serviceId": 100000004,
+            "serviceCode": 642196,
+            "paidFee": 450.8481,
+            "serviceName": "Outpatient rehabilitation"
+          }
+        ]
+      ],
+      [
+        {
+          "services": [
+            {
+              "serviceDate": "Nov 18, 2017 12:00:00 AM",
+              "receiveDate": "Nov 30, 2018 11:18:24 PM",
+              "providerId": 100000000,
+              "serviceId": 100000008,
+              "serviceCode": 598470,
+              "paidFee": 473.87735,
+              "serviceName": "Dietitian session"
+            }
+          ],
+          "suspended": false,
+          "name": "Ian",
+          "number": 100000005,
+          "coordinate": {
+            "streetAddress": "9875 Oak Terrace",
+            "city": "Yerner",
+            "state": "Iowa",
+            "zipCode": 76174
+          }
+        },
+        [
+          {
+            "serviceDate": "Nov 18, 2017 12:00:00 AM",
+            "receiveDate": "Nov 30, 2018 11:18:24 PM",
+            "providerId": 100000000,
+            "serviceId": 100000008,
+            "serviceCode": 598470,
+            "paidFee": 473.87735,
+            "serviceName": "Dietitian session"
+          }
+        ]
+      ]
+    ],
+    "password": "b597a87be4ac85fae444e74b6f3008c44cf331807dd8e95a6dff5c249ac0b45c5baf77fcf589bcd876d6a7c8d19ce0928a9b69ffab95b62e89293aa23fa3ad16",
+    "name": "NorthWest Clinic",
+    "number": 100000000,
+    "coordinate": {
+      "streetAddress": "3187 Oak Terrace",
+      "city": "Yerner",
+      "state": "Arizona",
+      "zipCode": 85103
+    }
+  },
+  {
+    "services": [
+      [
+        {
+          "services": [
+            {
+              "serviceDate": "Jul 12, 2013 12:00:00 AM",
+              "receiveDate": "Nov 30, 2018 11:18:32 PM",
+              "providerId": 100000004,
+              "serviceId": 100000005,
+              "serviceCode": 337713,
+              "paidFee": 668.17676,
+              "serviceName": "Insulin pump install"
+            },
+            {
+              "serviceDate": "Jul 12, 2012 12:00:00 AM",
+              "receiveDate": "Nov 30, 2018 11:18:32 PM",
+              "providerId": 100000007,
+              "serviceId": 100000006,
+              "serviceCode": 443290,
+              "paidFee": 887.25653,
+              "serviceName": "Therapy"
+            }
+          ],
+          "suspended": false,
+          "name": "Darren",
+          "number": 100000003,
+          "coordinate": {
+            "streetAddress": "6895 West Chicken Street",
+            "city": "Arlo",
+            "state": "Idaho",
+            "zipCode": 69478
+          }
+        },
+        [
+          {
+            "serviceDate": "Jul 12, 2013 12:00:00 AM",
+            "receiveDate": "Nov 30, 2018 11:18:32 PM",
+            "providerId": 100000004,
+            "serviceId": 100000005,
+            "serviceCode": 337713,
+            "paidFee": 668.17676,
+            "serviceName": "Insulin pump install"
+          }
+        ]
+      ]
+    ],
+    "password": "b597a87be4ac85fae444e74b6f3008c44cf331807dd8e95a6dff5c249ac0b45c5baf77fcf589bcd876d6a7c8d19ce0928a9b69ffab95b62e89293aa23fa3ad16",
+    "name": "Heartfelt Hospital",
+    "number": 100000004,
+    "coordinate": {
+      "streetAddress": "7034 Kosh Street",
+      "city": "Mallard",
+      "state": "Arizona",
+      "zipCode": 20119
+    }
+  },
+  {
+    "services": {},
+    "password": "b597a87be4ac85fae444e74b6f3008c44cf331807dd8e95a6dff5c249ac0b45c5baf77fcf589bcd876d6a7c8d19ce0928a9b69ffab95b62e89293aa23fa3ad16",
+    "name": "St. Jude Hospital",
+    "number": 100000000,
+    "coordinate": {
+      "streetAddress": "2598 North Bull Terrace",
+      "city": "Kelpfield",
+      "state": "North Dakota",
+      "zipCode": 13594
+    }
+  },
+  {
+    "services": {},
+    "password": "b597a87be4ac85fae444e74b6f3008c44cf331807dd8e95a6dff5c249ac0b45c5baf77fcf589bcd876d6a7c8d19ce0928a9b69ffab95b62e89293aa23fa3ad16",
+    "name": "Mercy Hospital",
+    "number": 100000004,
+    "coordinate": {
+      "streetAddress": "8079 Saint Street",
+      "city": "Vitsburgh",
+      "state": "Florida",
+      "zipCode": 75194
+    }
+  },
+  {
+    "services": [
+      [
+        {
+          "services": [
+            {
+              "serviceDate": "Jul 27, 2015 12:00:00 AM",
+              "receiveDate": "Nov 30, 2018 11:18:36 PM",
+              "providerId": 100000007,
+              "serviceId": 100000002,
+              "serviceCode": 598470,
+              "paidFee": 351.1011,
+              "serviceName": "Dietitian session"
+            },
+            {
+              "serviceDate": "Jul 5, 2013 12:00:00 AM",
+              "receiveDate": "Nov 30, 2018 11:18:36 PM",
+              "providerId": 100000001,
+              "serviceId": 100000005,
+              "serviceCode": 555555,
+              "paidFee": 26.127895,
+              "serviceName": "Other"
+            }
+          ],
+          "suspended": false,
+          "name": "Winston",
+          "number": 100000008,
+          "coordinate": {
+            "streetAddress": "5707 Kent Avenue",
+            "city": "Arlo",
+            "state": "Alaska",
+            "zipCode": 57861
+          }
+        },
+        [
+          {
+            "serviceDate": "Jul 27, 2015 12:00:00 AM",
+            "receiveDate": "Nov 30, 2018 11:18:36 PM",
+            "providerId": 100000007,
+            "serviceId": 100000002,
+            "serviceCode": 598470,
+            "paidFee": 351.1011,
+            "serviceName": "Dietitian session"
+          }
+        ]
+      ],
+      [
+        {
+          "services": [
+            {
+              "serviceDate": "Jul 12, 2013 12:00:00 AM",
+              "receiveDate": "Nov 30, 2018 11:18:32 PM",
+              "providerId": 100000004,
+              "serviceId": 100000005,
+              "serviceCode": 337713,
+              "paidFee": 668.17676,
+              "serviceName": "Insulin pump install"
+            },
+            {
+              "serviceDate": "Jul 12, 2012 12:00:00 AM",
+              "receiveDate": "Nov 30, 2018 11:18:32 PM",
+              "providerId": 100000007,
+              "serviceId": 100000006,
+              "serviceCode": 443290,
+              "paidFee": 887.25653,
+              "serviceName": "Therapy"
+            }
+          ],
+          "suspended": false,
+          "name": "Darren",
+          "number": 100000003,
+          "coordinate": {
+            "streetAddress": "6895 West Chicken Street",
+            "city": "Arlo",
+            "state": "Idaho",
+            "zipCode": 69478
+          }
+        },
+        [
+          {
+            "serviceDate": "Jul 12, 2012 12:00:00 AM",
+            "receiveDate": "Nov 30, 2018 11:18:32 PM",
+            "providerId": 100000007,
+            "serviceId": 100000006,
+            "serviceCode": 443290,
+            "paidFee": 887.25653,
+            "serviceName": "Therapy"
+          }
+        ]
+      ],
+      [
+        {
+          "services": [
+            {
+              "serviceDate": "Oct 25, 2013 12:00:00 AM",
+              "receiveDate": "Nov 30, 2018 11:18:21 PM",
+              "providerId": 100000008,
+              "serviceId": 100000003,
+              "serviceCode": 225824,
+              "paidFee": 573.50635,
+              "serviceName": "Sober house"
+            },
+            {
+              "serviceDate": "Sep 22, 2014 12:00:00 AM",
+              "receiveDate": "Nov 30, 2018 11:18:21 PM",
+              "providerId": 100000009,
+              "serviceId": 100000007,
+              "serviceCode": 225824,
+              "paidFee": 836.2389,
+              "serviceName": "Sober house"
+            },
+            {
+              "serviceDate": "Apr 14, 2010 12:00:00 AM",
+              "receiveDate": "Nov 30, 2018 11:18:21 PM",
+              "providerId": 100000007,
+              "serviceId": 100000009,
+              "serviceCode": 682220,
+              "paidFee": 900.2349,
+              "serviceName": "Inpatient withdrawal treatment"
+            }
+          ],
+          "suspended": true,
+          "name": "Bree",
+          "number": 100000000,
+          "coordinate": {
+            "streetAddress": "5565 Earth Worm Avenue",
+            "city": "Cuda",
+            "state": "South Dakota",
+            "zipCode": 48347
+          }
+        },
+        [
+          {
+            "serviceDate": "Apr 14, 2010 12:00:00 AM",
+            "receiveDate": "Nov 30, 2018 11:18:21 PM",
+            "providerId": 100000007,
+            "serviceId": 100000009,
+            "serviceCode": 682220,
+            "paidFee": 900.2349,
+            "serviceName": "Inpatient withdrawal treatment"
+          }
+        ]
+      ],
+      [
+        {
+          "services": [
+            {
+              "serviceDate": "Apr 1, 2011 12:00:00 AM",
+              "receiveDate": "Nov 30, 2018 11:18:36 PM",
+              "providerId": 100000007,
+              "serviceId": 100000001,
+              "serviceCode": 642196,
+              "paidFee": 936.8469,
+              "serviceName": "Outpatient rehabilitation"
+            }
+          ],
+          "suspended": false,
+          "name": "Andrew",
+          "number": 100000006,
+          "coordinate": {
+            "streetAddress": "8887 West Chicken Street",
+            "city": "Barnen",
+            "state": "Oregon",
+            "zipCode": 89407
+          }
+        },
+        [
+          {
+            "serviceDate": "Apr 1, 2011 12:00:00 AM",
+            "receiveDate": "Nov 30, 2018 11:18:36 PM",
+            "providerId": 100000007,
+            "serviceId": 100000001,
+            "serviceCode": 642196,
+            "paidFee": 936.8469,
+            "serviceName": "Outpatient rehabilitation"
+          }
+        ]
+      ],
+      [
+        {
+          "services": [
+            {
+              "serviceDate": "Jun 23, 2014 12:00:00 AM",
+              "receiveDate": "Nov 30, 2018 11:18:21 PM",
+              "providerId": 100000007,
+              "serviceId": 100000001,
+              "serviceCode": 555555,
+              "paidFee": 703.60284,
+              "serviceName": "Other"
+            }
+          ],
+          "suspended": false,
+          "name": "Michelle",
+          "number": 100000004,
+          "coordinate": {
+            "streetAddress": "1639 Saint Street",
+            "city": "Tengi",
+            "state": "Nevada",
+            "zipCode": 85975
+          }
+        },
+        [
+          {
+            "serviceDate": "Jun 23, 2014 12:00:00 AM",
+            "receiveDate": "Nov 30, 2018 11:18:21 PM",
+            "providerId": 100000007,
+            "serviceId": 100000001,
+            "serviceCode": 555555,
+            "paidFee": 703.60284,
+            "serviceName": "Other"
+          }
+        ]
+      ]
+    ],
+    "password": "b597a87be4ac85fae444e74b6f3008c44cf331807dd8e95a6dff5c249ac0b45c5baf77fcf589bcd876d6a7c8d19ce0928a9b69ffab95b62e89293aa23fa3ad16",
+    "name": "Salt Lake Clinic",
+    "number": 100000007,
+    "coordinate": {
+      "streetAddress": "2706 South Kirtus Road",
+      "city": "Dallas",
+      "state": "Oregon",
+      "zipCode": 41216
+    }
+  },
+  {
+    "services": {},
+    "password": "b597a87be4ac85fae444e74b6f3008c44cf331807dd8e95a6dff5c249ac0b45c5baf77fcf589bcd876d6a7c8d19ce0928a9b69ffab95b62e89293aa23fa3ad16",
+    "name": "Kaiser",
+    "number": 100000000,
+    "coordinate": {
+      "streetAddress": "2962 Earth Worm Avenue",
+      "city": "Salem",
+      "state": "North Dakota",
+      "zipCode": 41239
+    }
+  },
+  {
+    "services": {},
+    "password": "b597a87be4ac85fae444e74b6f3008c44cf331807dd8e95a6dff5c249ac0b45c5baf77fcf589bcd876d6a7c8d19ce0928a9b69ffab95b62e89293aa23fa3ad16",
+    "name": "Mayo Clinic",
+    "number": 100000004,
+    "coordinate": {
+      "streetAddress": "7908 Oak Terrace",
+      "city": "Vitsburgh",
+      "state": "Arizona",
+      "zipCode": 45086
+    }
+  },
+  {
+    "services": {},
+    "password": "b597a87be4ac85fae444e74b6f3008c44cf331807dd8e95a6dff5c249ac0b45c5baf77fcf589bcd876d6a7c8d19ce0928a9b69ffab95b62e89293aa23fa3ad16",
+    "name": "Providence",
+    "number": 100000007,
+    "coordinate": {
+      "streetAddress": "6083 SW Jangle Road",
+      "city": "Yerner",
+      "state": "Texas",
+      "zipCode": 37606
+    }
+  },
+  {
+    "services": [
+      [
+        {
+          "services": [
+            {
+              "serviceDate": "Oct 24, 2016 12:00:00 AM",
+              "receiveDate": "Nov 30, 2018 11:18:41 PM",
+              "providerId": 100000006,
+              "serviceId": 100000002,
+              "serviceCode": 739452,
+              "paidFee": 10.658592,
+              "serviceName": "Acupuncture"
+            },
+            {
+              "serviceDate": "Jan 25, 2012 12:00:00 AM",
+              "receiveDate": "Nov 30, 2018 11:18:41 PM",
+              "providerId": 100000001,
+              "serviceId": 100000005,
+              "serviceCode": 804031,
+              "paidFee": 714.42303,
+              "serviceName": "Psychology"
+            }
+          ],
+          "suspended": false,
+          "name": "Michael",
+          "number": 100000009,
+          "coordinate": {
+            "streetAddress": "6047 Kent Avenue",
+            "city": "Lalapope",
+            "state": "New Mexico",
+            "zipCode": 33164
+          }
+        },
+        [
+          {
+            "serviceDate": "Oct 24, 2016 12:00:00 AM",
+            "receiveDate": "Nov 30, 2018 11:18:41 PM",
+            "providerId": 100000006,
+            "serviceId": 100000002,
+            "serviceCode": 739452,
+            "paidFee": 10.658592,
+            "serviceName": "Acupuncture"
+          }
+        ]
+      ],
+      [
+        {
+          "services": [
+            {
+              "serviceDate": "Aug 5, 2015 12:00:00 AM",
+              "receiveDate": "Nov 30, 2018 11:18:32 PM",
+              "providerId": 100000006,
+              "serviceId": 100000008,
+              "serviceCode": 682220,
+              "paidFee": 856.9752,
+              "serviceName": "Inpatient withdrawal treatment"
+            }
+          ],
+          "suspended": false,
+          "name": "Christopher",
+          "number": 100000006,
+          "coordinate": {
+            "streetAddress": "7111 SE John Street",
+            "city": "Insata",
+            "state": "Nevada",
+            "zipCode": 26309
+          }
+        },
+        [
+          {
+            "serviceDate": "Aug 5, 2015 12:00:00 AM",
+            "receiveDate": "Nov 30, 2018 11:18:32 PM",
+            "providerId": 100000006,
+            "serviceId": 100000008,
+            "serviceCode": 682220,
+            "paidFee": 856.9752,
+            "serviceName": "Inpatient withdrawal treatment"
+          }
+        ]
+      ],
+      [
+        {
+          "services": [
+            {
+              "serviceDate": "Aug 13, 2016 12:00:00 AM",
+              "receiveDate": "Nov 30, 2018 11:18:36 PM",
+              "providerId": 100000006,
+              "serviceId": 100000000,
+              "serviceCode": 110944,
+              "paidFee": 84.15106,
+              "serviceName": "Detox"
+            }
+          ],
+          "suspended": false,
+          "name": "Natalie",
+          "number": 100000004,
+          "coordinate": {
+            "streetAddress": "2832 SE John Street",
+            "city": "Kelpfield",
+            "state": "Nevada",
+            "zipCode": 73771
+          }
+        },
+        [
+          {
+            "serviceDate": "Aug 13, 2016 12:00:00 AM",
+            "receiveDate": "Nov 30, 2018 11:18:36 PM",
+            "providerId": 100000006,
+            "serviceId": 100000000,
+            "serviceCode": 110944,
+            "paidFee": 84.15106,
+            "serviceName": "Detox"
+          }
+        ]
+      ],
+      [
+        {
+          "services": [
+            {
+              "serviceDate": "Apr 15, 2010 12:00:00 AM",
+              "receiveDate": "Nov 30, 2018 11:18:32 PM",
+              "providerId": 100000006,
+              "serviceId": 100000000,
+              "serviceCode": 682220,
+              "paidFee": 484.98706,
+              "serviceName": "Inpatient withdrawal treatment"
+            },
+            {
+              "serviceDate": "Sep 26, 2011 12:00:00 AM",
+              "receiveDate": "Nov 30, 2018 11:18:32 PM",
+              "providerId": 100000002,
+              "serviceId": 100000001,
+              "serviceCode": 225824,
+              "paidFee": 925.5601,
+              "serviceName": "Sober house"
+            },
+            {
+              "serviceDate": "May 18, 2013 12:00:00 AM",
+              "receiveDate": "Nov 30, 2018 11:18:32 PM",
+              "providerId": 100000005,
+              "serviceId": 100000007,
+              "serviceCode": 682220,
+              "paidFee": 816.85693,
+              "serviceName": "Inpatient withdrawal treatment"
+            }
+          ],
+          "suspended": true,
+          "name": "Bree",
+          "number": 100000005,
+          "coordinate": {
+            "streetAddress": "9781 Kosh Street",
+            "city": "Kerro",
+            "state": "Iowa",
+            "zipCode": 78869
+          }
+        },
+        [
+          {
+            "serviceDate": "Apr 15, 2010 12:00:00 AM",
+            "receiveDate": "Nov 30, 2018 11:18:32 PM",
+            "providerId": 100000006,
+            "serviceId": 100000000,
+            "serviceCode": 682220,
+            "paidFee": 484.98706,
+            "serviceName": "Inpatient withdrawal treatment"
+          }
+        ]
+      ],
+      [
+        {
+          "services": [
+            {
+              "serviceDate": "Mar 15, 2014 12:00:00 AM",
+              "receiveDate": "Nov 30, 2018 11:18:36 PM",
+              "providerId": 100000006,
+              "serviceId": 100000004,
+              "serviceCode": 555555,
+              "paidFee": 215.79591,
+              "serviceName": "Other"
+            },
+            {
+              "serviceDate": "Jan 2, 2015 12:00:00 AM",
+              "receiveDate": "Nov 30, 2018 11:18:36 PM",
+              "providerId": 100000006,
+              "serviceId": 100000008,
+              "serviceCode": 555555,
+              "paidFee": 669.70197,
+              "serviceName": "Other"
+            },
+            {
+              "serviceDate": "Aug 5, 2014 12:00:00 AM",
+              "receiveDate": "Nov 30, 2018 11:18:36 PM",
+              "providerId": 100000001,
+              "serviceId": 100000009,
+              "serviceCode": 529440,
+              "paidFee": 311.02606,
+              "serviceName": "Relapse therapy"
+            }
+          ],
+          "suspended": false,
+          "name": "Shary",
+          "number": 100000005,
+          "coordinate": {
+            "streetAddress": "4243 Oak Terrace",
+            "city": "Salem",
+            "state": "Florida",
+            "zipCode": 90918
+          }
+        },
+        [
+          {
+            "serviceDate": "Mar 15, 2014 12:00:00 AM",
+            "receiveDate": "Nov 30, 2018 11:18:36 PM",
+            "providerId": 100000006,
+            "serviceId": 100000004,
+            "serviceCode": 555555,
+            "paidFee": 215.79591,
+            "serviceName": "Other"
+          },
+          {
+            "serviceDate": "Jan 2, 2015 12:00:00 AM",
+            "receiveDate": "Nov 30, 2018 11:18:36 PM",
+            "providerId": 100000006,
+            "serviceId": 100000008,
+            "serviceCode": 555555,
+            "paidFee": 669.70197,
+            "serviceName": "Other"
+          }
+        ]
+      ],
+      [
+        {
+          "services": [
+            {
+              "serviceDate": "May 16, 2013 12:00:00 AM",
+              "receiveDate": "Nov 30, 2018 11:18:36 PM",
+              "providerId": 100000008,
+              "serviceId": 100000006,
+              "serviceCode": 110944,
+              "paidFee": 333.37738,
+              "serviceName": "Detox"
+            },
+            {
+              "serviceDate": "Oct 25, 2015 12:00:00 AM",
+              "receiveDate": "Nov 30, 2018 11:18:36 PM",
+              "providerId": 100000006,
+              "serviceId": 100000007,
+              "serviceCode": 225824,
+              "paidFee": 493.93402,
+              "serviceName": "Sober house"
+            }
+          ],
+          "suspended": false,
+          "name": "Winston",
+          "number": 100000001,
+          "coordinate": {
+            "streetAddress": "9008 SE John Street",
+            "city": "Dallas",
+            "state": "New Mexico",
+            "zipCode": 73995
+          }
+        },
+        [
+          {
+            "serviceDate": "Oct 25, 2015 12:00:00 AM",
+            "receiveDate": "Nov 30, 2018 11:18:36 PM",
+            "providerId": 100000006,
+            "serviceId": 100000007,
+            "serviceCode": 225824,
+            "paidFee": 493.93402,
+            "serviceName": "Sober house"
+          }
+        ]
+      ]
+    ],
+    "password": "b597a87be4ac85fae444e74b6f3008c44cf331807dd8e95a6dff5c249ac0b45c5baf77fcf589bcd876d6a7c8d19ce0928a9b69ffab95b62e89293aa23fa3ad16",
+    "name": "Fortmill Hospital",
+    "number": 100000006,
+    "coordinate": {
+      "streetAddress": "763 West Hood Street",
+      "city": "Salmon",
+      "state": "Alaska",
+      "zipCode": 65909
+    }
+  },
+  {
+    "services": [
+      [
+        {
+          "services": [
+            {
+              "serviceDate": "Jun 27, 2013 12:00:00 AM",
+              "receiveDate": "Nov 30, 2018 11:18:36 PM",
+              "providerId": 100000002,
+              "serviceId": 100000003,
+              "serviceCode": 529440,
+              "paidFee": 40.65264,
+              "serviceName": "Relapse therapy"
+            }
+          ],
+          "suspended": false,
+          "name": "Fransico",
+          "number": 100000009,
+          "coordinate": {
+            "streetAddress": "3449 South Kirtus Road",
+            "city": "Vitsburgh",
+            "state": "Washington",
+            "zipCode": 85939
+          }
+        },
+        [
+          {
+            "serviceDate": "Jun 27, 2013 12:00:00 AM",
+            "receiveDate": "Nov 30, 2018 11:18:36 PM",
+            "providerId": 100000002,
+            "serviceId": 100000003,
+            "serviceCode": 529440,
+            "paidFee": 40.65264,
+            "serviceName": "Relapse therapy"
+          }
+        ]
+      ],
+      [
+        {
+          "services": [
+            {
+              "serviceDate": "Apr 15, 2010 12:00:00 AM",
+              "receiveDate": "Nov 30, 2018 11:18:32 PM",
+              "providerId": 100000006,
+              "serviceId": 100000000,
+              "serviceCode": 682220,
+              "paidFee": 484.98706,
+              "serviceName": "Inpatient withdrawal treatment"
+            },
+            {
+              "serviceDate": "Sep 26, 2011 12:00:00 AM",
+              "receiveDate": "Nov 30, 2018 11:18:32 PM",
+              "providerId": 100000002,
+              "serviceId": 100000001,
+              "serviceCode": 225824,
+              "paidFee": 925.5601,
+              "serviceName": "Sober house"
+            },
+            {
+              "serviceDate": "May 18, 2013 12:00:00 AM",
+              "receiveDate": "Nov 30, 2018 11:18:32 PM",
+              "providerId": 100000005,
+              "serviceId": 100000007,
+              "serviceCode": 682220,
+              "paidFee": 816.85693,
+              "serviceName": "Inpatient withdrawal treatment"
+            }
+          ],
+          "suspended": true,
+          "name": "Bree",
+          "number": 100000005,
+          "coordinate": {
+            "streetAddress": "9781 Kosh Street",
+            "city": "Kerro",
+            "state": "Iowa",
+            "zipCode": 78869
+          }
+        },
+        [
+          {
+            "serviceDate": "Sep 26, 2011 12:00:00 AM",
+            "receiveDate": "Nov 30, 2018 11:18:32 PM",
+            "providerId": 100000002,
+            "serviceId": 100000001,
+            "serviceCode": 225824,
+            "paidFee": 925.5601,
+            "serviceName": "Sober house"
+          }
+        ]
+      ],
+      [
+        {
+          "services": [
+            {
+              "serviceDate": "May 3, 2014 12:00:00 AM",
+              "receiveDate": "Nov 30, 2018 11:18:32 PM",
+              "providerId": 100000002,
+              "serviceId": 100000002,
+              "serviceCode": 598470,
+              "paidFee": 191.61443,
+              "serviceName": "Dietitian session"
+            }
+          ],
+          "suspended": false,
+          "name": "Chris",
+          "number": 100000000,
+          "coordinate": {
+            "streetAddress": "8419 SE John Street",
+            "city": "Vitsburgh",
+            "state": "Oregon",
+            "zipCode": 63396
+          }
+        },
+        [
+          {
+            "serviceDate": "May 3, 2014 12:00:00 AM",
+            "receiveDate": "Nov 30, 2018 11:18:32 PM",
+            "providerId": 100000002,
+            "serviceId": 100000002,
+            "serviceCode": 598470,
+            "paidFee": 191.61443,
+            "serviceName": "Dietitian session"
+          }
+        ]
+      ],
+      [
+        {
+          "services": [
+            {
+              "serviceDate": "Jun 25, 2017 12:00:00 AM",
+              "receiveDate": "Nov 30, 2018 11:18:24 PM",
+              "providerId": 100000001,
+              "serviceId": 100000000,
+              "serviceCode": 804031,
+              "paidFee": 837.055,
+              "serviceName": "Psychology"
+            },
+            {
+              "serviceDate": "May 24, 2012 12:00:00 AM",
+              "receiveDate": "Nov 30, 2018 11:18:24 PM",
+              "providerId": 100000002,
+              "serviceId": 100000003,
+              "serviceCode": 804031,
+              "paidFee": 983.3881,
+              "serviceName": "Psychology"
+            }
+          ],
+          "suspended": true,
+          "name": "Nick",
+          "number": 100000009,
+          "coordinate": {
+            "streetAddress": "4065 SE John Street",
+            "city": "Salmon",
+            "state": "California",
+            "zipCode": 50531
+          }
+        },
+        [
+          {
+            "serviceDate": "May 24, 2012 12:00:00 AM",
+            "receiveDate": "Nov 30, 2018 11:18:24 PM",
+            "providerId": 100000002,
+            "serviceId": 100000003,
+            "serviceCode": 804031,
+            "paidFee": 983.3881,
+            "serviceName": "Psychology"
+          }
+        ]
+      ],
+      [
+        {
+          "services": [
+            {
+              "serviceDate": "Sep 30, 2015 12:00:00 AM",
+              "receiveDate": "Nov 30, 2018 11:18:21 PM",
+              "providerId": 100000002,
+              "serviceId": 100000005,
+              "serviceCode": 900422,
+              "paidFee": 380.78024,
+              "serviceName": "Family therapy"
+            }
+          ],
+          "suspended": false,
+          "name": "Terry",
+          "number": 100000007,
+          "coordinate": {
+            "streetAddress": "9770 North Bull Terrace",
+            "city": "Jesupe",
+            "state": "South Dakota",
+            "zipCode": 71429
+          }
+        },
+        [
+          {
+            "serviceDate": "Sep 30, 2015 12:00:00 AM",
+            "receiveDate": "Nov 30, 2018 11:18:21 PM",
+            "providerId": 100000002,
+            "serviceId": 100000005,
+            "serviceCode": 900422,
+            "paidFee": 380.78024,
+            "serviceName": "Family therapy"
+          }
+        ]
+      ],
+      [
+        {
+          "services": [
+            {
+              "serviceDate": "Mar 10, 2016 12:00:00 AM",
+              "receiveDate": "Nov 30, 2018 11:18:41 PM",
+              "providerId": 100000002,
+              "serviceId": 100000003,
+              "serviceCode": 443290,
+              "paidFee": 771.5805,
+              "serviceName": "Therapy"
+            },
+            {
+              "serviceDate": "Sep 29, 2012 12:00:00 AM",
+              "receiveDate": "Nov 30, 2018 11:18:41 PM",
+              "providerId": 100000008,
+              "serviceId": 100000006,
+              "serviceCode": 739452,
+              "paidFee": 121.57588,
+              "serviceName": "Acupuncture"
+            }
+          ],
+          "suspended": false,
+          "name": "Nathan",
+          "number": 100000004,
+          "coordinate": {
+            "streetAddress": "4828 North Bull Terrace",
+            "city": "Jesupe",
+            "state": "Alaska",
+            "zipCode": 44626
+          }
+        },
+        [
+          {
+            "serviceDate": "Mar 10, 2016 12:00:00 AM",
+            "receiveDate": "Nov 30, 2018 11:18:41 PM",
+            "providerId": 100000002,
+            "serviceId": 100000003,
+            "serviceCode": 443290,
+            "paidFee": 771.5805,
+            "serviceName": "Therapy"
+          }
+        ]
+      ],
+      [
+        {
+          "services": [
+            {
+              "serviceDate": "Oct 11, 2016 12:00:00 AM",
+              "receiveDate": "Nov 30, 2018 11:18:21 PM",
+              "providerId": 100000002,
+              "serviceId": 100000002,
+              "serviceCode": 225824,
+              "paidFee": 652.0,
+              "serviceName": "Sober house"
+            }
+          ],
+          "suspended": true,
+          "name": "Natalie",
+          "number": 100000006,
+          "coordinate": {
+            "streetAddress": "152 North Barrel Avenue",
+            "city": "Salmon",
+            "state": "Iowa",
+            "zipCode": 23881
+          }
+        },
+        [
+          {
+            "serviceDate": "Oct 11, 2016 12:00:00 AM",
+            "receiveDate": "Nov 30, 2018 11:18:21 PM",
+            "providerId": 100000002,
+            "serviceId": 100000002,
+            "serviceCode": 225824,
+            "paidFee": 652.0,
+            "serviceName": "Sober house"
+          }
+        ]
+      ]
+    ],
+    "password": "b597a87be4ac85fae444e74b6f3008c44cf331807dd8e95a6dff5c249ac0b45c5baf77fcf589bcd876d6a7c8d19ce0928a9b69ffab95b62e89293aa23fa3ad16",
+    "name": "Western Hospital",
+    "number": 100000002,
+    "coordinate": {
+      "streetAddress": "754 West Hood Street",
+      "city": "Arlo",
+      "state": "South Dakota",
+      "zipCode": 70614
+    }
+  },
+  {
+    "services": [
+      [
+        {
+          "services": [
+            {
+              "serviceDate": "Oct 24, 2016 12:00:00 AM",
+              "receiveDate": "Nov 30, 2018 11:18:41 PM",
+              "providerId": 100000006,
+              "serviceId": 100000002,
+              "serviceCode": 739452,
+              "paidFee": 10.658592,
+              "serviceName": "Acupuncture"
+            },
+            {
+              "serviceDate": "Jan 25, 2012 12:00:00 AM",
+              "receiveDate": "Nov 30, 2018 11:18:41 PM",
+              "providerId": 100000001,
+              "serviceId": 100000005,
+              "serviceCode": 804031,
+              "paidFee": 714.42303,
+              "serviceName": "Psychology"
+            }
+          ],
+          "suspended": false,
+          "name": "Michael",
+          "number": 100000009,
+          "coordinate": {
+            "streetAddress": "6047 Kent Avenue",
+            "city": "Lalapope",
+            "state": "New Mexico",
+            "zipCode": 33164
+          }
+        },
+        [
+          {
+            "serviceDate": "Jan 25, 2012 12:00:00 AM",
+            "receiveDate": "Nov 30, 2018 11:18:41 PM",
+            "providerId": 100000001,
+            "serviceId": 100000005,
+            "serviceCode": 804031,
+            "paidFee": 714.42303,
+            "serviceName": "Psychology"
+          }
+        ]
+      ],
+      [
+        {
+          "services": [
+            {
+              "serviceDate": "Jul 27, 2015 12:00:00 AM",
+              "receiveDate": "Nov 30, 2018 11:18:36 PM",
+              "providerId": 100000007,
+              "serviceId": 100000002,
+              "serviceCode": 598470,
+              "paidFee": 351.1011,
+              "serviceName": "Dietitian session"
+            },
+            {
+              "serviceDate": "Jul 5, 2013 12:00:00 AM",
+              "receiveDate": "Nov 30, 2018 11:18:36 PM",
+              "providerId": 100000001,
+              "serviceId": 100000005,
+              "serviceCode": 555555,
+              "paidFee": 26.127895,
+              "serviceName": "Other"
+            }
+          ],
+          "suspended": false,
+          "name": "Winston",
+          "number": 100000008,
+          "coordinate": {
+            "streetAddress": "5707 Kent Avenue",
+            "city": "Arlo",
+            "state": "Alaska",
+            "zipCode": 57861
+          }
+        },
+        [
+          {
+            "serviceDate": "Jul 5, 2013 12:00:00 AM",
+            "receiveDate": "Nov 30, 2018 11:18:36 PM",
+            "providerId": 100000001,
+            "serviceId": 100000005,
+            "serviceCode": 555555,
+            "paidFee": 26.127895,
+            "serviceName": "Other"
+          }
+        ]
+      ],
+      [
+        {
+          "services": [
+            {
+              "serviceDate": "Apr 14, 2011 12:00:00 AM",
+              "receiveDate": "Nov 30, 2018 11:18:24 PM",
+              "providerId": 100000005,
+              "serviceId": 100000004,
+              "serviceCode": 682220,
+              "paidFee": 818.07855,
+              "serviceName": "Inpatient withdrawal treatment"
+            },
+            {
+              "serviceDate": "Oct 3, 2012 12:00:00 AM",
+              "receiveDate": "Nov 30, 2018 11:18:24 PM",
+              "providerId": 100000001,
+              "serviceId": 100000009,
+              "serviceCode": 555555,
+              "paidFee": 890.83484,
+              "serviceName": "Other"
+            }
+          ],
+          "suspended": true,
+          "name": "Fransico",
+          "number": 100000008,
+          "coordinate": {
+            "streetAddress": "3331 West Chicken Street",
+            "city": "Mallard",
+            "state": "North Dakota",
+            "zipCode": 49243
+          }
+        },
+        [
+          {
+            "serviceDate": "Oct 3, 2012 12:00:00 AM",
+            "receiveDate": "Nov 30, 2018 11:18:24 PM",
+            "providerId": 100000001,
+            "serviceId": 100000009,
+            "serviceCode": 555555,
+            "paidFee": 890.83484,
+            "serviceName": "Other"
+          }
+        ]
+      ],
+      [
+        {
+          "services": [
+            {
+              "serviceDate": "Mar 15, 2014 12:00:00 AM",
+              "receiveDate": "Nov 30, 2018 11:18:36 PM",
+              "providerId": 100000006,
+              "serviceId": 100000004,
+              "serviceCode": 555555,
+              "paidFee": 215.79591,
+              "serviceName": "Other"
+            },
+            {
+              "serviceDate": "Jan 2, 2015 12:00:00 AM",
+              "receiveDate": "Nov 30, 2018 11:18:36 PM",
+              "providerId": 100000006,
+              "serviceId": 100000008,
+              "serviceCode": 555555,
+              "paidFee": 669.70197,
+              "serviceName": "Other"
+            },
+            {
+              "serviceDate": "Aug 5, 2014 12:00:00 AM",
+              "receiveDate": "Nov 30, 2018 11:18:36 PM",
+              "providerId": 100000001,
+              "serviceId": 100000009,
+              "serviceCode": 529440,
+              "paidFee": 311.02606,
+              "serviceName": "Relapse therapy"
+            }
+          ],
+          "suspended": false,
+          "name": "Shary",
+          "number": 100000005,
+          "coordinate": {
+            "streetAddress": "4243 Oak Terrace",
+            "city": "Salem",
+            "state": "Florida",
+            "zipCode": 90918
+          }
+        },
+        [
+          {
+            "serviceDate": "Aug 5, 2014 12:00:00 AM",
+            "receiveDate": "Nov 30, 2018 11:18:36 PM",
+            "providerId": 100000001,
+            "serviceId": 100000009,
+            "serviceCode": 529440,
+            "paidFee": 311.02606,
+            "serviceName": "Relapse therapy"
+          }
+        ]
+      ],
+      [
+        {
+          "services": [
+            {
+              "serviceDate": "Jun 25, 2017 12:00:00 AM",
+              "receiveDate": "Nov 30, 2018 11:18:24 PM",
+              "providerId": 100000001,
+              "serviceId": 100000000,
+              "serviceCode": 804031,
+              "paidFee": 837.055,
+              "serviceName": "Psychology"
+            },
+            {
+              "serviceDate": "May 24, 2012 12:00:00 AM",
+              "receiveDate": "Nov 30, 2018 11:18:24 PM",
+              "providerId": 100000002,
+              "serviceId": 100000003,
+              "serviceCode": 804031,
+              "paidFee": 983.3881,
+              "serviceName": "Psychology"
+            }
+          ],
+          "suspended": true,
+          "name": "Nick",
+          "number": 100000009,
+          "coordinate": {
+            "streetAddress": "4065 SE John Street",
+            "city": "Salmon",
+            "state": "California",
+            "zipCode": 50531
+          }
+        },
+        [
+          {
+            "serviceDate": "Jun 25, 2017 12:00:00 AM",
+            "receiveDate": "Nov 30, 2018 11:18:24 PM",
+            "providerId": 100000001,
+            "serviceId": 100000000,
+            "serviceCode": 804031,
+            "paidFee": 837.055,
+            "serviceName": "Psychology"
+          }
+        ]
+      ]
+    ],
+    "password": "b597a87be4ac85fae444e74b6f3008c44cf331807dd8e95a6dff5c249ac0b45c5baf77fcf589bcd876d6a7c8d19ce0928a9b69ffab95b62e89293aa23fa3ad16",
+    "name": "Heartfelt Hospital",
+    "number": 100000001,
+    "coordinate": {
+      "streetAddress": "1675 SW Beat Street",
+      "city": "Vernen",
+      "state": "Alaska",
+      "zipCode": 72324
+    }
+  },
+  {
+    "services": [
+      [
+        {
+          "services": [
+            {
+              "serviceDate": "Apr 14, 2011 12:00:00 AM",
+              "receiveDate": "Nov 30, 2018 11:18:32 PM",
+              "providerId": 100000008,
+              "serviceId": 100000009,
+              "serviceCode": 443290,
+              "paidFee": 244.41557,
+              "serviceName": "Therapy"
+            }
+          ],
+          "suspended": true,
+          "name": "Charlotte",
+          "number": 100000009,
+          "coordinate": {
+            "streetAddress": "8394 North Barrel Avenue",
+            "city": "Gundam",
+            "state": "Arizona",
+            "zipCode": 47296
+          }
+        },
+        [
+          {
+            "serviceDate": "Apr 14, 2011 12:00:00 AM",
+            "receiveDate": "Nov 30, 2018 11:18:32 PM",
+            "providerId": 100000008,
+            "serviceId": 100000009,
+            "serviceCode": 443290,
+            "paidFee": 244.41557,
+            "serviceName": "Therapy"
+          }
+        ]
+      ],
+      [
+        {
+          "services": [
+            {
+              "serviceDate": "Oct 25, 2013 12:00:00 AM",
+              "receiveDate": "Nov 30, 2018 11:18:21 PM",
+              "providerId": 100000008,
+              "serviceId": 100000003,
+              "serviceCode": 225824,
+              "paidFee": 573.50635,
+              "serviceName": "Sober house"
+            },
+            {
+              "serviceDate": "Sep 22, 2014 12:00:00 AM",
+              "receiveDate": "Nov 30, 2018 11:18:21 PM",
+              "providerId": 100000009,
+              "serviceId": 100000007,
+              "serviceCode": 225824,
+              "paidFee": 836.2389,
+              "serviceName": "Sober house"
+            },
+            {
+              "serviceDate": "Apr 14, 2010 12:00:00 AM",
+              "receiveDate": "Nov 30, 2018 11:18:21 PM",
+              "providerId": 100000007,
+              "serviceId": 100000009,
+              "serviceCode": 682220,
+              "paidFee": 900.2349,
+              "serviceName": "Inpatient withdrawal treatment"
+            }
+          ],
+          "suspended": true,
+          "name": "Bree",
+          "number": 100000000,
+          "coordinate": {
+            "streetAddress": "5565 Earth Worm Avenue",
+            "city": "Cuda",
+            "state": "South Dakota",
+            "zipCode": 48347
+          }
+        },
+        [
+          {
+            "serviceDate": "Oct 25, 2013 12:00:00 AM",
+            "receiveDate": "Nov 30, 2018 11:18:21 PM",
+            "providerId": 100000008,
+            "serviceId": 100000003,
+            "serviceCode": 225824,
+            "paidFee": 573.50635,
+            "serviceName": "Sober house"
+          }
+        ]
+      ],
+      [
+        {
+          "services": [
+            {
+              "serviceDate": "Sep 18, 2012 12:00:00 AM",
+              "receiveDate": "Nov 30, 2018 11:18:41 PM",
+              "providerId": 100000008,
+              "serviceId": 100000004,
+              "serviceCode": 900422,
+              "paidFee": 410.88214,
+              "serviceName": "Family therapy"
+            }
+          ],
+          "suspended": false,
+          "name": "Shary",
+          "number": 100000008,
+          "coordinate": {
+            "streetAddress": "2117 North Bull Terrace",
+            "city": "Insata",
+            "state": "Alaska",
+            "zipCode": 99847
+          }
+        },
+        [
+          {
+            "serviceDate": "Sep 18, 2012 12:00:00 AM",
+            "receiveDate": "Nov 30, 2018 11:18:41 PM",
+            "providerId": 100000008,
+            "serviceId": 100000004,
+            "serviceCode": 900422,
+            "paidFee": 410.88214,
+            "serviceName": "Family therapy"
+          }
+        ]
+      ],
+      [
+        {
+          "services": [
+            {
+              "serviceDate": "May 16, 2013 12:00:00 AM",
+              "receiveDate": "Nov 30, 2018 11:18:36 PM",
+              "providerId": 100000008,
+              "serviceId": 100000006,
+              "serviceCode": 110944,
+              "paidFee": 333.37738,
+              "serviceName": "Detox"
+            },
+            {
+              "serviceDate": "Oct 25, 2015 12:00:00 AM",
+              "receiveDate": "Nov 30, 2018 11:18:36 PM",
+              "providerId": 100000006,
+              "serviceId": 100000007,
+              "serviceCode": 225824,
+              "paidFee": 493.93402,
+              "serviceName": "Sober house"
+            }
+          ],
+          "suspended": false,
+          "name": "Winston",
+          "number": 100000001,
+          "coordinate": {
+            "streetAddress": "9008 SE John Street",
+            "city": "Dallas",
+            "state": "New Mexico",
+            "zipCode": 73995
+          }
+        },
+        [
+          {
+            "serviceDate": "May 16, 2013 12:00:00 AM",
+            "receiveDate": "Nov 30, 2018 11:18:36 PM",
+            "providerId": 100000008,
+            "serviceId": 100000006,
+            "serviceCode": 110944,
+            "paidFee": 333.37738,
+            "serviceName": "Detox"
+          }
+        ]
+      ],
+      [
+        {
+          "services": [
+            {
+              "serviceDate": "Mar 10, 2016 12:00:00 AM",
+              "receiveDate": "Nov 30, 2018 11:18:41 PM",
+              "providerId": 100000002,
+              "serviceId": 100000003,
+              "serviceCode": 443290,
+              "paidFee": 771.5805,
+              "serviceName": "Therapy"
+            },
+            {
+              "serviceDate": "Sep 29, 2012 12:00:00 AM",
+              "receiveDate": "Nov 30, 2018 11:18:41 PM",
+              "providerId": 100000008,
+              "serviceId": 100000006,
+              "serviceCode": 739452,
+              "paidFee": 121.57588,
+              "serviceName": "Acupuncture"
+            }
+          ],
+          "suspended": false,
+          "name": "Nathan",
+          "number": 100000004,
+          "coordinate": {
+            "streetAddress": "4828 North Bull Terrace",
+            "city": "Jesupe",
+            "state": "Alaska",
+            "zipCode": 44626
+          }
+        },
+        [
+          {
+            "serviceDate": "Sep 29, 2012 12:00:00 AM",
+            "receiveDate": "Nov 30, 2018 11:18:41 PM",
+            "providerId": 100000008,
+            "serviceId": 100000006,
+            "serviceCode": 739452,
+            "paidFee": 121.57588,
+            "serviceName": "Acupuncture"
+          }
+        ]
+      ],
+      [
+        {
+          "services": [
+            {
+              "serviceDate": "Sep 25, 2016 12:00:00 AM",
+              "receiveDate": "Nov 30, 2018 11:18:24 PM",
+              "providerId": 100000008,
+              "serviceId": 100000001,
+              "serviceCode": 900422,
+              "paidFee": 422.1983,
+              "serviceName": "Family therapy"
+            }
+          ],
+          "suspended": true,
+          "name": "Ian",
+          "number": 100000004,
+          "coordinate": {
+            "streetAddress": "1961 North Barrel Avenue",
+            "city": "Jesupe",
+            "state": "Washington",
+            "zipCode": 75774
+          }
+        },
+        [
+          {
+            "serviceDate": "Sep 25, 2016 12:00:00 AM",
+            "receiveDate": "Nov 30, 2018 11:18:24 PM",
+            "providerId": 100000008,
+            "serviceId": 100000001,
+            "serviceCode": 900422,
+            "paidFee": 422.1983,
+            "serviceName": "Family therapy"
+          }
+        ]
+      ],
+      [
+        {
+          "services": [
+            {
+              "serviceDate": "Jun 28, 2010 12:00:00 AM",
+              "receiveDate": "Nov 30, 2018 11:18:21 PM",
+              "providerId": 100000008,
+              "serviceId": 100000004,
+              "serviceCode": 337713,
+              "paidFee": 281.2106,
+              "serviceName": "Insulin pump install"
+            }
+          ],
+          "suspended": false,
+          "name": "Sarah",
+          "number": 100000005,
+          "coordinate": {
+            "streetAddress": "1878 NW Sparrow Road",
+            "city": "Yerner",
+            "state": "South Dakota",
+            "zipCode": 17955
+          }
+        },
+        [
+          {
+            "serviceDate": "Jun 28, 2010 12:00:00 AM",
+            "receiveDate": "Nov 30, 2018 11:18:21 PM",
+            "providerId": 100000008,
+            "serviceId": 100000004,
+            "serviceCode": 337713,
+            "paidFee": 281.2106,
+            "serviceName": "Insulin pump install"
+          }
+        ]
+      ],
+      [
+        {
+          "services": [
+            {
+              "serviceDate": "Nov 24, 2016 12:00:00 AM",
+              "receiveDate": "Nov 30, 2018 11:18:21 PM",
+              "providerId": 100000008,
+              "serviceId": 100000008,
+              "serviceCode": 555555,
+              "paidFee": 21.43745,
+              "serviceName": "Other"
+            }
+          ],
+          "suspended": false,
+          "name": "Tyrone",
+          "number": 100000003,
+          "coordinate": {
+            "streetAddress": "6255 NW Sparrow Road",
+            "city": "Lalapope",
+            "state": "Alaska",
+            "zipCode": 42263
+          }
+        },
+        [
+          {
+            "serviceDate": "Nov 24, 2016 12:00:00 AM",
+            "receiveDate": "Nov 30, 2018 11:18:21 PM",
+            "providerId": 100000008,
+            "serviceId": 100000008,
+            "serviceCode": 555555,
+            "paidFee": 21.43745,
+            "serviceName": "Other"
+          }
+        ]
+      ]
+    ],
+    "password": "b597a87be4ac85fae444e74b6f3008c44cf331807dd8e95a6dff5c249ac0b45c5baf77fcf589bcd876d6a7c8d19ce0928a9b69ffab95b62e89293aa23fa3ad16",
+    "name": "Mercy Hospital",
+    "number": 100000008,
+    "coordinate": {
+      "streetAddress": "8957 East Jurk Road",
+      "city": "Lalapope",
+      "state": "Idaho",
+      "zipCode": 24753
+    }
+  },
+  {
+    "services": [
+      [
+        {
+          "services": [
+            {
+              "serviceDate": "Apr 7, 2012 12:00:00 AM",
+              "receiveDate": "Nov 30, 2018 11:18:32 PM",
+              "providerId": 100000009,
+              "serviceId": 100000003,
+              "serviceCode": 900422,
+              "paidFee": 760.273,
+              "serviceName": "Family therapy"
+            }
+          ],
+          "suspended": false,
+          "name": "Christopher",
+          "number": 100000004,
+          "coordinate": {
+            "streetAddress": "2576 West Chicken Street",
+            "city": "Vitsburgh",
+            "state": "Alaska",
+            "zipCode": 27836
+          }
+        },
+        [
+          {
+            "serviceDate": "Apr 7, 2012 12:00:00 AM",
+            "receiveDate": "Nov 30, 2018 11:18:32 PM",
+            "providerId": 100000009,
+            "serviceId": 100000003,
+            "serviceCode": 900422,
+            "paidFee": 760.273,
+            "serviceName": "Family therapy"
+          }
+        ]
+      ],
+      [
+        {
+          "services": [
+            {
+              "serviceDate": "Jan 23, 2013 12:00:00 AM",
+              "receiveDate": "Nov 30, 2018 11:18:21 PM",
+              "providerId": 100000009,
+              "serviceId": 100000006,
+              "serviceCode": 110944,
+              "paidFee": 385.71655,
+              "serviceName": "Detox"
+            }
+          ],
+          "suspended": false,
+          "name": "Jack",
+          "number": 100000002,
+          "coordinate": {
+            "streetAddress": "4017 Earth Worm Avenue",
+            "city": "Barnen",
+            "state": "Washington",
+            "zipCode": 94444
+          }
+        },
+        [
+          {
+            "serviceDate": "Jan 23, 2013 12:00:00 AM",
+            "receiveDate": "Nov 30, 2018 11:18:21 PM",
+            "providerId": 100000009,
+            "serviceId": 100000006,
+            "serviceCode": 110944,
+            "paidFee": 385.71655,
+            "serviceName": "Detox"
+          }
+        ]
+      ],
+      [
+        {
+          "services": [
+            {
+              "serviceDate": "Oct 25, 2013 12:00:00 AM",
+              "receiveDate": "Nov 30, 2018 11:18:21 PM",
+              "providerId": 100000008,
+              "serviceId": 100000003,
+              "serviceCode": 225824,
+              "paidFee": 573.50635,
+              "serviceName": "Sober house"
+            },
+            {
+              "serviceDate": "Sep 22, 2014 12:00:00 AM",
+              "receiveDate": "Nov 30, 2018 11:18:21 PM",
+              "providerId": 100000009,
+              "serviceId": 100000007,
+              "serviceCode": 225824,
+              "paidFee": 836.2389,
+              "serviceName": "Sober house"
+            },
+            {
+              "serviceDate": "Apr 14, 2010 12:00:00 AM",
+              "receiveDate": "Nov 30, 2018 11:18:21 PM",
+              "providerId": 100000007,
+              "serviceId": 100000009,
+              "serviceCode": 682220,
+              "paidFee": 900.2349,
+              "serviceName": "Inpatient withdrawal treatment"
+            }
+          ],
+          "suspended": true,
+          "name": "Bree",
+          "number": 100000000,
+          "coordinate": {
+            "streetAddress": "5565 Earth Worm Avenue",
+            "city": "Cuda",
+            "state": "South Dakota",
+            "zipCode": 48347
+          }
+        },
+        [
+          {
+            "serviceDate": "Sep 22, 2014 12:00:00 AM",
+            "receiveDate": "Nov 30, 2018 11:18:21 PM",
+            "providerId": 100000009,
+            "serviceId": 100000007,
+            "serviceCode": 225824,
+            "paidFee": 836.2389,
+            "serviceName": "Sober house"
+          }
+        ]
+      ],
+      [
+        {
+          "services": [
+            {
+              "serviceDate": "Jan 20, 2010 12:00:00 AM",
+              "receiveDate": "Nov 30, 2018 11:18:24 PM",
+              "providerId": 100000009,
+              "serviceId": 100000007,
+              "serviceCode": 225824,
+              "paidFee": 762.9474,
+              "serviceName": "Sober house"
+            }
+          ],
+          "suspended": false,
+          "name": "Sarah",
+          "number": 100000002,
+          "coordinate": {
+            "streetAddress": "5921 East Jurk Road",
+            "city": "Vernen",
+            "state": "New Mexico",
+            "zipCode": 21835
+          }
+        },
+        [
+          {
+            "serviceDate": "Jan 20, 2010 12:00:00 AM",
+            "receiveDate": "Nov 30, 2018 11:18:24 PM",
+            "providerId": 100000009,
+            "serviceId": 100000007,
+            "serviceCode": 225824,
+            "paidFee": 762.9474,
+            "serviceName": "Sober house"
+          }
+        ]
+      ],
+      [
+        {
+          "services": [
+            {
+              "serviceDate": "Feb 25, 2011 12:00:00 AM",
+              "receiveDate": "Nov 30, 2018 11:18:24 PM",
+              "providerId": 100000003,
+              "serviceId": 100000005,
+              "serviceCode": 900422,
+              "paidFee": 69.616135,
+              "serviceName": "Family therapy"
+            },
+            {
+              "serviceDate": "May 23, 2016 12:00:00 AM",
+              "receiveDate": "Nov 30, 2018 11:18:24 PM",
+              "providerId": 100000009,
+              "serviceId": 100000006,
+              "serviceCode": 337713,
+              "paidFee": 697.0329,
+              "serviceName": "Insulin pump install"
+            }
+          ],
+          "suspended": true,
+          "name": "Jack",
+          "number": 100000003,
+          "coordinate": {
+            "streetAddress": "3952 Saint Street",
+            "city": "Yerner",
+            "state": "Vermont",
+            "zipCode": 44937
+          }
+        },
+        [
+          {
+            "serviceDate": "May 23, 2016 12:00:00 AM",
+            "receiveDate": "Nov 30, 2018 11:18:24 PM",
+            "providerId": 100000009,
+            "serviceId": 100000006,
+            "serviceCode": 337713,
+            "paidFee": 697.0329,
+            "serviceName": "Insulin pump install"
+          }
+        ]
+      ],
+      [
+        {
+          "services": [
+            {
+              "serviceDate": "Nov 11, 2014 12:00:00 AM",
+              "receiveDate": "Nov 30, 2018 11:18:41 PM",
+              "providerId": 100000009,
+              "serviceId": 100000007,
+              "serviceCode": 225824,
+              "paidFee": 659.6603,
+              "serviceName": "Sober house"
+            }
+          ],
+          "suspended": false,
+          "name": "Jacob",
+          "number": 100000006,
+          "coordinate": {
+            "streetAddress": "9614 North Bull Terrace",
+            "city": "Yerner",
+            "state": "South Dakota",
+            "zipCode": 90834
+          }
+        },
+        [
+          {
+            "serviceDate": "Nov 11, 2014 12:00:00 AM",
+            "receiveDate": "Nov 30, 2018 11:18:41 PM",
+            "providerId": 100000009,
+            "serviceId": 100000007,
+            "serviceCode": 225824,
+            "paidFee": 659.6603,
+            "serviceName": "Sober house"
+          }
+        ]
+      ]
+    ],
+    "password": "b597a87be4ac85fae444e74b6f3008c44cf331807dd8e95a6dff5c249ac0b45c5baf77fcf589bcd876d6a7c8d19ce0928a9b69ffab95b62e89293aa23fa3ad16",
+    "name": "NorthWest Clinic",
+    "number": 100000009,
+    "coordinate": {
+      "streetAddress": "121 Kosh Street",
+      "city": "Tengi",
+      "state": "Kentucky",
+      "zipCode": 30136
+    }
+  },
+  {
+    "services": [
+      [
+        {
+          "services": [
+            {
+              "serviceDate": "Aug 14, 2017 12:00:00 AM",
+              "receiveDate": "Nov 30, 2018 11:18:41 PM",
+              "providerId": 100000003,
+              "serviceId": 100000008,
+              "serviceCode": 555555,
+              "paidFee": 306.62305,
+              "serviceName": "Other"
+            }
+          ],
+          "suspended": false,
+          "name": "Carol",
+          "number": 100000007,
+          "coordinate": {
+            "streetAddress": "9314 West Chicken Street",
+            "city": "Jesupe",
+            "state": "Florida",
+            "zipCode": 73630
+          }
+        },
+        [
+          {
+            "serviceDate": "Aug 14, 2017 12:00:00 AM",
+            "receiveDate": "Nov 30, 2018 11:18:41 PM",
+            "providerId": 100000003,
+            "serviceId": 100000008,
+            "serviceCode": 555555,
+            "paidFee": 306.62305,
+            "serviceName": "Other"
+          }
+        ]
+      ],
+      [
+        {
+          "services": [
+            {
+              "serviceDate": "Feb 28, 2016 12:00:00 AM",
+              "receiveDate": "Nov 30, 2018 11:18:41 PM",
+              "providerId": 100000003,
+              "serviceId": 100000001,
+              "serviceCode": 443290,
+              "paidFee": 254.87578,
+              "serviceName": "Therapy"
+            },
+            {
+              "serviceDate": "Oct 24, 2014 12:00:00 AM",
+              "receiveDate": "Nov 30, 2018 11:18:41 PM",
+              "providerId": 100000005,
+              "serviceId": 100000009,
+              "serviceCode": 529440,
+              "paidFee": 917.4359,
+              "serviceName": "Relapse therapy"
+            }
+          ],
+          "suspended": false,
+          "name": "Rachael",
+          "number": 100000001,
+          "coordinate": {
+            "streetAddress": "5943 North Bull Terrace",
+            "city": "Yerner",
+            "state": "Texas",
+            "zipCode": 76241
+          }
+        },
+        [
+          {
+            "serviceDate": "Feb 28, 2016 12:00:00 AM",
+            "receiveDate": "Nov 30, 2018 11:18:41 PM",
+            "providerId": 100000003,
+            "serviceId": 100000001,
+            "serviceCode": 443290,
+            "paidFee": 254.87578,
+            "serviceName": "Therapy"
+          }
+        ]
+      ],
+      [
+        {
+          "services": [
+            {
+              "serviceDate": "Feb 25, 2011 12:00:00 AM",
+              "receiveDate": "Nov 30, 2018 11:18:24 PM",
+              "providerId": 100000003,
+              "serviceId": 100000005,
+              "serviceCode": 900422,
+              "paidFee": 69.616135,
+              "serviceName": "Family therapy"
+            },
+            {
+              "serviceDate": "May 23, 2016 12:00:00 AM",
+              "receiveDate": "Nov 30, 2018 11:18:24 PM",
+              "providerId": 100000009,
+              "serviceId": 100000006,
+              "serviceCode": 337713,
+              "paidFee": 697.0329,
+              "serviceName": "Insulin pump install"
+            }
+          ],
+          "suspended": true,
+          "name": "Jack",
+          "number": 100000003,
+          "coordinate": {
+            "streetAddress": "3952 Saint Street",
+            "city": "Yerner",
+            "state": "Vermont",
+            "zipCode": 44937
+          }
+        },
+        [
+          {
+            "serviceDate": "Feb 25, 2011 12:00:00 AM",
+            "receiveDate": "Nov 30, 2018 11:18:24 PM",
+            "providerId": 100000003,
+            "serviceId": 100000005,
+            "serviceCode": 900422,
+            "paidFee": 69.616135,
+            "serviceName": "Family therapy"
+          }
+        ]
+      ]
+    ],
+    "password": "b597a87be4ac85fae444e74b6f3008c44cf331807dd8e95a6dff5c249ac0b45c5baf77fcf589bcd876d6a7c8d19ce0928a9b69ffab95b62e89293aa23fa3ad16",
+    "name": "St. Hood Hospital",
+    "number": 100000003,
+    "coordinate": {
+      "streetAddress": "4041 SE John Street",
+      "city": "Dallas",
+      "state": "Iowa",
+      "zipCode": 42943
+    }
+  },
+  {
+    "services": [
+      [
+        {
+          "services": [
+            {
+              "serviceDate": "Apr 15, 2010 12:00:00 AM",
+              "receiveDate": "Nov 30, 2018 11:18:32 PM",
+              "providerId": 100000006,
+              "serviceId": 100000000,
+              "serviceCode": 682220,
+              "paidFee": 484.98706,
+              "serviceName": "Inpatient withdrawal treatment"
+            },
+            {
+              "serviceDate": "Sep 26, 2011 12:00:00 AM",
+              "receiveDate": "Nov 30, 2018 11:18:32 PM",
+              "providerId": 100000002,
+              "serviceId": 100000001,
+              "serviceCode": 225824,
+              "paidFee": 925.5601,
+              "serviceName": "Sober house"
+            },
+            {
+              "serviceDate": "May 18, 2013 12:00:00 AM",
+              "receiveDate": "Nov 30, 2018 11:18:32 PM",
+              "providerId": 100000005,
+              "serviceId": 100000007,
+              "serviceCode": 682220,
+              "paidFee": 816.85693,
+              "serviceName": "Inpatient withdrawal treatment"
+            }
+          ],
+          "suspended": true,
+          "name": "Bree",
+          "number": 100000005,
+          "coordinate": {
+            "streetAddress": "9781 Kosh Street",
+            "city": "Kerro",
+            "state": "Iowa",
+            "zipCode": 78869
+          }
+        },
+        [
+          {
+            "serviceDate": "May 18, 2013 12:00:00 AM",
+            "receiveDate": "Nov 30, 2018 11:18:32 PM",
+            "providerId": 100000005,
+            "serviceId": 100000007,
+            "serviceCode": 682220,
+            "paidFee": 816.85693,
+            "serviceName": "Inpatient withdrawal treatment"
+          }
+        ]
+      ],
+      [
+        {
+          "services": [
+            {
+              "serviceDate": "Feb 28, 2016 12:00:00 AM",
+              "receiveDate": "Nov 30, 2018 11:18:41 PM",
+              "providerId": 100000003,
+              "serviceId": 100000001,
+              "serviceCode": 443290,
+              "paidFee": 254.87578,
+              "serviceName": "Therapy"
+            },
+            {
+              "serviceDate": "Oct 24, 2014 12:00:00 AM",
+              "receiveDate": "Nov 30, 2018 11:18:41 PM",
+              "providerId": 100000005,
+              "serviceId": 100000009,
+              "serviceCode": 529440,
+              "paidFee": 917.4359,
+              "serviceName": "Relapse therapy"
+            }
+          ],
+          "suspended": false,
+          "name": "Rachael",
+          "number": 100000001,
+          "coordinate": {
+            "streetAddress": "5943 North Bull Terrace",
+            "city": "Yerner",
+            "state": "Texas",
+            "zipCode": 76241
+          }
+        },
+        [
+          {
+            "serviceDate": "Oct 24, 2014 12:00:00 AM",
+            "receiveDate": "Nov 30, 2018 11:18:41 PM",
+            "providerId": 100000005,
+            "serviceId": 100000009,
+            "serviceCode": 529440,
+            "paidFee": 917.4359,
+            "serviceName": "Relapse therapy"
+          }
+        ]
+      ],
+      [
+        {
+          "services": [
+            {
+              "serviceDate": "Apr 18, 2013 12:00:00 AM",
+              "receiveDate": "Nov 30, 2018 11:18:41 PM",
+              "providerId": 100000005,
+              "serviceId": 100000000,
+              "serviceCode": 755212,
+              "paidFee": 396.9646,
+              "serviceName": "Recovery group meeting"
+            }
+          ],
+          "suspended": false,
+          "name": "Andy",
+          "number": 100000000,
+          "coordinate": {
+            "streetAddress": "3443 North Bull Terrace",
+            "city": "Jesupe",
+            "state": "Arizona",
+            "zipCode": 34842
+          }
+        },
+        [
+          {
+            "serviceDate": "Apr 18, 2013 12:00:00 AM",
+            "receiveDate": "Nov 30, 2018 11:18:41 PM",
+            "providerId": 100000005,
+            "serviceId": 100000000,
+            "serviceCode": 755212,
+            "paidFee": 396.9646,
+            "serviceName": "Recovery group meeting"
+          }
+        ]
+      ],
+      [
+        {
+          "services": [
+            {
+              "serviceDate": "Apr 14, 2011 12:00:00 AM",
+              "receiveDate": "Nov 30, 2018 11:18:24 PM",
+              "providerId": 100000005,
+              "serviceId": 100000004,
+              "serviceCode": 682220,
+              "paidFee": 818.07855,
+              "serviceName": "Inpatient withdrawal treatment"
+            },
+            {
+              "serviceDate": "Oct 3, 2012 12:00:00 AM",
+              "receiveDate": "Nov 30, 2018 11:18:24 PM",
+              "providerId": 100000001,
+              "serviceId": 100000009,
+              "serviceCode": 555555,
+              "paidFee": 890.83484,
+              "serviceName": "Other"
+            }
+          ],
+          "suspended": true,
+          "name": "Fransico",
+          "number": 100000008,
+          "coordinate": {
+            "streetAddress": "3331 West Chicken Street",
+            "city": "Mallard",
+            "state": "North Dakota",
+            "zipCode": 49243
+          }
+        },
+        [
+          {
+            "serviceDate": "Apr 14, 2011 12:00:00 AM",
+            "receiveDate": "Nov 30, 2018 11:18:24 PM",
+            "providerId": 100000005,
+            "serviceId": 100000004,
+            "serviceCode": 682220,
+            "paidFee": 818.07855,
+            "serviceName": "Inpatient withdrawal treatment"
+          }
+        ]
+      ]
+    ],
+    "password": "b597a87be4ac85fae444e74b6f3008c44cf331807dd8e95a6dff5c249ac0b45c5baf77fcf589bcd876d6a7c8d19ce0928a9b69ffab95b62e89293aa23fa3ad16",
+    "name": "Kaiser",
+    "number": 100000005,
+    "coordinate": {
+      "streetAddress": "6266 East Jurk Road",
+      "city": "Jesupe",
+      "state": "California",
+      "zipCode": 11854
+    }
+  }
+]

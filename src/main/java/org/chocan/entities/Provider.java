@@ -30,12 +30,13 @@ public class Provider extends ClientInfo {
     public ConcurrentHashMap<Member, ArrayList<Service>> getServices() {
         return services;
     }
+
     public float totalWeeklyFees(){
         float weeklyFees = 0.0f;
         Date oneWeekAgo = new Date(System.currentTimeMillis() - (7 * DAY_IN_MS));
         for(Map.Entry<Member, ArrayList<Service>> entry: services.entrySet()) {
             for(Service service : entry.getValue()) {
-                if (service.getServiceDate().after(oneWeekAgo))
+                if (!service.getServiceDate().after(oneWeekAgo))
                     weeklyFees += service.getPaidFee();
             }
         }
@@ -52,7 +53,7 @@ public class Provider extends ClientInfo {
         Date oneWeekAgo = new Date(System.currentTimeMillis() - (7 * DAY_IN_MS));
         for(Map.Entry<Member, ArrayList<Service>> entry: services.entrySet()){
             for(Service service: entry.getValue()){
-                if (service.getServiceDate().after(oneWeekAgo))
+                if (!service.getServiceDate().after(oneWeekAgo))
                     weeklyConsultations++;
             }
         }
