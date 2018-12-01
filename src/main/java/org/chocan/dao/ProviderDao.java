@@ -75,7 +75,7 @@ public class ProviderDao implements Dao<Provider, Integer> {
     }
 
     public synchronized int getNextId(){
-        return this.cache.stream().mapToInt(en -> en.getNumber()).max().orElse(0) +1;
+        return this.cache.stream().mapToInt(en -> en.getNumber()).max().orElse(99999999) +1;
     }
 
     @Override

@@ -126,10 +126,10 @@ public class ReportGenerator {
 
         printReport.printf("Weekly EFT Summary Report%n");
         for(Provider provider: providers){
-            int providerConsultations = provider.totalWeeklyConsultations(); // TODO: implement this function to count consultations
+            int providerConsultations = provider.totalWeeklyConsultations();
 
             if(providerConsultations > 0) {
-                double providerFees = provider.totalWeeklyFees(); // TODO: implement this function to calculate fees
+                double providerFees = provider.totalWeeklyFees();
 
                 printReport.printf("%n==================================================%n");
                 printReport.printf("Provider Name:           " + provider.getName() + "%n");

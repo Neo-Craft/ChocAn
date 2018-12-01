@@ -8,16 +8,18 @@ public class Service {
     private Date serviceDate;   // Date of service (MM-DD-YYYY).
     private Date receiveDate;   // Date and time data were received by the computer (MM-DD-YYYY HH:MM:SS)
     private int providerId;
-    private int serviceCode;    // 6 digits
+    private int serviceId;     // 9 digits unique identifier for a particular service object
+    private int serviceCode;    // 6 digits identifier of service type
     private float paidFee;      // Fee to be paid (up to $999.99)
     private String serviceName;
 
 
 
-    public Service(Date serviceDate, int provider, int serviceCode, float paidFee, String serviceName){
+    public Service(Date serviceDate, int provider, int serviceId, int serviceCode, float paidFee, String serviceName){
         this.serviceDate = serviceDate;
         this.receiveDate = new Date(); //Current time;
         this.providerId = provider;
+        this.serviceId = serviceId;
         this.serviceCode = serviceCode;
         this.paidFee = paidFee;
         this.serviceName = serviceName;
@@ -46,6 +48,14 @@ public class Service {
 
     public void setProviderId(int provider) {
         this.providerId = provider;
+    }
+
+    public int getServiceId() {
+        return serviceId;
+    }
+
+    public void setServiceId(int serviceId) {
+        this.serviceId = serviceId;
     }
 
     public int getServiceCode() {

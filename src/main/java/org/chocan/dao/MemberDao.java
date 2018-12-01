@@ -24,7 +24,7 @@ public class MemberDao implements Dao<Member, Integer> {
             Member[] people = gson.fromJson(reader, Member[].class);
             if(people != null)
                 for (Member person : people) {
-                    person.setServices(person.getServices().stream().map(entry -> Database.SERVICES.get(entry.getServiceCode()))    // we set the services in json to points here
+                    person.setServices(person.getServices().stream().map(entry -> Database.SERVICES.get(entry.getServiceId()))    // we set the services in json to points here
                             .filter(entry -> entry.isPresent())
                             .map(entry -> entry.get())
                             .collect(Collectors.toList()));
@@ -69,7 +69,7 @@ public class MemberDao implements Dao<Member, Integer> {
     }
 
     public synchronized int getNextId(){
-        return this.cache.keySet().stream().mapToInt(en -> en).max().orElse(0) + 1;
+        return this.cache.keySet().stream().mapToInt(en -> en).max().orElse(99999999) + 1;
     }
 
     @Override

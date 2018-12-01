@@ -8,10 +8,8 @@ import org.chocan.entities.Service;
 import org.junit.Test;
 
 import javax.xml.crypto.Data;
-import java.util.ArrayList;
-import java.util.Date;
+import java.util.*;
 import java.util.concurrent.ConcurrentHashMap;
-import java.util.Iterator;
 
 public class DatabaseTest {
 
@@ -62,7 +60,8 @@ public class DatabaseTest {
         if(service == null)
             System.out.print("Null Service\n\n");
         else {
-            System.out.print("Service #" + service.getServiceCode() + ": " + service.getServiceName() + "\n");
+            System.out.print("Service #" + service.getServiceId() + "\n");
+            System.out.print("Service Code: " + service.getServiceCode() + ": " + service.getServiceName() + "\n");
             System.out.print("Service Provider #" + service.getProviderId() + ": " + Database.PROVIDERS.get(service.getProviderId()).orElse(null).getName() + "\n");
             System.out.print("Date of service: " + service.getServiceDate() + "\n");
             System.out.print("Date of service recieved: " + service.getReceiveDate() + "\n");
@@ -119,19 +118,13 @@ public class DatabaseTest {
                 "Vermont", "North Dakota", "South Dakota", "New Mexico", "Arizona", "Kentucky", "Iowa"
         };
 
-        String services[] = {
-                "Acupuncture", "Physcology", "Therapy", "Family therapy",
-                "Detox", "Inpatient rehabilitation", "Sober house", "Relaspe therapy",
-                "Recovery group meeting", "Outpatient rehabilitation",
-        };
-
         //Load the stored Database
         Database.load();
         //Create and put Member objects into Database
         for(int i = 0; i < maxMembers; i++) {
             String Addr = getRandNum(100,9999) + " " + adresses[getRandNum(0,adresses.length)];
             Coordinate cord = new Coordinate(Addr, cities[getRandNum(0, cities.length)], states[getRandNum(0, states.length)], getRandNum(10000,99999));
-            Member member = new Member(names[getRandNum(0, names.length-1)], i, cord, (1==getRandNum(0,3)));
+            Member member = new Member(names[getRandNum(0, names.length-1)], i + 100000000, cord, (1==getRandNum(0,3)));
             Database.MEMBERS.add(member);
         }
 
@@ -139,7 +132,7 @@ public class DatabaseTest {
         for(int i = 0; i < maxProviders; i++) {
             String Addr = getRandNum(100,9999) + " " + adresses[getRandNum(0,adresses.length)];
             Coordinate cord = new Coordinate(Addr, cities[getRandNum(0, cities.length)], states[getRandNum(0, states.length)], getRandNum(10000,99999));
-            Provider provider = new Provider(providers[getRandNum(0, providers.length)], i, cord, AccountHelper.generateHash( AccountHelper.KEY + "test"));
+            Provider provider = new Provider(providers[getRandNum(0, providers.length)], i + 100000000, cord, AccountHelper.generateHash( AccountHelper.KEY + "test"));
             Database.PROVIDERS.add(provider);
         }
 
@@ -147,15 +140,21 @@ public class DatabaseTest {
         for(int i = 0; i< maxServices; i++) {
             Date date = new Date(getRandNum(110,118), getRandNum(0, 11), getRandNum(1,31));
 
-            int serviceProvider = getRandNum(0, maxProviders);
-            Service service = new Service(date, serviceProvider, i, getRanFloat(0f, 999.99f), services[getRandNum(0 , services.length)]);
+            int serviceProvider = getRandNum(100000000, maxProviders + 100000000);
+            List<Map.Entry<Integer, String>> services = new ArrayList<>(Service.serviceDirectory.entrySet());
+            int serviceIndex = getRandNum(0, services.size());
+            int serviceCode = services.get(serviceIndex).getKey();
+            String serviceName = services.get(serviceIndex).getValue();
+            Service service = new Service(date, serviceProvider, i + 100000000, serviceCode , getRanFloat(0f, 999.99f), serviceName);
             Database.SERVICES.add(service);
 
             //Add service to provider
             Provider provider = Database.PROVIDERS.get(serviceProvider).orElse(null);
-            Member member = Database.MEMBERS.get(getRandNum(0, maxMembers)).orElse(null);
+            Member member = Database.MEMBERS.get(getRandNum(100000000, maxMembers + 100000000)).orElse(null);
             provider.addService(member, service);
             Database.PROVIDERS.update(provider);
+            //Add service to member
+            member.addService(service);
         }
         //Save the new Database
         Database.save();
@@ -163,28 +162,28 @@ public class DatabaseTest {
         //Print Member object information stored in Database.
         System.out.print("*** MEMBERS ***\n\n");
         for(int i = 0; i < maxMembers; i++) {
-            Member member = Database.MEMBERS.get(i).orElse(null);
+            Member member = Database.MEMBERS.get(i + 100000000).orElse(null);
             printMemberInfo(member);
         }
 
         //Print Provider object information stored in Database
         System.out.print("*** PROVIDERS ***\n\n");
         for(int i = 0; i < maxProviders; i++) {
-            Provider provider = Database.PROVIDERS.get(i).orElse(null);
+            Provider provider = Database.PROVIDERS.get(i + 100000000).orElse(null);
             printProviderInfo(provider);
         }
 
         //Print Service object information stored in Database
         System.out.print("*** SERVICES ***\n\n");
         for(int i = 0; i < maxServices; i++) {
-            Service service = Database.SERVICES.get(i).orElse(null);
+            Service service = Database.SERVICES.get(i + 100000000).orElse(null);
             printServiceInfo(service);
         }
 
         //Print services provided by a Provider object.
         System.out.print("***SERVICES PROVIDED BY A PROVIDER***\n\n");
         for(int i = 0; i < maxProviders; i++) {
-            Provider provider = Database.PROVIDERS.get(i).orElse(null);
+            Provider provider = Database.PROVIDERS.get(i + 100000000).orElse(null);
             printProviderServices(provider);
         }
     }
