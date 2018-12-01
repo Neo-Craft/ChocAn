@@ -138,12 +138,12 @@ public class Menu {
                     System.out.print("Username: ");
                     userName = strScanner.nextLine();
 
-                    Optional<Manager> provider = Database.MANAGERS.get(userName);
-                    if (provider.isPresent() == true) {
+                    Optional<Manager> manager = Database.MANAGERS.get(userName);
+                    if (manager.isPresent() == true) {
                         System.out.print("Password: ");
                         password = strScanner.nextLine();
-                        if (provider.get().isValidPass(password) == true){
-                            mManager = provider.get();
+                        if (manager.get().isValidPass(password) == true){
+                            mManager = manager.get();
                             menuIndx = 3;
                             onMenu = false;
                         } else {
@@ -252,7 +252,6 @@ public class Menu {
                 case 0:
                     //Clear and redisplay menu
                     ClearScreen();
-                    //DisplayMenu(3);
                     break;
                 case 1:
                     //Log out
@@ -326,9 +325,6 @@ public class Menu {
             menuIndx = 0;
             return;
         }
-
-        //Current manager
-        List<Provider> providers = mManager.getProviders();
 
         boolean onMenu = true;
         while (onMenu == true){
@@ -436,7 +432,23 @@ public class Menu {
                         if (curMember != null){
                             System.out.println("Are you sure you want to delete that (0/1): ");
                             if (GetNumberInputWithBoundCheck(0, 1) == 1){
-                                //Delete the member
+                                //Delete the member from Provider caches
+                                List<Service> serviceList = curMember.getServices();
+                                for(int indx = serviceList.size() - 1; indx >= 0; indx--){
+                                    Service curService = serviceList.get(indx);
+                                    //Delete the associated services
+                                    //from the database
+                                    Database.SERVICES.delete(curService);
+                                    //from current member's list
+                                    serviceList.remove(curService);
+                                }
+                                for(Provider curProv : Database.PROVIDERS.getAll()){
+                                    if (curProv.getServices().keySet().contains(curMember) == true){
+                                        curProv.getService(curMember).clear();
+                                        break;
+                                    }
+                                }
+                                //Delete member from database
                                 Database.MEMBERS.delete(curMember);
                             }
                         }
@@ -561,7 +573,16 @@ public class Menu {
                         if (delService != null){
                             System.out.println("Are you sure you want to delete that (0/1): ");
                             if (GetNumberInputWithBoundCheck(0, 1) == 1){
-                                //Delete the member
+                                //Delete service from member cache
+                                for(Member member : Database.MEMBERS.getAll()) {
+                                    if (member.getServices().contains(delService)) {
+                                        for (Provider provider : Database.PROVIDERS.getAll()) {
+                                            provider.getService(member).remove(delService);
+                                        }
+                                        member.getServices().remove(delService);
+                                    }
+                                }
+                                //Delete the service from database
                                 Database.SERVICES.delete(delService);
                             }
                         }
@@ -800,19 +821,22 @@ public class Menu {
     }
     private int GetNumberInputWithBoundCheck(int min, int max){
         int returnVal = -3;
+        boolean mismatch = false;
         try {
-             returnVal = numScanner.nextInt();
-        }catch (InputMismatchException ex){
-            System.out.println("Input mismatch! Check GetNumberInputWithBoundCheck(int, int)");
+             returnVal = Integer.parseInt(numScanner.nextLine());
+        }catch (Exception ex){
+            System.out.println("Input mismatch!");
         }
         //Bad input ----- Make sure to check to upper bound
-        while (returnVal < min || returnVal > max){
+        while (returnVal < min || returnVal > max || mismatch){
             System.out.print("Can't input that... ");
             System.out.print("Your input: ");
             try {
-                returnVal = numScanner.nextInt();
-            }catch (InputMismatchException ex){
-                System.out.println("Input mismatch! Check GetNumberInputWithBoundCheck(int, int)");
+                returnVal = Integer.parseInt(numScanner.nextLine());
+                mismatch = false;
+            }catch (Exception ex){
+                System.out.println("Input mismatch!");
+                mismatch = true;
             }
         }
 
@@ -820,21 +844,24 @@ public class Menu {
     }       //Prompt for input until we get the correct input in range[min, max]
     private int GetNumberInputWithBoundCheck(int min, int max, boolean quitOption){
         int returnVal = -3;
+        boolean mismatch = false;
         try {
-            returnVal = numScanner.nextInt();
-        }catch (InputMismatchException ex){
-            System.out.println("Input mismatch! Check GetNumberInputWithBoundCheck(int, int)");
+            returnVal = Integer.parseInt(numScanner.nextLine());
+        }catch (Exception ex){
+            System.out.println("Input mismatch!");
         }
         //User wants to quit instead of providing input
         if (quitOption && returnVal == -1) return returnVal;
         //Bad input ----- Make sure to check to upper bound
-        while (returnVal < min || returnVal > max){
+        while (returnVal < min || returnVal > max || mismatch){
             System.out.print("Can't input that... ");
             System.out.print("Your input: ");
             try {
-                returnVal = numScanner.nextInt();
-            }catch (InputMismatchException ex){
-                System.out.println("Input mismatch! Check GetNumberInputWithBoundCheck(int, int)");
+                returnVal = Integer.parseInt(numScanner.nextLine());
+                mismatch = false;
+            }catch (Exception ex){
+                System.out.println("Input mismatch!");
+                mismatch = true;
             }
         }
 
@@ -842,19 +869,22 @@ public class Menu {
     }       //Quits on -1 if quitOption is enabled
     private float GetNumberInputWithBoundCheck(float min, float max){
         float returnVal = -3;
+        boolean mismatch = false;
         try {
-            returnVal = numScanner.nextFloat();
-        }catch (InputMismatchException ex){
-            System.out.println("Input mismatch! Check GetNumberInputWithBoundCheck(float, float)");
+            returnVal = Float.parseFloat(numScanner.nextLine());
+        }catch (Exception ex){
+            System.out.println("Input mismatch!");
         }
         //Bad input ----- Make sure to check to upper bound
-        while (returnVal < min || returnVal > max){
+        while (returnVal < min || returnVal > max || mismatch){
             System.out.print("Can't input that... ");
             System.out.print("Your input: ");
             try {
-                returnVal = numScanner.nextFloat();
-            }catch (InputMismatchException ex){
-                System.out.println("Input mismatch! Check GetNumberInputWithBoundCheck(float, float)");
+                returnVal = Float.parseFloat(numScanner.nextLine());
+                mismatch = false;
+            }catch (Exception ex){
+                System.out.println("Input mismatch!");
+                mismatch = true;
             }
         }
 

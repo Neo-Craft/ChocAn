@@ -15,13 +15,13 @@ public class Provider extends ClientInfo {
 
     public Provider(String name, int gid, Coordinate coordinate, String password) {
         super(name, gid, coordinate);
-        this.password = password;
+        this.password = AccountHelper.generateHash( AccountHelper.KEY + password);;
         this.services = new ConcurrentHashMap<Member, ArrayList<Service>>();
     }
     public Provider(String name, int gid, Coordinate coordinate, ConcurrentHashMap services, String password) {
         super(name, gid, coordinate);
         this.services = services;
-        this.password = password;
+        this.password = AccountHelper.generateHash( AccountHelper.KEY + password);;
     }
 
     public ArrayList<Service> getService(Member member) {
