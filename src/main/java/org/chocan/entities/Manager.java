@@ -13,7 +13,8 @@ public class Manager {
 
     public Manager(String username, String password, ArrayList<Provider> providers) {
         this.username = username;
-        this.password = password;
+        //this.password = password;
+        this.password = AccountHelper.generateHash( AccountHelper.KEY + password);
         this.providers = providers;
     }
 
@@ -27,7 +28,7 @@ public class Manager {
         return password;
     }
     public void setPassword(String password) {
-        this.password = password;
+        this.password = AccountHelper.generateHash( AccountHelper.KEY + password); //password;
     }
 
     public List<Provider> getProviders() {
